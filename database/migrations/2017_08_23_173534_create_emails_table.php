@@ -15,6 +15,9 @@ class CreateEmailsTable extends Migration
     {
         Schema::create('emails', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('to');
+            $table->string('subject');
+            $table->dateTime('sent');
             $table->timestamps();
         });
     }

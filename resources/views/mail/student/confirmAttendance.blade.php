@@ -93,9 +93,10 @@
                                                     <td width="10%"></td>
                                                 </tr>
                                             </table>
-                                            <a>Ņem vērā, <b>laikapstākļi mēdz būt dažādi</b>, tāpēc šeit ir pieminēts tikai survival-kit, bez kura nekādi nevarēsi iztikt. Par visu pārējo parūpējies pats.
+                                            <a>Ņem vērā, <b>laikapstākļi mēdz būt dažādi</b>, tāpēc šeit ir pieminēts tikai survival-kit, bez kura nekādi nevarēsi iztikt. Par visu pārējo parūpējies pats. N.B.: Nakšņošana notiks iekštelpās.
                                                 <br><br><b>Nakts trase</b> ir nopietns pārbaudījums gan ķermenim, gan prātam, un dažreiz gadās tā, ka drēbes to neiztur, tāpēc paņem līdzi kādu maiņas apģērba komplektu.
                                                 <br><br>Ja rodas kādas neskaidrības - raksti uz <a href="mailto:sejiens@datoriki.lv" style="color:#8D1C13;"><b>sejiens@datoriki.lv</b></a>, un neaizmirsti piedalīties <a href="https://www.facebook.com/events/111744119475006/permalink/120314598617958/"><font color='#8D1C13'><b>pasākumam veltītā konkursā</b></font></a>.</font>
+                                                <br><br>Datorikas fakultāte &ndash; tava māte kvalitate!
                                                 <br>
                                         </td>
                                     </table>

@@ -20,4 +20,4 @@ Route::resource('/student', 'StudentController');
 Route::post('/student/import', 'StudentController@import')->name('student.import');
 
 Route::resource('/mail', 'EmailController');
-Route::post('/mail/send', 'EmailController@send')->name('email.send');
+Route::post('/mail/send', 'EmailController@send')->name('mail.send');

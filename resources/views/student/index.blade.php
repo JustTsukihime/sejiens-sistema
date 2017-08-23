@@ -7,7 +7,7 @@
     {{ Form::submit() }}
 {{ Form::close() }}
     <div>Send attendance confirmation letter</div>
-{{ Form::open(['url' => route('email.send')]) }}
+{{ Form::open(['url' => route('mail.send')]) }}
     {{ Form::submit() }}
 {{ Form::close() }}
 @endsection

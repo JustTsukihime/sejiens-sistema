@@ -87,12 +87,12 @@ class EmailController extends Controller
     }
 
     public function send(Request $request) {
-        $recipients = Student::where('id',1)->get();
+        $recipients = Student::all();
 
         foreach ($recipients as $recipient) {
-            Mail::to($recipient->email)->send(new StudentConfirmAttendance());
+            Mail::to($recipient->email)->queue(new StudentConfirmAttendance());
         }
 
-        return redirect()->route('email.index');
+        return redirect()->route('student.index');
     }
 }
