@@ -17,9 +17,15 @@ class CreateStudentsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('surname');
-            $table->string('email');
-            $table->string('phone');
+            $table->string('email')->unique();
+            $table->string('phone')->unique();
             $table->string('attending');
+            $table->string('food');
+            $table->string('health');
+            $table->string('tshirt');
+            $table->string('mentor');
+            $table->string('whatsapp')->nullable();
+            $table->dateTime('applied');
             $table->timestamps();
         });
     }
