@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Student;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
-use Maatwebsite\Excel\Readers\LaravelExcelReader;
 
 class StudentController extends Controller
 {

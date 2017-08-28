@@ -17,7 +17,7 @@ class CreateEmailsTable extends Migration
             $table->increments('id');
             $table->string('to');
             $table->string('subject');
-            $table->dateTime('sent');
+            $table->dateTime('sent_at');
             $table->timestamps();
         });
     }

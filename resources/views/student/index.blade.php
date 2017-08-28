@@ -10,4 +10,9 @@
 {{ Form::open(['url' => route('mail.send')]) }}
     {{ Form::submit() }}
 {{ Form::close() }}
+    <div>Send attendance confirmation letter</div>
+{{ Form::open(['url' => route('mail.send')]) }}
+    {{ Form::text('email') }}
+    {{ Form::submit() }}
+{{ Form::close() }}
 @endsection

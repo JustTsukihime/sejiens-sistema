@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Email;
 use App\Mail\StudentConfirmAttendance;
+use App\Mail\TestMail;
 use App\Student;
 use Illuminate\Http\Request;
+use Illuminate\Mail\Mailer;
 use Illuminate\Support\Facades\Mail;
 
 class EmailController extends Controller
@@ -87,12 +89,14 @@ class EmailController extends Controller
     }
 
     public function send(Request $request) {
-        $recipients = Student::all();
+        $this->validate($request, [
+            'email' => 'required|email'
+        ]);
 
-        foreach ($recipients as $recipient) {
-            Mail::to($recipient->email)->queue(new StudentConfirmAttendance());
-        }
+        $type = 'StudentConfirmAttendance';
+        $mail = resolve('App\Mail\\'.$type);
 
+        Mail::to($request->email)->send($mail);
         return redirect()->route('student.index');
     }
 }

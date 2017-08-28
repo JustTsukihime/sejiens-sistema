@@ -16,8 +16,8 @@ Route::get('/', 'StudentController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('/student', 'StudentController');
 Route::post('/student/import', 'StudentController@import')->name('student.import');
+Route::resource('/student', 'StudentController');
 
-Route::resource('/mail', 'EmailController');
 Route::post('/mail/send', 'EmailController@send')->name('mail.send');
+Route::resource('/mail', 'EmailController');
