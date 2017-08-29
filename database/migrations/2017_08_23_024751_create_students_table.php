@@ -25,7 +25,7 @@ class CreateStudentsTable extends Migration
             $table->string('tshirt');
             $table->string('mentor');
             $table->string('whatsapp')->nullable();
-            $table->dateTime('applied');
+            $table->dateTime('applied_at');
             $table->timestamps();
         });
     }

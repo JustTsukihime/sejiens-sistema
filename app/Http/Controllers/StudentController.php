@@ -119,8 +119,43 @@ class StudentController extends Controller
                 'tshirt' => $student->$tshirt,
                 'mentor' => $student->$mentor,
                 'whatsapp' => $student->$whatsapp,
-                'applied' => $student->$timestamp,
+                'applied_at' => $student->$timestamp,
             ]);
+        }
+
+        $request->session()->flash('notification.success', ''); // TODO: Add label
+        return redirect()->route('student.index', compact('students'));
+    }
+
+    public function importAttendees(Request $request) {
+        $this->validate($request, [
+            'file' => 'required|file|max:1000|mimetypes:application/vnd.ms-excel,application/msexcel,application/x-msexcel,application/x-ms-excel,application/x-excel,application/x-dos_ms_excel,application/xls,application/x-xls,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+        ]);
+
+        $attendance = [
+            'Tikai 1.daļu (Raiņa bulvārī 19)' => 'first',
+            'Tikai 2.daļu (Garozas pamatskolā)' => 'second',
+            'Abām daļām' => 'both',
+        ];
+
+        $data = Excel::load($request->file('file')->getPathname())->all();
+        list($timestamp, $name, $surname, $allergies, $attending, $dropoff, $comments, $withdrawn) = $data->getHeading();
+
+        foreach ($data->values() as $student) {
+            $model = Student::where(['name' => $student->$name, 'surname' => $student->$surname])->first();
+            if (is_null($model)) continue;
+
+            $model->fill([
+                'allergies' => $student->$allergies,
+                'attending' => $attendance[$student->$attending],
+                'dropoff' => $student->$dropoff,
+                'comments' => $student->$comments,
+                'confirmed_at' =>$student->$timestamp,
+            ])->save();
+
+            if ($student->$withdrawn == 1) {
+                $model->delete();
+            }
         }
 
         $request->session()->flash('notification.success', ''); // TODO: Add label
