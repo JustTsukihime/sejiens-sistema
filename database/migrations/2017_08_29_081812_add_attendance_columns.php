@@ -15,9 +15,9 @@ class AddAttendanceColumns extends Migration
     {
         Schema::table('students', function (Blueprint $table) {
             $table->dateTime('confirmed_at')->nullable();
-            $table->string('dropoff');
-            $table->string('alergies');
-            $table->string('comments');
+            $table->string('dropoff')->nullable();
+            $table->string('alergies')->nullable();
+            $table->string('comments')->nullable();
             $table->softDeletes();
         });
     }
@@ -30,7 +30,8 @@ class AddAttendanceColumns extends Migration
     public function down()
     {
         Schema::table('students', function (Blueprint $table) {
-            //
+            $table->dropColumn(['confirmed_at', 'dropoff', 'alergies', 'comments']);
+            $table->dropSoftDeletes();
         });
     }
 }
