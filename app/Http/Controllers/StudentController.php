@@ -87,7 +87,7 @@ class StudentController extends Controller
 
     public function import(Request $request) {
         $this->validate($request, [
-            ['file' => 'required|file|max:1000|mimetypes:application/vnd.ms-excel,application/msexcel,application/x-msexcel,application/x-ms-excel,application/x-excel,application/x-dos_ms_excel,application/xls,application/x-xls,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet']
+            'file' => 'required|file|max:1000|mimetypes:application/vnd.ms-excel,application/msexcel,application/x-msexcel,application/x-ms-excel,application/x-excel,application/x-dos_ms_excel,application/xls,application/x-xls,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
         ]);
 
         $attendance = [
@@ -108,7 +108,7 @@ class StudentController extends Controller
             $student->surname = array_pop($student->$fullname);
             $student->name = implode(' ', $student->$fullname);
 
-            Student::create([
+            Student::firstOrCreate([
                 'name' => $student->name,
                 'surname' => $student->surname,
                 'email' => $student->$email,
