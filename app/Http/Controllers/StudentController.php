@@ -119,7 +119,7 @@ class StudentController extends Controller
                 'tshirt' => $student->$tshirt,
                 'mentor' => $student->$mentor,
                 'whatsapp' => $student->$whatsapp,
-                'applied' => $student->$timestamp,
+                'applied_at' => $student->$timestamp,
             ]);
         }
 
