@@ -107,7 +107,7 @@ class StudentController extends Controller
             $student->surname = array_pop($student->$fullname);
             $student->name = implode(' ', $student->$fullname);
 
-            Student::firstOrCreate([
+            Student::firstOrNew([
                 'name' => $student->name,
                 'surname' => $student->surname,
                 'email' => $student->$email,
