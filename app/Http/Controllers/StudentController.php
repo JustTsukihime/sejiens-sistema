@@ -3,11 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Student;
+use App\User;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 
 class StudentController extends Controller
 {
+    /**
+     * StudentController constructor.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -107,7 +116,7 @@ class StudentController extends Controller
             $student->surname = array_pop($student->$fullname);
             $student->name = implode(' ', $student->$fullname);
 
-            Student::firstOrNew([
+            Student::firstOrCreate([
                 'name' => $student->name,
                 'surname' => $student->surname,
                 'email' => $student->$email,
@@ -159,5 +168,32 @@ class StudentController extends Controller
 
         $request->session()->flash('notification.success', ''); // TODO: Add label
         return redirect()->route('student.index', compact('students'));
+    }
+
+    /**
+     * Creates users from students
+     *
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function createUsers(Request $request) {
+        $students = Student::all();
+
+        foreach ($students as $student) {
+            $user = User::firstOrNew([
+                'name' => $student->name,
+                'surname' => $student->surname,
+                'email' => $student->email,
+                'phone' => $student->phone,
+                'student_id' => $student->id,
+            ]);
+
+            if(!$user->id) {
+                $user->password = bcrypt($student->email);
+                $user->save();
+            }
+        }
+
+        $request->session()->flash('notification.success', ''); // TODO: Add label
+        return redirect()->route('student.index');
     }
 }

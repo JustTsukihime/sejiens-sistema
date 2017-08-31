@@ -39,14 +39,6 @@
                         {{ Form::close() }}
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">Create users</div>
-                    <div class="panel-body">
-                        {{ Form::open(['url' => route('student.createUsers')]) }}
-                            {{ Form::submit() }}
-                        {{ Form::close() }}
-                    </div>
-                </div>
             </div>
         </div>
     </div>
