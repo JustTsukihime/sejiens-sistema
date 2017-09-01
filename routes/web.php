@@ -24,4 +24,5 @@
 //Route::post('/mail/send', 'EmailController@send')->name('mail.send');
 //Route::resource('/mail', 'EmailController');
 
+Route::get('/', 'QRController@index');
 Route::get('/{qr}', 'QRController@show');
