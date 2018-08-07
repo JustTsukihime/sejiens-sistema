@@ -21,6 +21,7 @@ Route::post('/student/importAttendees', 'StudentController@importAttendees')->na
 Route::post('/student/createUsers', 'StudentController@createUsers')->name('student.createUsers');
 Route::resource('/student', 'StudentController');
 
+Route::post('/mail/studentConfirmation', 'EmailController@studentConfirmation');
 Route::post('/mail/send', 'EmailController@send')->name('mail.send');
 Route::resource('/mail', 'EmailController');
 

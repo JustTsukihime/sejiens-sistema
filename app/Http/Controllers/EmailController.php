@@ -3,11 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Email;
-use App\Mail\StudentConfirmAttendance;
-use App\Mail\TestMail;
-use App\Student;
+use App\Jobs\SendStudentConfirmationEmail;
 use Illuminate\Http\Request;
-use Illuminate\Mail\Mailer;
 use Illuminate\Support\Facades\Mail;
 
 class EmailController extends Controller
@@ -98,5 +95,13 @@ class EmailController extends Controller
 
         Mail::to($request->email)->send($mail);
         return redirect()->route('student.index');
+    }
+
+    public function studentConfirmation(Request $request)
+    {
+        SendStudentConfirmationEmail::dispatch();
+
+        $request->session()->flash('notification.notice', 'Student confirmation email sending job dispatched.');
+        return back();
     }
 }

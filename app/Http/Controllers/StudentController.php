@@ -130,7 +130,7 @@ class StudentController extends Controller
                 'tshirt' => $student->$tshirt,
                 'mentor' => $student->$mentor,
                 'whatsapp' => $student->$whatsapp,
-                'applied_at' => Carbon::createFromFormat('m/d/Y H:i:s', $student->$timestamp),
+                'applied_at' => Carbon::createFromFormat('Y.d.m H:i:s', $student->$timestamp),
             ]);
         }
 

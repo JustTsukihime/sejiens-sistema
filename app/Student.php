@@ -13,6 +13,10 @@ class Student extends Model
 
     protected $guarded = ['created_at', 'updated_at'];
 
+    public function emails() {
+        return $this->hasMany(StudentEmails::class);
+    }
+
     public function groups() {
         return $this->belongsToMany(Group::class);
     }

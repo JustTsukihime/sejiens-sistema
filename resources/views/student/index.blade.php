@@ -29,9 +29,9 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading">Send attendance confirmation letter</div>
+                    <div class="panel-heading">Send attendance confirmation letters</div>
                     <div class="panel-body">
-                        {{ Form::open(['url' => route('mail.send')]) }}
+                        {{ Form::open(['action' => 'EmailController@studentConfirmation']) }}
                             {{ Form::submit() }}
                         {{ Form::close() }}
                     </div>

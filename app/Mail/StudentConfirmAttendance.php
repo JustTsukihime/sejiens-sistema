@@ -2,7 +2,7 @@
 
 namespace App\Mail;
 
-use App\Email;
+use App\Student;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -13,13 +13,18 @@ class StudentConfirmAttendance extends Mailable
     use Queueable, SerializesModels;
 
     /**
+     * @var Student
+     */
+    public $student;
+
+    /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Student $student)
     {
-        //
+        $this->student = $student;
     }
 
     /**
@@ -29,8 +34,7 @@ class StudentConfirmAttendance extends Mailable
      */
     public function build()
     {
-        return $this->from(['address' => env('MAIL_FROM_ADDRESS'), 'name' => env('MAIL_FROM_NAME')])
-            ->subject('Sējiens 2017: Apstiprinājums')
+        return $this->subject('Sējiens 2018: Apstiprinājums')
             ->view('mail.student.confirmAttendance')
             ->text('mail.student.confirmAttendance_plain');
     }
