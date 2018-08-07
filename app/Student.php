@@ -12,4 +12,8 @@ class Student extends Model
     protected $dates = ['applied_at', 'deleted_at'];
 
     protected $guarded = ['created_at', 'updated_at'];
+
+    public function groups() {
+        return $this->belongsToMany(Group::class);
+    }
 }

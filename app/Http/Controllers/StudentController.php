@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Student;
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -95,19 +96,20 @@ class StudentController extends Controller
 
     public function import(Request $request) {
         $this->validate($request, [
-            'file' => 'required|file|max:1000|mimetypes:application/vnd.ms-excel,application/msexcel,application/x-msexcel,application/x-ms-excel,application/x-excel,application/x-dos_ms_excel,application/xls,application/x-xls,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+            'file' => 'required|file|max:1000',
         ]);
 
-        $attendance = [
-            'Tikai 1. daļu Raiņa bulvārī 19' => 'first',
-            'Tikai 2. daļu Garozas pamatskolā' => 'second',
-            'Esmu īsts datoriķis, tāpēc apmeklēšu abas daļas' => 'both',
-        ];
+//        $attendance = [
+//            'Tikai 1. daļu Raiņa bulvārī 19' => 'first',
+//            'Tikai 2. daļu Garozas pamatskolā' => 'second',
+//            'Esmu īsts datoriķis, tāpēc apmeklēšu abas daļas' => 'both',
+//        ];
 
         $students = [];
 
         $data = Excel::load($request->file('file')->getPathname())->all();
-        list($timestamp, $fullname, $phone, $email, $attending, $food, $health, $tshirt, $mentor, $whatsapp) = $data->getHeading();
+//        list($timestamp, $fullname, $phone, $email, $attending, $food, $health, $tshirt, $mentor, $whatsapp) = $data->getHeading();
+        list($timestamp, $fullname, $phone, $email, $tshirt, $mentor, $whatsapp) = $data->getHeading();
 
         foreach ($data->values() as $student) {
             if (!$student->$timestamp) continue;
@@ -117,21 +119,22 @@ class StudentController extends Controller
             $student->name = implode(' ', $student->$fullname);
 
             Student::firstOrCreate([
+                'email' => $student->$email,
+            ],[
                 'name' => $student->name,
                 'surname' => $student->surname,
-                'email' => $student->$email,
-                'phone' => $student->$phone.'',
-                'attending' => $attendance[$student->$attending],
-                'food' => $student->$food,
-                'health' => $student->$health,
+                'phone' => $student->$phone,
+//                'attending' => $attendance[$student->$attending],
+//                'food' => $student->$food,
+//                'health' => $student->$health,
                 'tshirt' => $student->$tshirt,
                 'mentor' => $student->$mentor,
                 'whatsapp' => $student->$whatsapp,
-                'applied_at' => $student->$timestamp,
+                'applied_at' => Carbon::createFromFormat('m/d/Y H:i:s', $student->$timestamp),
             ]);
         }
 
-        $request->session()->flash('notification.success', ''); // TODO: Add label
+        $request->session()->flash('notification.success', 'Students imported'); // TODO: Add label
         return redirect()->route('student.index', compact('students'));
     }
 

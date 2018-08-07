@@ -18,12 +18,12 @@ class CreateStudentsTable extends Migration
             $table->string('name');
             $table->string('surname');
             $table->string('email')->unique();
-            $table->string('phone')->unique();
-            $table->string('attending');
-            $table->string('food');
-            $table->string('health');
-            $table->string('tshirt');
-            $table->string('mentor');
+            $table->string('phone')->unique()->nullable();
+            $table->string('attending')->nullable();
+            $table->string('food')->nullable();
+            $table->string('health')->nullable();
+            $table->string('tshirt')->nullable();
+            $table->string('mentor')->nullable();
             $table->string('whatsapp')->nullable();
             $table->dateTime('applied_at');
             $table->timestamps();
