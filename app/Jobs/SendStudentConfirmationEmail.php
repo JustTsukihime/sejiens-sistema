@@ -3,9 +3,7 @@
 namespace App\Jobs;
 
 use App\Mail\StudentConfirmAttendance;
-use App\Student;
 use Illuminate\Bus\Queueable;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -17,15 +15,16 @@ class SendStudentConfirmationEmail implements ShouldQueue
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     protected $emailType = 'attendanceConfirmation';
+    private $students;
 
     /**
      * Create a new job instance.
      *
-     * @return void
+     * @param $students
      */
-    public function __construct()
+    public function __construct($students)
     {
-        //
+        $this->students = $students;
     }
 
     /**
@@ -35,11 +34,7 @@ class SendStudentConfirmationEmail implements ShouldQueue
      */
     public function handle()
     {
-        $students = Student::whereDoesntHave('emails', function (Builder $query) {
-            $query->where('type', $this->emailType);
-        })->get();
-
-        foreach ($students as $student)
+        foreach ($this->students as $student)
         {
             Mail::to($student)->send(new StudentConfirmAttendance($student));
             $student->emails()->create(['type' => $this->emailType]);

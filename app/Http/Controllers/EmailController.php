@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Email;
 use App\Jobs\SendStudentConfirmationEmail;
+use App\Student;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -99,7 +101,15 @@ class EmailController extends Controller
 
     public function studentConfirmation(Request $request)
     {
-        SendStudentConfirmationEmail::dispatch();
+        if ($request->has('student_id')) {
+            $students = Student::where('id', $request->student_id)->get();
+        } else {
+            $students = Student::whereDoesntHave('emails', function (Builder $query) {
+                $query->where('type', $this->emailType);
+            })->get();
+        }
+
+        SendStudentConfirmationEmail::dispatch($students);
 
         $request->session()->flash('notification.notice', 'Student confirmation email sending job dispatched.');
         return back();
