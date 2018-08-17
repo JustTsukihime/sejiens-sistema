@@ -1,9 +1,194 @@
 
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Baloo');
 
 // Variables
 @import "variables";
 
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~bootstrap/scss/bootstrap";
+
+
+body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+hr {
+  max-width: 50px;
+  border: 3px $orange;
+
+  &.light {
+    border-color: $white;
+  }
+}
+
+a {
+  color: $red;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Baloo', cursive;
+}
+
+.bg-primary {
+  background-color: $red;
+}
+
+.bg-secondary {
+  background-color: $purple;
+}
+
+.bg-dark {
+  background-color: $dark;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-video {
+  color: $gray-600;
+}
+
+section {
+  padding: 8rem 0;
+
+  .section-heading {
+    margin-top: 0;
+  }
+}
+
+
+::-moz-selection {
+  color: $white;
+  background: $gray-900;
+  text-shadow: none;
+}
+
+::selection {
+  color: $white;
+  background: $gray-900;
+  text-shadow: none;
+}
+
+img {
+  &::selection {
+    color: $white;
+    background: transparent;
+  }
+
+  &::-moz-selection {
+    color: $white;
+    background: transparent;
+  }
+
+}
+
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: $white;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+
+  @include media-breakpoint-up(lg) {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  .navbar-nav {
+    & > li.nav-item > a.nav-link {
+      font-size: .9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $gray-900;
+
+      @include media-breakpoint-up(lg) {
+        color: rgba(255, 255, 255, 0.7);
+        padding: 0.5rem 1rem;
+      }
+
+      &:hover, &:focus {
+        color: $red;
+
+        @include media-breakpoint-up(lg) {
+          color: $gray-700;
+        }
+      }
+    }
+  }
+}
+
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background: url("../images/fons.png") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 3rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 4rem;
+    }
+  }
+
+  p {
+    font-weight: 300;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.15rem;
+    }
+  }
+}
+
+.section-min {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+iframe {
+  border: solid 6px #5B123B;
+}
+
+#seko img {
+  height: 70px;
+}
+#sponsors img {
+  height: 100px;
+}
+
+.text-highlight {
+  color: $red;
+}
+
+.btn-apply {
+  @include button-variant($green, rgba(240, 95, 64, 0.5));
+  padding: 1rem 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
