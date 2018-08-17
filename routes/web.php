@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'StudentController@index');
+Route::get('/', 'HomeController@landing');
 //
 Auth::routes();
 //

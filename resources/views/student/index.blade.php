@@ -39,8 +39,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Send attendance confirmation letter</div>
                     <div class="panel-body">
-                        {{ Form::open(['url' => route('mail.send')]) }}
-                            {{ Form::text('email') }}
+                        {{ Form::open(['action' => 'EmailController@studentConfirmation']) }}
+                            {{ Form::select('student_id', $students->pluck('email', 'id'), null, ['placeholder' => 'Choose student\'s email']) }}
                             {{ Form::submit() }}
                         {{ Form::close() }}
                     </div>
