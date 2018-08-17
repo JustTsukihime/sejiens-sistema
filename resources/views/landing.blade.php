@@ -26,13 +26,13 @@
     <div class="container my-auto">
         <div class="row">
             <div class="col-lg-12 mx-auto">
-                <img src="img/oga.png" class="rounded mx-auto d-block" style="height: 400px;">
+                <img src="images/oga.png" class="rounded mx-auto d-block" style="height: 400px;">
             </div>
 
             <div class="col-lg-8 mx-auto">
                 <h1>Sējiens 2018</h1>
                 <h3>31. augusts - 2. septembris</h3>
-                <a class="btn btn-primary btn-xl js-scroll-trigger mt-2" href="#pieteikties">PIETEIKTIES</a>
+                <a class="btn btn-apply js-scroll-trigger mt-2" href="#pieteikties">PIETEIKTIES</a>
             </div>
         </div>
     </div>
@@ -74,34 +74,34 @@
                     <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/album/1.jpg" alt="1 slide">
+                                <img class="d-block w-100" src="images/album/1.jpg" alt="1 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/2.jpg" alt="2 slide">
+                                <img class="d-block w-100" src="images/album/2.jpg" alt="2 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/3.jpg" alt="3 slide">
+                                <img class="d-block w-100" src="images/album/3.jpg" alt="3 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/4.jpg" alt="4 slide">
+                                <img class="d-block w-100" src="images/album/4.jpg" alt="4 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/5.jpg" alt="5 slide">
+                                <img class="d-block w-100" src="images/album/5.jpg" alt="5 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/6.jpg" alt="6 slide">
+                                <img class="d-block w-100" src="images/album/6.jpg" alt="6 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/7.jpg" alt="7 slide">
+                                <img class="d-block w-100" src="images/album/7.jpg" alt="7 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/8.jpg" alt="8 slide">
+                                <img class="d-block w-100" src="images/album/8.jpg" alt="8 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/9.jpg" alt="9 slide">
+                                <img class="d-block w-100" src="images/album/9.jpg" alt="9 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/9a.jpg" alt="9a slide">
+                                <img class="d-block w-100" src="images/album/9a.jpg" alt="9a slide">
                             </div>
 
                         </div>
@@ -114,7 +114,7 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <p class="text-faded">Pagājušā gada bildes</p>
+                    <p class="text-dark mt-1">Pagājušā gada bildes</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-8 text-center">
@@ -141,31 +141,31 @@
                     <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/album/10.jpg" alt="10 slide">
+                                <img class="d-block w-100" src="images/album/10.jpg" alt="10 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/11.jpg" alt="11 slide">
+                                <img class="d-block w-100" src="images/album/11.jpg" alt="11 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/12.jpg" alt="12 slide">
+                                <img class="d-block w-100" src="images/album/12.jpg" alt="12 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/13.jpg" alt="13 slide">
+                                <img class="d-block w-100" src="images/album/13.jpg" alt="13 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/14.jpg" alt="14 slide">
+                                <img class="d-block w-100" src="images/album/14.jpg" alt="14 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/15.jpg" alt="15 slide">
+                                <img class="d-block w-100" src="images/album/15.jpg" alt="15 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/16.jpg" alt="16 slide">
+                                <img class="d-block w-100" src="images/album/16.jpg" alt="16 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/17.jpg" alt="17 slide">
+                                <img class="d-block w-100" src="images/album/17.jpg" alt="17 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/album/18.jpg" alt="18 slide">
+                                <img class="d-block w-100" src="images/album/18.jpg" alt="18 slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
@@ -177,7 +177,7 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <p class="text-faded">Pagājušā gada bildes</p>
+                    <p class="text-dark mt-1">Pagājušā gada bildes</p>
                 </div>
             </div>
         </div>
@@ -188,7 +188,7 @@
                 </div>
             </div>
             <div class="col-12 text-center">
-                <p class="text-secondary mt-3">Sējiens ir viens no nozīmīgākajiem Latvijas Universitātes Datorikas fakultātes pasākumiem, un  Datorikas fakultātes Studentu pašpārvalde parūpēsies, lai Tu un Tavi topošie kursa biedri iepazītos un sadraudzētos neformālā gaisotnē, pakustētos un padomātu dažādās interesnatās aktivitātēs, uzzinātu svarīgāko, kas sagaida universitātes dzīvē, un, protams, neaizmirstami pavadītu pēdejo vasaras nogali!</p>
+                <p class="video-text mt-3">Sējiens ir viens no nozīmīgākajiem Latvijas Universitātes Datorikas fakultātes pasākumiem, un  Datorikas fakultātes Studentu pašpārvalde parūpēsies, lai Tu un Tavi topošie kursa biedri iepazītos un sadraudzētos neformālā gaisotnē, pakustētos un padomātu dažādās interesnatās aktivitātēs, uzzinātu svarīgāko, kas sagaida universitātes dzīvē, un, protams, neaizmirstami pavadītu pēdejo vasaras nogali!</p>
             </div>
         </div>
     </div>
@@ -224,25 +224,25 @@
         </div>
         <div class="row">
             <div class="col-lg-3 ml-auto text-center">
-                <a href = "https://www.facebook.com/ludfsp"><img src="img/facebook.svg" alt="facebook"></a>
+                <a href = "https://www.facebook.com/ludfsp"><img src="images/facebook.svg" alt="facebook"></a>
                 <a href = "https://www.facebook.com/ludfsp"><h5 class="mt-2">ludfsp</h5></a>
                 <a href = "https://www.facebook.com/LUDatorikasfakultate"><h5 class="mt-2">LUDatorikasfakultate</h5></a>
             </div>
             <div class="col-lg-2 ml-auto text-center">
-                <a href = "http://datoriki.lv/"><img src="img/home.svg" alt="datoriki"></a>
+                <a href = "http://datoriki.lv/"><img src="images/home.svg" alt="datoriki"></a>
                 <a href = "http://datoriki.lv/"><h5 class="mt-2">datoriki.lv</h5></a>
                 <a href = "https://www.df.lu.lv/"><h5 class="mt-2">df.lu.lv</h5></a>
             </div>
             <div class="col-lg-2 ml-auto text-center">
-                <a href = "https://www.instagram.com/datoriki/"><img src="img/instagram.svg" alt="event"></a>
+                <a href = "https://www.instagram.com/datoriki/"><img src="images/instagram.svg" alt="event"></a>
                 <a href = "https://www.instagram.com/datoriki/"><h5 class="mt-2">datoriki</h5></a>
             </div>
             <div class="col-lg-2 ml-auto text-center">
-                <a href = "https://twitter.com/LU_Datorika"><img src="img/twitter.svg" alt="twitter"></a>
+                <a href = "https://twitter.com/LU_Datorika"><img src="images/twitter.svg" alt="twitter"></a>
                 <a href = "https://twitter.com/LU_Datorika"><h5 class="mt-2">@LU_Datorika</h5></a>
             </div>
             <div class="col-lg-2 ml-auto text-center">
-                <a href = "https://www.facebook.com/events/1042669569229494/"><img src="img/event.svg" alt="event"></a>
+                <a href = "https://www.facebook.com/events/1042669569229494/"><img src="images/event.svg" alt="event"></a>
                 <a href = "https://www.facebook.com/events/1042669569229494/"><h5 class="mt-2">Sējiens 2018</h5></a>
             </div>
         </div>
@@ -259,22 +259,22 @@
             <div class="row">
                 <div class="col-lg-2 mr-auto text-center">
                     <a href="https://www.accenture.com/lv-en/">
-                        <img src="img/accenture_logo.svg" alt="Accenture">
+                        <img src="images/accenture_logo.svg" alt="Accenture">
                     </a>
                 </div>
                 <div class="col-lg-2 mr-auto text-center">
                     <a href="http://datoriki.lv/">
-                        <img src="img/dfsp_logo.svg" alt="DF SP Logo">
+                        <img src="images/dfsp_logo.svg" alt="DF SP Logo">
                     </a>
                 </div>
                 <div class="col-lg-2 mr-auto text-center">
                     <a href="http://www.lu.lv/">
-                        <img src="img/lu_logo.svg" alt="LU Logo">
+                        <img src="images/lu_logo.svg" alt="LU Logo">
                     </a>
                 </div>
                 <div class="col-lg-2 mr-auto text-center">
                     <a href="http://www.df.lu.lv/">
-                        <img src="img/df_logo.svg" alt="DF Logo">
+                        <img src="images/df_logo.svg" alt="DF Logo">
                     </a>
                 </div>
             </div>
