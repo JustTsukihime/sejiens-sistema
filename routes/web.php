@@ -15,10 +15,14 @@ Route::get('/', 'HomeController@landing');
 //
 Auth::routes();
 //
-Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/student/import', 'StudentController@import')->name('student.import');
-Route::post('/student/importAttendees', 'StudentController@importAttendees')->name('student.importAttendees');
-Route::post('/student/createUsers', 'StudentController@createUsers')->name('student.createUsers');
+Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+
+Route::group(['prefix' => 'student', 'as' => 'student.'], function() {
+    Route::get('management', 'StudentController@management')->name('management');
+    Route::post('import', 'StudentController@import')->name('import');
+    Route::post('importAttendees', 'StudentController@importAttendees')->name('importAttendees');
+//    Route::post('createUsers', 'StudentController@createUsers')->name('createUsers');
+});
 Route::resource('/student', 'StudentController');
 
 Route::post('/mail/studentConfirmation', 'EmailController@studentConfirmation');

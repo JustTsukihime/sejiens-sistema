@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Student;
+use App\StudentFilters;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -21,12 +22,14 @@ class StudentController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param Request $request
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $students = Student::orderBy('email')->get();
-        return view('student.index', compact('students'));
+        $filters = new StudentFilters($request->all());
+        $students = Student::filter($filters)->get();
+        return view('student.index', compact('students', 'filters'));
     }
 
     /**
@@ -42,7 +45,7 @@ class StudentController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -53,7 +56,7 @@ class StudentController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Student  $student
+     * @param  \App\Student $student
      * @return \Illuminate\Http\Response
      */
     public function show(Student $student)
@@ -64,7 +67,7 @@ class StudentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Student  $student
+     * @param  \App\Student $student
      * @return \Illuminate\Http\Response
      */
     public function edit(Student $student)
@@ -75,8 +78,8 @@ class StudentController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Student  $student
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Student $student
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Student $student)
@@ -87,12 +90,18 @@ class StudentController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Student  $student
+     * @param  \App\Student $student
      * @return \Illuminate\Http\Response
      */
     public function destroy(Student $student)
     {
         //
+    }
+
+    public function management()
+    {
+        $students = Student::orderBy('email')->get();
+        return view('student.management', compact('students'));
     }
 
     public function import(Request $request) {
@@ -135,43 +144,49 @@ class StudentController extends Controller
             ]);
         }
 
-        $request->session()->flash('notification.success', 'Students imported'); // TODO: Add label
+        $request->session()->flash('notification.success', 'Dalībnieki importēti');
         return redirect()->route('student.index', compact('students'));
     }
 
     public function importAttendees(Request $request) {
         $this->validate($request, [
-            'file' => 'required|file|max:1000|mimetypes:application/vnd.ms-excel,application/msexcel,application/x-msexcel,application/x-ms-excel,application/x-excel,application/x-dos_ms_excel,application/xls,application/x-xls,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+            'file' => 'required|file|max:1000'
         ]);
 
         $attendance = [
-            'Tikai 1.daļu (Raiņa bulvārī 19)' => 'first',
-            'Tikai 2.daļu (Garozas pamatskolā)' => 'second',
-            'Abām daļām' => 'both',
+            'Tikai 1. daļu (Raiņa 19 aktivitātes)' => 'first',
+            'Tikai 2. daļu (mistiskais ārpus Rīgas ceļojums)' => 'second',
+            'Esmu īsts datoriķis, tāpēc apmeklēšu abas daļas' => 'both',
         ];
 
         $data = Excel::load($request->file('file')->getPathname())->all();
-        list($timestamp, $name, $surname, $allergies, $attending, $dropoff, $comments, $withdrawn) = $data->getHeading();
+        list($timestamp, $name, $surname, $food, $allergies, $health, $attending, $about, $tos, $comments) = $data->getHeading();
 
+        $skipped = [];
         foreach ($data->values() as $student) {
             $model = Student::where(['name' => $student->$name, 'surname' => $student->$surname])->first();
-            if (is_null($model)) continue;
+            if (is_null($model)) {
+                $skipped[] = $student->$name.' '.$student->$surname;
+                continue;
+            }
 
             $model->fill([
+                'food' => $student->$food,
                 'allergies' => $student->$allergies,
+                'health' => $student->$health,
                 'attending' => $attendance[$student->$attending],
-                'dropoff' => $student->$dropoff,
+                'about' => $student->$about,
                 'comments' => $student->$comments,
-                'confirmed_at' =>$student->$timestamp,
+                'confirmed_at' => Carbon::createFromFormat('d/m/Y H:i:s', $student->$timestamp),
             ])->save();
-
-            if ($student->$withdrawn == 1) {
-                $model->delete();
-            }
         }
 
-        $request->session()->flash('notification.success', ''); // TODO: Add label
-        return redirect()->route('student.index', compact('students'));
+        if (empty($skipped)) {
+            $request->session()->flash('notification.success', 'Dalībnieku apstiprinājumi importēti');
+        } else {
+            $request->session()->flash('notification.error', 'Importēti visi izņemot: '.implode(', ', $skipped));
+        }
+        return redirect()->route('student.index');
     }
 
     /**

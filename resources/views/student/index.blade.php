@@ -2,58 +2,39 @@
 
 @section('content')
     <div class="container">
-        @if(session()->has('notification.success'))
-            {{ session()->get('notification.success') }}
-        @endif
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                @if($errors->has('file'))
-                    {{ $errors->first('file') }}
-                @endif
-                <div class="panel panel-default">
-                    <div class="panel-heading">Student import</div>
-                    <div class="panel-body">
-                        {{ Form::open(['url' => route('student.import'), 'files' => true]) }}
-                            {{ Form::file('file', ['class' => 'form-control']) }}
-                            {{ Form::submit('Submit', ['class' => 'btn btn-primary']) }}
-                        {{ Form::close() }}
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">Student import attendee list</div>
-                    <div class="panel-body">
-                        {{ Form::open(['url' => route('student.importAttendees'), 'files' => true]) }}
-                            {{ Form::file('file') }}
-                            {{ Form::submit() }}
-                        {{ Form::close() }}
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">Send attendance confirmation letters</div>
-                    <div class="panel-body">
-                        {{ Form::open(['action' => 'EmailController@studentConfirmation']) }}
-                            {{ Form::submit() }}
-                        {{ Form::close() }}
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">Send attendance confirmation letter</div>
-                    <div class="panel-body">
-                        {{ Form::open(['action' => 'EmailController@studentConfirmation']) }}
-                            {{ Form::select('student_id', $students->pluck('email', 'id'), null, ['placeholder' => 'Choose student\'s email']) }}
-                            {{ Form::submit() }}
-                        {{ Form::close() }}
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">Create users</div>
-                    <div class="panel-body">
-                        {{ Form::open(['url' => route('student.createUsers')]) }}
-                            {{ Form::submit() }}
-                        {{ Form::close() }}
+        @include('notifications')
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <a href="{{ route('student.index', $filters->except(['status'])->all()) }}" class="btn btn-secondary {{ $filters->has('status') ? '' : 'active' }}">Visi</a>
+                        <a href="{{ route('student.index', $filters->with(['status' => 'confirmed'])->all()) }}" class="btn btn-secondary {{ $filters->is('status', 'confirmed') ? 'active' : '' }}">Apstiprinājušie</a>
+                        <a href="{{ route('student.index', $filters->with(['status' => 'unconfirmed'])->all()) }}" class="btn btn-secondary {{ $filters->is('status', 'unconfirmed') ? 'active' : '' }}">Neapstiprinājušie</a>
                     </div>
                 </div>
             </div>
         </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>N.p.k</th>
+                    <th>Telefons</th>
+                    <th>E-pasts</th>
+                    <th>Par sevi</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach($students as $student)
+                <tr>
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $student->name }} {{ $student->surname }}</td>
+                    <td>{{ $student->phone }}</td>
+                    <td>{{ $student->email }}</td>
+                    <td>{{ $student->about }}</td>
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
+        <a href="{{ route('student.management') }}">Dalībnieku pārvalde</a>
     </div>
 @endsection
