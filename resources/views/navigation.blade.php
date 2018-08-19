@@ -16,6 +16,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('student.index') }}">Dalībnieki</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('group.index') }}">Grupas</a>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->

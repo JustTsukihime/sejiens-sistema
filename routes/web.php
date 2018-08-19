@@ -21,9 +21,15 @@ Route::group(['prefix' => 'student', 'as' => 'student.'], function() {
     Route::get('management', 'StudentController@management')->name('management');
     Route::post('import', 'StudentController@import')->name('import');
     Route::post('importAttendees', 'StudentController@importAttendees')->name('importAttendees');
+    Route::post('resolve', 'StudentController@resolve');
 //    Route::post('createUsers', 'StudentController@createUsers')->name('createUsers');
 });
 Route::resource('/student', 'StudentController');
+
+Route::group(['prefix' => 'group', 'as' => 'group.'], function() {
+    Route::post('{group}/addMember', 'GroupController@addMember');
+});
+Route::resource('group', 'GroupController');
 
 Route::post('/mail/studentConfirmation', 'EmailController@studentConfirmation');
 Route::post('/mail/send', 'EmailController@send')->name('mail.send');

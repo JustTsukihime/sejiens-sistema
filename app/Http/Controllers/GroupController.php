@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class GroupController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +19,8 @@ class GroupController extends Controller
      */
     public function index()
     {
-        //
+        $groups = Group::with('members')->get();
+        return view('group.index', compact('groups'));
     }
 
     /**
@@ -24,7 +30,7 @@ class GroupController extends Controller
      */
     public function create()
     {
-        //
+        return view('group.create');
     }
 
     /**
@@ -35,7 +41,12 @@ class GroupController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name' => 'required',
+        ]);
+
+        $group = Group::create($request->only(['name']));
+        return redirect()->route('group.show', $group);
     }
 
     /**
@@ -46,7 +57,7 @@ class GroupController extends Controller
      */
     public function show(Group $group)
     {
-        //
+        return view('group.show', compact('group'));
     }
 
     /**
@@ -81,5 +92,15 @@ class GroupController extends Controller
     public function destroy(Group $group)
     {
         //
+    }
+
+    public function addMember(Request $request, Group $group)
+    {
+        $this->validate($request, [
+            'student_id' => 'required|exists:students,id',
+        ]);
+
+        $group->members()->attach($request->student_id);
+        return back();
     }
 }

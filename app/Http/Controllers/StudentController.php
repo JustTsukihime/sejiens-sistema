@@ -104,6 +104,24 @@ class StudentController extends Controller
         return view('student.management', compact('students'));
     }
 
+    public function resolve(Request $request)
+    {
+        $this->validate($request, [
+            'type' => 'required',
+            'hash' => 'required_if:type,qr',
+            'name' => 'required_if:type,name',
+        ]);
+
+        if ($request->type == 'qr') {
+            $values = explode('/', $request->hash);
+            $result = array_pop($values);
+
+            $student = Student::where('hash', $result)->first();
+        }
+
+        return ['id' => $student->id, 'name' => $student->name.' '.$student->surname];
+    }
+
     public function import(Request $request) {
         $this->validate($request, [
             'file' => 'required|file|max:1000',
@@ -139,6 +157,7 @@ class StudentController extends Controller
 //                'health' => $student->$health,
                 'tshirt' => $student->$tshirt,
                 'mentor' => $student->$mentor,
+                'hash' => substr(sha1($student->$phone.time()), 0, 8),
                 'whatsapp' => $student->$whatsapp,
                 'applied_at' => Carbon::createFromFormat('Y.d.m H:i:s', $student->$timestamp),
             ]);

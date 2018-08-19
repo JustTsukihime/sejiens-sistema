@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Student extends Model
 {
-    use SoftDeletes, Filterable;
+    use Filterable;
 
     protected $dates = ['applied_at', 'deleted_at'];
 

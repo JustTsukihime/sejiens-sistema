@@ -18,6 +18,7 @@
             <thead>
                 <tr>
                     <th>N.p.k</th>
+                    <th>Vārds</th>
                     <th>Telefons</th>
                     <th>E-pasts</th>
                     <th>Par sevi</th>
