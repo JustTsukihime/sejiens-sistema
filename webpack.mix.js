@@ -13,4 +13,5 @@ let mix = require('laravel-mix');
 
 mix.copy('resources/assets/images', 'public/images')
     .js('resources/assets/js/app.js', 'public/js')
+    .copy('resources/assets/js/qr-scanner', 'public/js/qr-scanner')
     .sass('resources/assets/sass/app.scss', 'public/css');
