@@ -8,7 +8,7 @@
                 <div class="card-header">Pievienot dalībnieku</div>
                 <div class="card-body">
                     {{ Form::open(['action' => ['GroupController@addMember', $group]]) }}
-                    {{ Form::text('student_id', null, ['class' => 'form-control', 'id' => 'resolved-qr']) }}
+                    {{ Form::hidden('student-id', null, ['id' => 'student-id']) }}
                     <video muted autoplay playsinline id="qr-video" class="w-100"></video>
 
                     <b>Nolasīts: </b><span id="cam-qr-result">nekas</span>
@@ -18,17 +18,11 @@
                         import QrScanner from "/js/qr-scanner/qr-scanner.min.js";
 
                         const video = document.getElementById('qr-video');
-                        const resolvedQr = document.getElementById('resolved-qr');
-                        const studentName = document.getElementById('student-name');
                         const camQrResult = document.getElementById('cam-qr-result');
+                        const studentId = document.getElementById('student-id');
+                        const studentName = document.getElementById('student-name');
 
                         var oldQR = null;
-
-                        $.ajaxSetup({
-                            headers: {
-                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                            }
-                        });
 
                         function resolve(result) {
                             if (oldQR == result) return;
@@ -39,7 +33,7 @@
                                 url: '{{ action('StudentController@resolve') }}',
                                 data: {'type': 'qr', 'hash': result},
                                 success: function (data) {
-                                    resolvedQr.value = data.id;
+                                    studentId.value = data.id;
                                     studentName.textContent = data.name;
                                 }
                             });
