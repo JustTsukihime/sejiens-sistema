@@ -6,6 +6,8 @@ use App\Student;
 use App\StudentFilters;
 use App\User;
 use Carbon\Carbon;
+use chillerlan\QRCode\QRCode;
+use chillerlan\QRCode\QROptions;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -61,7 +63,15 @@ class StudentController extends Controller
      */
     public function show(Student $student)
     {
-        return view('student.show', compact('student'));
+        $qropt = new QROptions([
+            'outputType' => QRCode::OUTPUT_MARKUP_SVG,
+            'eccLevel'   => QRCode::ECC_H,
+            'addQuietzone' => false,
+            'cssClass' => 'card-img',
+        ]);
+        $qrcode = new QRCode($qropt);
+
+        return view('student.show', compact('student', 'qrcode'));
     }
 
     /**
@@ -113,10 +123,7 @@ class StudentController extends Controller
         ]);
 
         if ($request->type == 'qr') {
-            $values = explode('/', $request->hash);
-            $result = array_pop($values);
-
-            $student = Student::where('hash', $result)->first();
+            $student = Student::where('hash', $request->hash)->first();
         }
 
         return ['id' => $student->id, 'name' => $student->name.' '.$student->surname];
@@ -157,7 +164,7 @@ class StudentController extends Controller
 //                'health' => $student->$health,
                 'tshirt' => $student->$tshirt,
                 'mentor' => $student->$mentor,
-                'hash' => substr(sha1($student->$phone.time()), 0, 8),
+                'hash' => substr(sha1($student->$phone.$student->$email), 0, 8),
                 'whatsapp' => $student->$whatsapp,
                 'applied_at' => Carbon::createFromFormat('Y.d.m H:i:s', $student->$timestamp),
             ]);

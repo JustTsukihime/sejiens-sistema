@@ -9,6 +9,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card-body">
+                                <img class="card-img mb-2" src="data:image/svg+xml;base64,{{ base64_encode($qrcode->render($student->hash)) }}">
                                 <h4 class="card-title text-center">{{ $student->name }} {{ $student->surname }}</h4>
                                 <h6 class="card-subtitle text-center text-muted">Dalībnieks</h6>
                             </div>
