@@ -9,7 +9,7 @@ class Student extends Model
 {
     use Filterable;
 
-    protected $dates = ['applied_at', 'deleted_at'];
+    protected $dates = ['applied_at', 'deleted_at', 'confirmed_at'];
 
     protected $guarded = ['created_at', 'updated_at'];
 

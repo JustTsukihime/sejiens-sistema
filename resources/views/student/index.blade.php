@@ -28,7 +28,7 @@
             @foreach($students as $student)
                 <tr>
                     <td>{{ $loop->iteration }}</td>
-                    <td>{{ $student->name }} {{ $student->surname }}</td>
+                    <td><a href="{{ route('student.show', $student) }}">{{ $student->name }} {{ $student->surname }}</a></td>
                     <td>{{ $student->phone }}</td>
                     <td>{{ $student->email }}</td>
                     <td>{{ $student->about }}</td>
