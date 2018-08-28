@@ -61,5 +61,26 @@
                 </div>
             </div>
         </div>
+        <div class="row mt-3">
+            <div class="table-responsive">
+                <table class="table">
+                    <caption>Grupas</caption>
+                    <thead>
+                        <tr>
+                            <th>Nosaukums</th>
+                            <th>Pievienots</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($student->groups as $group)
+                        <tr>
+                            <td><a href="{{ route('group.show', $group) }}">{{ $group->name }}</a></td>
+                            <td>{{ $group->pivot->created_at->format('d.m.Y. H:i:s') }}</td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 @endsection

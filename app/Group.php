@@ -10,7 +10,7 @@ class Group extends Model
 
     public function members()
     {
-        return $this->belongsToMany(Student::class);
+        return $this->belongsToMany(Student::class)->withTimestamps();
     }
 
     public function leader()

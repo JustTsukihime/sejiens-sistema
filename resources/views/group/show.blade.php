@@ -8,7 +8,7 @@
                 <div class="card-header">Pievienot dalībnieku</div>
                 <div class="card-body">
                     {{ Form::open(['action' => ['GroupController@addMember', $group]]) }}
-                    {{ Form::hidden('student-id', null, ['id' => 'student-id']) }}
+                    {{ Form::hidden('student_id', null, ['id' => 'student-id']) }}
                     <video muted autoplay playsinline id="qr-video" class="w-100"></video>
 
                     <b>Nolasīts: </b><span id="cam-qr-result">nekas</span>
