@@ -28,7 +28,8 @@ Route::group(['prefix' => 'student', 'as' => 'student.'], function() {
 Route::resource('/student', 'StudentController');
 
 Route::group(['prefix' => 'group', 'as' => 'group.'], function() {
-    Route::post('{group}/addMember', 'GroupController@addMember');
+    Route::get('{group}/createMember', 'GroupController@createMember');
+    Route::post('{group}/createMember', 'GroupController@storeMember');
     Route::post('{group}/removeMember', 'GroupController@removeMember');
 });
 Route::resource('group', 'GroupController');

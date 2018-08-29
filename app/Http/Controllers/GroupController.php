@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Group;
+use App\Student;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
@@ -110,13 +111,21 @@ class GroupController extends Controller
         //
     }
 
-    public function addMember(Request $request, Group $group)
+    public function createMember(Group $group)
+    {
+        return view('group.createMember', compact('group'));
+    }
+
+    public function storeMember(Request $request, Group $group)
     {
         $this->validate($request, [
             'student_id' => 'required|exists:students,id',
         ]);
 
-        $group->members()->attach($request->student_id);
+        $student = Student::find($request->student_id);
+
+        $group->members()->attach($student);
+        $request->session()->flash('notification.success', "$student->name $student->surname pievienots grupai $group->name");
         return back();
     }
 
