@@ -29,6 +29,7 @@ Route::resource('/student', 'StudentController');
 
 Route::group(['prefix' => 'group', 'as' => 'group.'], function() {
     Route::post('{group}/addMember', 'GroupController@addMember');
+    Route::post('{group}/removeMember', 'GroupController@removeMember');
 });
 Route::resource('group', 'GroupController');
 

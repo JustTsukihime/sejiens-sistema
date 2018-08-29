@@ -14,7 +14,7 @@
                     <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('student.index') }}">Dalībnieki</a>
+                    <a class="nav-link" href="{{ route('student.index', ['status' => 'confirmed']) }}">Dalībnieki</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('group.index') }}">Grupas</a>

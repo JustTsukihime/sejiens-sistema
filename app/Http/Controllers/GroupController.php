@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Group;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class GroupController extends Controller
 {
@@ -42,7 +43,7 @@ class GroupController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name' => 'required',
+            'name' => 'required|unique:groups,name',
         ]);
 
         $group = Group::create($request->only(['name']));
@@ -68,7 +69,7 @@ class GroupController extends Controller
      */
     public function edit(Group $group)
     {
-        //
+        return view('group.edit', compact('group'));
     }
 
     /**
@@ -80,7 +81,12 @@ class GroupController extends Controller
      */
     public function update(Request $request, Group $group)
     {
-        //
+        $this->validate($request, [
+            'name' => ['required', Rule::unique('groups')->ignore($group->id)]
+        ]);
+
+        $group->update($request->only(['name']));
+        return redirect()->route('group.show', $group);
     }
 
     /**
@@ -101,6 +107,16 @@ class GroupController extends Controller
         ]);
 
         $group->members()->attach($request->student_id);
+        return back();
+    }
+
+    public function removeMember(Request $request, Group $group)
+    {
+        $this->validate($request, [
+            'student_id' => 'required|exists:students,id',
+        ]);
+
+        $group->members()->detach($request->student_id);
         return back();
     }
 }
