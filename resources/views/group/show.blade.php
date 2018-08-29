@@ -14,7 +14,7 @@
                             <dt class="col-sm-6">Izveidota</dt>
                             <dd class="col-sm-6">{{ $group->created_at->format('d.m.Y. H:i') }}</dd>
                             <dt class="col-sm-6">Līderis</dt>
-                            <dd class="col-sm-6">-</dd>
+                            <dd class="col-sm-6">{{ $group->leader->name  }}</dd>
                         </dl>
                         <a href="{{ route('group.edit', $group) }}" class="btn btn-secondary">Rediģēt</a>
                     </div>

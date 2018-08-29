@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Group;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
@@ -31,7 +32,8 @@ class GroupController extends Controller
      */
     public function create()
     {
-        return view('group.create');
+        $userList = User::all()->pluck('name', 'id');
+        return view('group.create', compact('userList'));
     }
 
     /**
@@ -44,9 +46,12 @@ class GroupController extends Controller
     {
         $this->validate($request, [
             'name' => 'required|unique:groups,name',
+            'leader_id' => 'required|exists:users,id',
         ]);
 
         $group = Group::create($request->only(['name']));
+        $group->leader()->associate($request->leader_id)->save();
+
         return redirect()->route('group.show', $group);
     }
 
@@ -69,7 +74,9 @@ class GroupController extends Controller
      */
     public function edit(Group $group)
     {
-        return view('group.edit', compact('group'));
+        $userList = User::all()->pluck('name', 'id');
+
+        return view('group.edit', compact('group', 'userList'));
     }
 
     /**
@@ -82,10 +89,13 @@ class GroupController extends Controller
     public function update(Request $request, Group $group)
     {
         $this->validate($request, [
-            'name' => ['required', Rule::unique('groups')->ignore($group->id)]
+            'name' => ['required', Rule::unique('groups')->ignore($group->id)],
+            'leader_id' => 'required|exists:users,id',
         ]);
 
         $group->update($request->only(['name']));
+        $group->leader()->associate($request->leader_id)->save();
+
         return redirect()->route('group.show', $group);
     }
 

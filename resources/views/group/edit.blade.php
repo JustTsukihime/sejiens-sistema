@@ -9,6 +9,7 @@
             <div class="card-body">
                 {{ Form::model($group, ['route' => ['group.update', $group], 'method' => 'PATCH']) }}
                     {{ Form::rowText('name', null, 'Nosaukums', ['required', 'autofocus']) }}
+                    {{ Form::rowSelect('leader_id', $userList, 'Līderis', $group->leader) }}
                     {{ Form::submit('Izveidot', ['class' => 'brt btn-primary form-control']) }}
                 {{ Form::close() }}
             </div>

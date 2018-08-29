@@ -9,6 +9,7 @@
                 <div class="card-body">
                     {{ Form::open(['route' => 'group.store']) }}
                         {{ Form::rowText('name', null, 'Nosaukums', ['required','class' => 'form-control mb-2']) }}
+                        {{ Form::rowSelect('leader_id', $userList, 'Līderis', ['required','class' => 'form-control mb-2']) }}
                         {{ Form::submit('Izveidot', ['class' => 'brt btn-primary form-control']) }}
                     {{ Form::close() }}
                 </div>

@@ -25,7 +25,7 @@
                     <tr>
                         <td><a href="{{ route('group.show', $group) }}">{{ $group->name }}</a></td>
                         <td>{{ $group->members->count() }}</td>
-                        <td>{{ $group->leader_id }}</td>
+                        <td>{{ $group->leader->name  }}</td>
                     </tr>
                 @endforeach()
             </tbody>
