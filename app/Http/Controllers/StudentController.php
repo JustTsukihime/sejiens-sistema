@@ -85,7 +85,7 @@ class StudentController extends Controller
      */
     public function edit(Student $student)
     {
-        //
+        return view('student.edit', compact('student'));
     }
 
     /**
@@ -97,7 +97,15 @@ class StudentController extends Controller
      */
     public function update(Request $request, Student $student)
     {
-        //
+        $this->validate($request, [
+            'name' => 'required',
+            'surname' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required',
+        ]);
+
+        $student->update($request->only(['name', 'surname', 'email', 'phone', 'attending', 'food', 'health']));
+        return redirect()->route('student.show', $student);
     }
 
     /**
