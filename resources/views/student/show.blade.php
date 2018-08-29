@@ -55,7 +55,7 @@
                 <div class="card">
                     <div class="card-body">
                         <a href="{{ route('student.edit', $student) }}" class="btn btn-block btn-info">Rediģēt</a>
-                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#destroy-student">Pievienot grupai</button>
+                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#add-to-group">Pievienot grupai</button>
                         <button class="btn btn-danger btn-block" data-toggle="modal" data-target="#destroy-student">Dzēst</button>
                     </div>
                 </div>
@@ -80,6 +80,29 @@
                     @endforeach
                     </tbody>
                 </table>
+            </div>
+        </div>
+    </div>
+    {{-- Modal for agging to group --}}
+    <div class="modal fade" id="add-to-group" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                {{ Form::open(['action' => ['StudentController@addGroup', $student], 'class' => 'd-inline']) }}
+                <div class="modal-header">
+                    <h5 class="modal-title">Pievienot grupai</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label for="mentor_id">Grupa</label>
+                    {{ Form::select('group_id', $groupList, null, ['class' => 'form-control', 'required']) }}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Atcelt</button>
+                    {{ Form::submit("Pievienot", ['class' => 'btn btn-primary']) }}
+                </div>
+                {{ Form::close() }}
             </div>
         </div>
     </div>

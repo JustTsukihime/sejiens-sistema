@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Group;
 use App\Student;
 use App\StudentFilters;
 use App\User;
@@ -71,7 +72,9 @@ class StudentController extends Controller
         ]);
         $qrcode = new QRCode($qropt);
 
-        return view('student.show', compact('student', 'qrcode'));
+        $groupList = Group::whereNotIn('id', $student->groups->pluck('id'))->get()->pluck('name', 'id');
+
+        return view('student.show', compact('student', 'qrcode', 'groupList'));
     }
 
     /**
@@ -240,5 +243,16 @@ class StudentController extends Controller
 
         $request->session()->flash('notification.success', ''); // TODO: Add label
         return redirect()->route('student.index');
+    }
+
+    public function addGroup(Request $request, Student $student)
+    {
+        $this->validate($request, [
+            'group_id' => 'required|exists:groups,id'
+        ]);
+
+//        dd($request->group_id);
+        $student->groups()->attach($request->group_id);
+        return back();
     }
 }

@@ -22,6 +22,7 @@ Route::group(['prefix' => 'student', 'as' => 'student.'], function() {
     Route::post('import', 'StudentController@import')->name('import');
     Route::post('importAttendees', 'StudentController@importAttendees')->name('importAttendees');
     Route::post('resolve', 'StudentController@resolve');
+    Route::post('{student}/addGroup', 'StudentController@addGroup');
 //    Route::post('createUsers', 'StudentController@createUsers')->name('createUsers');
 });
 Route::resource('/student', 'StudentController');
