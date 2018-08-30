@@ -78,7 +78,7 @@ class GenerateQRCodeArchive implements ShouldQueue
                 foreach($students as $student) {
                     $sheet->appendRow([
                         "$student->name $student->surname",
-                        "$student->name.$student->surname.svg",
+                        str_replace(' ', '.', "$student->name.$student->surname.svg"),
                     ]);
                 }
             });
