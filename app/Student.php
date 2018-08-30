@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Builder;
 
 class Student extends Model
 {
@@ -19,5 +20,10 @@ class Student extends Model
 
     public function groups() {
         return $this->belongsToMany(Group::class)->withTimestamps();
+    }
+
+    public function scopeConfirmed(Builder $query)
+    {
+        return $query->whereNotNull('confirmed_at');
     }
 }
