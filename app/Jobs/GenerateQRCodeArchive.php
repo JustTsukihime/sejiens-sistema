@@ -41,10 +41,9 @@ class GenerateQRCodeArchive implements ShouldQueue
         $students = Student::confirmed()->get();
 
         $qropt = new QROptions([
-            'outputType' => QRCode::OUTPUT_MARKUP_SVG,
+            'outputType' => QRCode::OUTPUT_IMAGE_PNG,
             'eccLevel'   => QRCode::ECC_H,
             'addQuietzone' => false,
-            'cssClass' => 'card-img',
         ]);
 
         $qr = new QRCode($qropt);
@@ -60,7 +59,7 @@ class GenerateQRCodeArchive implements ShouldQueue
 
         foreach ($students as $student) {
             $qrsvg = $qr->render($student->hash);
-            $zip->addFromString(str_replace(' ', '.', "$student->name.$student->surname.svg"), $qrsvg);
+            $zip->addFromString(str_replace(' ', '.', "$student->name.$student->surname.png"), $qrsvg);
         }
 
 
