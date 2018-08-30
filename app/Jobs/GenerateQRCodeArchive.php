@@ -43,6 +43,7 @@ class GenerateQRCodeArchive implements ShouldQueue
         $qropt = new QROptions([
             'outputType' => QRCode::OUTPUT_IMAGE_PNG,
             'eccLevel'   => QRCode::ECC_H,
+            'imageBase64' => false,
             'addQuietzone' => false,
         ]);
 
