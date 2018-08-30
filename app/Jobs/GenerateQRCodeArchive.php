@@ -60,7 +60,7 @@ class GenerateQRCodeArchive implements ShouldQueue
 
         foreach ($students as $student) {
             $qrsvg = $qr->render($student->hash);
-            $zip->addFromString(mb_str_replace(' ', '.', "$student->name.$student->surname.svg"), $qrsvg);
+            $zip->addFromString(str_replace(' ', '.', "$student->name.$student->surname.svg"), $qrsvg);
         }
 
 
