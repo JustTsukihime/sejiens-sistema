@@ -42,7 +42,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        //
+        return view('student.create');
     }
 
     /**
@@ -53,7 +53,15 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name' => 'required',
+            'surname' => 'required',
+            'email' => 'required|email',
+        ]);
+
+        $student = Student::make($request->only(['name', 'surname', 'email']));
+        $student->hash = substr(sha1($student->email.time()), 0, 8);
+        $student->save();
     }
 
     /**
