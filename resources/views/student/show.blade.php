@@ -56,6 +56,9 @@
                     <div class="card-body">
                         <a href="{{ route('student.edit', $student) }}" class="btn btn-block btn-info">Rediģēt</a>
                         <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#add-to-group">Pievienot grupai</button>
+                        @if($student->confirmed_at == null)
+                        <button class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#force-confirm">Apstiprināt dalību</button>
+                        @endif
                         <button class="btn btn-danger btn-block" data-toggle="modal" data-target="#destroy-student">Dzēst</button>
                     </div>
                 </div>
@@ -83,7 +86,7 @@
             </div>
         </div>
     </div>
-    {{-- Modal for agging to group --}}
+    {{-- Modal for adding to group --}}
     <div class="modal fade" id="add-to-group" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -101,6 +104,25 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Atcelt</button>
                     {{ Form::submit("Pievienot", ['class' => 'btn btn-primary']) }}
+                </div>
+                {{ Form::close() }}
+            </div>
+        </div>
+    </div>
+    {{-- Modal for forcing accepted status --}}
+    <div class="modal fade" id="force-confirm" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                {{ Form::open(['action' => ['StudentController@forceConfirm', $student], 'class' => 'd-inline']) }}
+                <div class="modal-header">
+                    <h5 class="modal-title">Apstiprināt dalību manuāli?</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Nē</button>
+                    {{ Form::submit("Jā", ['class' => 'btn btn-primary']) }}
                 </div>
                 {{ Form::close() }}
             </div>

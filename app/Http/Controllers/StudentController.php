@@ -259,8 +259,13 @@ class StudentController extends Controller
             'group_id' => 'required|exists:groups,id'
         ]);
 
-//        dd($request->group_id);
         $student->groups()->attach($request->group_id);
+        return back();
+    }
+
+    public function forceConfirm(Student $student)
+    {
+        $student->confirm();
         return back();
     }
 }
