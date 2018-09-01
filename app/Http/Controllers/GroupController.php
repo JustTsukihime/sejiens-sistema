@@ -124,7 +124,9 @@ class GroupController extends Controller
 
         $student = Student::find($request->student_id);
 
-        $group->members()->attach($student);
+        if(! $group->members->contains($student) ) {
+            $group->members()->attach($student);
+        }
         $request->session()->flash('notification.success', "$student->name $student->surname pievienots grupai $group->name");
         return back();
     }

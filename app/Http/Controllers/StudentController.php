@@ -267,7 +267,9 @@ class StudentController extends Controller
             'group_id' => 'required|exists:groups,id'
         ]);
 
-        $student->groups()->attach($request->group_id);
+        if (! $student->groups->contains($request->group_id)) {
+            $student->groups()->attach($request->group_id);
+        }
         return back();
     }
 
