@@ -26,7 +26,7 @@
     <div class="container my-auto">
         <div class="row">
             <div class="col-lg-12 mx-auto">
-                <img src="images/pingvins.png" class="rounded mx-auto d-block" style="height: 400px;">
+                <img src="images/pingvins.png" class="rounded mx-auto d-block img-fluid">
             </div>
 
             <div class="col-lg-8 mx-auto">

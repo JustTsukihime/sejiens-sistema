@@ -99,7 +99,7 @@ img {
 
   @include media-breakpoint-up(lg) {
     border-color: transparent;
-    background-color: transparent;
+    background-color: $light_blue;
   }
 
   .navbar-nav {
