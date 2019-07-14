@@ -233,8 +233,21 @@
 <section class="bg-secondary text-white" id="pieteikties">
     <div class="container text-center">
         <h2 class="mb-4">Piesakies</h2>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdP6RvrkfzgAHUr3n4Wcc6ew96lI3C8zOi6EWq57vzMZzcAuA/viewform?embedded=true" width="100%" height="1900" frameborder="0" marginheight="0" marginwidth="0">Notiek ielāde...</iframe>
-        <h4 class="text-white pt-2">Mēs, Datorikas fakultātes Studentu pašpārvalde, apstrādāsim Tavus datus, lai informētu Tevi par pasākumu un jaunumiem, kas saistīti ar studiju uzsākšanu. Tavus datus mēs nenodosim trešajām personām. Ja Tev ir jautājumi, sazinies ar mums info@datoriki.lv.
+        <div class="offset-lg-2 col-lg-8">
+            @if(session()->has('application-success'))
+                <div class="alert alert-success" role="alert">{{ session()->get('application-success') }}</div>
+            @endif
+            {{ Form::open(['method' => 'POST', 'route' => ['student.store'], 'class' => 'form-horizontal', 'id' => 'application-form']) }}
+            {{ Form::rowText('name', null, 'Vārds', ['required', 'autofocus']) }}
+            {{ Form::rowText('surname', null, 'Uzvārds', ['required']) }}
+            {{ Form::rowEmail('email', null, 'E-pasts', ['required']) }}
+            {{ Form::rowText('phone', null, 'Tālrunis', ['required']) }}
+            {{ Form::rowSelect('tshirt', ['XS'=>'XS','S'=>'S','M'=>'M','L'=>'L','XL'=>'XL','XXL'=>'XXL'], 'T-krekla izmērs', ['required']) }}
+            {{ Form::rowRadio('whatsapp', 'Tevi pievienot 1.kursa Whatsapp grupai?', null, [['label' => 'Jā', 'value' => 'yes'], ['label' => 'Nē', 'value' => 'no']], ['required']) }}
+            {{ Form::rowSubmit('Pieteikties', ['class' => 'form-control btn btn-primary col-lg-6']) }}
+            {{ Form::close() }}
+        </div>
+        <h4 class="text-white pt-2 mt-5">Mēs, Datorikas fakultātes Studentu pašpārvalde, apstrādāsim Tavus datus, lai informētu Tevi par pasākumu un jaunumiem, kas saistīti ar studiju uzsākšanu. Tavus datus mēs nenodosim trešajām personām. Ja Tev ir jautājumi, sazinies ar mums info@datoriki.lv.
         </h4>
     </div>
 </section>
