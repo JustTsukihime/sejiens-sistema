@@ -235,7 +235,7 @@
         <h2 class="mb-4">Piesakies</h2>
         <div class="offset-lg-2 col-lg-8">
             @if(session()->has('application-success'))
-                <div class="alert alert-success" role="alert">{{ session()->get('application-success') }}</div>
+                <div class="alert alert-primary" role="alert">{{ session()->get('application-success') }}</div>
             @endif
             {{ Form::open(['method' => 'POST', 'route' => ['student.store'], 'class' => 'form-horizontal', 'id' => 'application-form']) }}
             {{ Form::rowText('name', null, 'Vārds', ['required', 'autofocus']) }}
