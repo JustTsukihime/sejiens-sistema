@@ -1,7 +1,7 @@
 
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-@import url('https://fonts.googleapis.com/css?family=Baloo');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
 
 // Variables
 @import "variables";
@@ -17,7 +17,7 @@ body {
 
 hr {
   max-width: 50px;
-  border: 3px $orange;
+  border: 3px $light_blue;
 
   &.light {
     border-color: $white;
@@ -25,7 +25,7 @@ hr {
 }
 
 a {
-  color: $red;
+  color: $light_blue;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -37,11 +37,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-primary {
-  background-color: $red;
+  background-color: $light_blue;
 }
 
 .bg-secondary {
-  background-color: $purple;
+  background-color: $blue;
 }
 
 .bg-dark {
@@ -116,7 +116,7 @@ img {
       }
 
       &:hover, &:focus {
-        color: $red;
+        color: $light_blue;
 
         @include media-breakpoint-up(lg) {
           color: $gray-700;
@@ -169,7 +169,7 @@ header.masthead {
 }
 
 iframe {
-  border: solid 6px #5B123B;
+  border: solid 6px #003B49;
 }
 
 #seko img {
@@ -180,11 +180,11 @@ iframe {
 }
 
 .text-highlight {
-  color: $red;
+  color: $light_blue;
 }
 
 .btn-apply {
-  @include button-variant($green, rgba(240, 95, 64, 0.5));
+  @include button-variant($dark_blue, rgba(240, 95, 64, 0.5));
   padding: 1rem 2rem;
   font-weight: 700;
   text-transform: uppercase;

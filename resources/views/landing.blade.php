@@ -26,7 +26,7 @@
     <div class="container my-auto">
         <div class="row">
             <div class="col-lg-12 mx-auto">
-                <img src="images/oga.png" class="rounded mx-auto d-block" style="height: 400px;">
+                <img src="images/pingvins.png" class="rounded mx-auto d-block" style="height: 400px;">
             </div>
 
             <div class="col-lg-8 mx-auto">
@@ -101,7 +101,13 @@
                                 <img class="d-block w-100" src="images/album/9.jpg" alt="9 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="images/album/9a.jpg" alt="9a slide">
+                                <img class="d-block w-100" src="images/album/10.jpg" alt="10 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/11.jpg" alt="11 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/12.jpg" alt="12 slide">
                             </div>
 
                         </div>
@@ -140,15 +146,6 @@
                 <div class="mt-5 mx-auto">
                     <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="images/album/10.jpg" alt="10 slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/album/11.jpg" alt="11 slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/album/12.jpg" alt="12 slide">
-                            </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/album/13.jpg" alt="13 slide">
                             </div>
@@ -166,6 +163,24 @@
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/album/18.jpg" alt="18 slide">
+                            </div>
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/album/19.jpg" alt="19 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/20.jpg" alt="20 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/21.jpg" alt="21 slide">
+                            </div>
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/album/22.jpg" alt="22 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/23.jpg" alt="23 slide">
+                            </div>
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/album/24.jpg" alt="24 slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
