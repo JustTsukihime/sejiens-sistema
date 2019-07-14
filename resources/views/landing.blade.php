@@ -91,9 +91,6 @@
                                 <img class="d-block w-100" src="images/album/5.jpg" alt="5 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="images/album/6.jpg" alt="6 slide">
-                            </div>
-                            <div class="carousel-item">
                                 <img class="d-block w-100" src="images/album/7.jpg" alt="7 slide">
                             </div>
                             <div class="carousel-item">
@@ -156,7 +153,7 @@
                 <div class="mt-5 mx-auto">
                     <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item">
+                            <div class="carousel-item active">
                                 <img class="d-block w-100" src="images/album/13.jpg" alt="13 slide">
                             </div>
                             <div class="carousel-item">
@@ -174,7 +171,7 @@
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/album/18.jpg" alt="18 slide">
                             </div>
-                            <div class="carousel-item active">
+                            <div class="carousel-item">
                                 <img class="d-block w-100" src="images/album/19.jpg" alt="19 slide">
                             </div>
                             <div class="carousel-item">
@@ -183,13 +180,13 @@
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/album/21.jpg" alt="21 slide">
                             </div>
-                            <div class="carousel-item active">
+                            <div class="carousel-item">
                                 <img class="d-block w-100" src="images/album/22.jpg" alt="22 slide">
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/album/23.jpg" alt="23 slide">
                             </div>
-                            <div class="carousel-item active">
+                            <div class="carousel-item">
                                 <img class="d-block w-100" src="images/album/24.jpg" alt="24 slide">
                             </div>
                         </div>
