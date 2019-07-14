@@ -30,8 +30,8 @@
             </div>
 
             <div class="col-lg-8 mx-auto">
-                <h1>Sējiens 2018</h1>
-                <h3>31. augusts - 2. septembris</h3>
+                <h1>Sējiens 2019</h1>
+                <h3>30. augusts - 1. septembris</h3>
                 <a class="btn btn-apply js-scroll-trigger mt-2" href="#pieteikties">PIETEIKTIES</a>
             </div>
         </div>
@@ -43,7 +43,9 @@
             <div class="col-lg-8 mx-auto text-center">
                 <h2 class="section-heading text-white">Hey, pirmkursniek!</h2>
                 <hr class="light my-4">
-                <p class="text-faded mb-4">Vasara šogad mūs ir patiesi lutinājusi. Brīžiem karstā saule un lietainais periods ir nesis daudz sulīgas un baudāmas ogas. Arī Tu, pirmkursniek, esi īpaša oga Latvijas Universitātes groziņā!
+                <p class="text-faded mb-4">
+                    Rudens tuvojas straujiem soļiem un tam uz papēžiem jau min ziema. Kas kopīgs ziemai un datoriķiem? Bet protams, mūsu mīļākās operētājsistēmas talismans- pingvīns!
+                    Kā jau zinām, pingvīniem ir tendence turēties kopā. Sējienā iepazīsies ar citiem pirmkursniekiem un spēsi atrast draugus, ar kuriem turēties kopā, lai izturētu visskarbākās ziemas.
                 </p>
                 <p class="text-faded mb-4">
                     Tu esi godam izturējis centralizēto eksāmenu kārtošanu, pinķerīgo pieteikuma veidošanu un ilgu neziņas un satraukuma brīdi! Nu Tev sācies jauns un piedzīvojumiem pilns dzīves posms un beidzot vari saukt sevi par Latvijas Universitātes Datorikas fakultātes studentu!
@@ -125,9 +127,14 @@
             </div>
             <div class="col-lg-6 col-md-8 text-center">
                 <div class="mt-5 mx-auto">
-                    <p>Lai pirmajā studiju dienā universitātē Tu jau justos kā mājās, būtu iepazinies ar daudziem kursabiedriem, mēs aicinām piedalīties vienā no spilgtākajiem mūsu fakultātes notikumiem – <span class="text-primary font-weight-bold">pirmsaristotelī “Sējiens 2018”, kas notiks no 31. augusta līdz 2. septembrim.</span> </p>
+                    <p>Lai pirmajā studiju dienā universitātē Tu jau justos kā mājās, būtu iepazinies ar daudziem kursabiedriem,
+                        mēs aicinām piedalīties vienā no spilgtākajiem mūsu fakultātes notikumiem –
+                        <span class="text-primary font-weight-bold">pirmsaristotelī “Sējiens 2019”, kas notiks no 30. augusta līdz 1. septembrim.</span>
+                    </p>
                     <p>
-                        Lai Tu vienmēr saglabātu savu svaigumu un saldumu, mēs Tev piedāvājam doties aizraujošā pirmsstudiju piedzīvojumā, kurā iegūtās prasmes varēsi izmantot arī turpmāk, lai nekļūtu skābs un negaršīgs, sastopoties ar negulētām naktīm, kontroldarbiem un sesiju.
+                        Piedalies aizraujošā pirmsstudiju piedzīvojumā,
+                        kurā iegūtās prasmes varēsi izmantot arī turpmāk, lai neapjuktu, sastopoties ar negulētām naktīm,
+                        kontroldarbiem un sesiju.
                     </p>
                 </div>
             </div>
@@ -135,11 +142,14 @@
         <div class="row">
             <div class="col-lg-6 col-md-8 text-center">
                 <div class="mt-5 mx-auto">
-                    <p><span class="text-primary font-weight-bold">Piektdienā, 31. augustā, tiksimies Latvijas Universitātes galvenajā ēkā (Raiņa bulvāris 19)</span>, lai iepazītu gan universitātes telpas, gan arī savus jaunos kursabiedrus, iesaistoties dažādos interesantos piedzīvojumos. </p>
-                    <p>Vēlāk kopīgi dosimies ārpus Rīgas, kur uzturēsimies līdz pat pasākuma beigām un trenēsim gan prātu, gan ķermeni un pat dosimies nakts trasē, lai kļūtu par īstiem studentiem. </p>
-                    <p> 2. septembrī brauksim atpakaļ uz Rīgu, lai <span class="text-primary font-weight-bold"> sagatavotos Latvijas Universitātes studentu svētkiem “Aristotelis”</span> un parādītu pārējām fakultātēm, cik DF ir saliedēta un “skaļa” fakultāte!</p>
-                    </p>
-
+                    <p><span class="text-primary font-weight-bold">Piektdienā, 30. augustā, tiksimies Latvijas Universitātes galvenajā ēkā
+                          (Raiņa bulvāris 19)</span>, lai iepazītu gan universitātes telpas, gan arī savus jaunos kursabiedrus,
+                        iesaistoties dažādos interesantos piedzīvojumos. </p>
+                    <p>Vēlāk kopīgi dosimies ārpus Rīgas, kur uzturēsimies līdz pat pasākuma beigām un trenēsim gan prātu,
+                        gan ķermeni un pat dosimies nakts trasē, lai kļūtu par īstiem studentiem. </p>
+                    <p> 1. septembrī brauksim atpakaļ uz Rīgu, lai <span class="text-primary font-weight-bold"> sagatavotos
+                          Latvijas Universitātes studentu svētkiem “Aristotelis”</span> un parādītu pārējām fakultātēm, cik DF ir
+                        saliedēta un “skaļa” fakultāte!</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-3 text-center">
@@ -203,7 +213,7 @@
                 </div>
             </div>
             <div class="col-12 text-center">
-                <p class="video-text mt-3">Sējiens ir viens no nozīmīgākajiem Latvijas Universitātes Datorikas fakultātes pasākumiem, un  Datorikas fakultātes Studentu pašpārvalde parūpēsies, lai Tu un Tavi topošie kursa biedri iepazītos un sadraudzētos neformālā gaisotnē, pakustētos un padomātu dažādās interesnatās aktivitātēs, uzzinātu svarīgāko, kas sagaida universitātes dzīvē, un, protams, neaizmirstami pavadītu pēdejo vasaras nogali!</p>
+                <p class="text-secondary mt-3">Sējiens ir viens no nozīmīgākajiem Latvijas Universitātes Datorikas fakultātes pasākumiem, un  Datorikas fakultātes Studentu pašpārvalde parūpēsies, lai Tu un Tavi topošie kursa biedri iepazītos un sadraudzētos neformālā gaisotnē, pakustētos un padomātu dažādās interesnatās aktivitātēs, uzzinātu svarīgāko, kas sagaida universitātes dzīvē, un, protams, neaizmirstami pavadītu pēdejo vasaras nogali!</p>
             </div>
         </div>
     </div>
@@ -243,22 +253,20 @@
                 <a href = "https://www.facebook.com/ludfsp"><h5 class="mt-2">ludfsp</h5></a>
                 <a href = "https://www.facebook.com/LUDatorikasfakultate"><h5 class="mt-2">LUDatorikasfakultate</h5></a>
             </div>
-            <div class="col-lg-2 ml-auto text-center">
+            <div class="col-lg-3 ml-auto text-center">
                 <a href = "http://datoriki.lv/"><img src="images/home.svg" alt="datoriki"></a>
                 <a href = "http://datoriki.lv/"><h5 class="mt-2">datoriki.lv</h5></a>
                 <a href = "https://www.df.lu.lv/"><h5 class="mt-2">df.lu.lv</h5></a>
             </div>
-            <div class="col-lg-2 ml-auto text-center">
+            <div class="col-lg-3 ml-auto text-center">
                 <a href = "https://www.instagram.com/datoriki/"><img src="images/instagram.svg" alt="event"></a>
                 <a href = "https://www.instagram.com/datoriki/"><h5 class="mt-2">datoriki</h5></a>
+                <a href = "https://www.instagram.com/datorikasfakultate/"><h5 class="mt-2">datorikasfakultate</h5></a>
             </div>
-            <div class="col-lg-2 ml-auto text-center">
-                <a href = "https://twitter.com/LU_Datorika"><img src="images/twitter.svg" alt="twitter"></a>
-                <a href = "https://twitter.com/LU_Datorika"><h5 class="mt-2">@LU_Datorika</h5></a>
-            </div>
-            <div class="col-lg-2 ml-auto text-center">
-                <a href = "https://www.facebook.com/events/1042669569229494/"><img src="images/event.svg" alt="event"></a>
-                <a href = "https://www.facebook.com/events/1042669569229494/"><h5 class="mt-2">Sējiens 2018</h5></a>
+
+            <div class="col-lg-3 ml-auto text-center">
+                <a href = "https://www.facebook.com/events/453925892069462/"><img src="images/event.svg" alt="event"></a>
+                <a href = "https://www.facebook.com/events/453925892069462/"><h5 class="mt-2">Sējiens 2019</h5></a>
             </div>
         </div>
         <div class="row">
@@ -272,24 +280,19 @@
     <div class="container">
         <div id="sponsors" class="text-center">
             <div class="row">
-                <div class="col-lg-2 mr-auto text-center">
+                <div class="col-lg-4 mr-auto text-center">
                     <a href="https://www.accenture.com/lv-en/">
                         <img src="images/accenture_logo.svg" alt="Accenture">
                     </a>
                 </div>
-                <div class="col-lg-2 mr-auto text-center">
+                <div class="col-lg-4 mr-auto text-center">
                     <a href="http://datoriki.lv/">
                         <img src="images/dfsp_logo.svg" alt="DF SP Logo">
                     </a>
                 </div>
-                <div class="col-lg-2 mr-auto text-center">
-                    <a href="http://www.lu.lv/">
-                        <img src="images/lu_logo.svg" alt="LU Logo">
-                    </a>
-                </div>
-                <div class="col-lg-2 mr-auto text-center">
+                <div class="col-lg-4 mr-auto text-center">
                     <a href="http://www.df.lu.lv/">
-                        <img src="images/df_logo.svg" alt="DF Logo">
+                        <img src="images/lu_logo.svg" alt="DF Logo">
                     </a>
                 </div>
             </div>
