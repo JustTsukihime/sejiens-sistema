@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Group;
-use App\Rules\Phone;
+use App\Http\Requests\StudentRequest;
 use App\Student;
 use App\StudentFilters;
 use App\User;
@@ -11,7 +11,6 @@ use Carbon\Carbon;
 use chillerlan\QRCode\QRCode;
 use chillerlan\QRCode\QROptions;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
 use Maatwebsite\Excel\Facades\Excel;
 
 class StudentController extends Controller
@@ -50,20 +49,11 @@ class StudentController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param StudentRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StudentRequest $request)
     {
-        $this->validate($request, [
-            'name' => 'required',
-            'surname' => 'required',
-            'email' => 'required|email|unique:students',
-            'phone' => ['required', 'min:8', new Phone, 'unique:students'],
-            'tshirt' => ['required', Rule::in(['XS','S','M','L','XL','XXL'])],
-            'whatsapp' => ['required', Rule::in(['yes','no'])],
-        ]);
-
         $student = Student::make($request->only(['name', 'surname', 'email', 'phone', 'tshirt', 'whatsapp']));
         $student->applied_at = Carbon::now();
         $student->hash = substr(sha1($student->email.time()), 0, 8);
