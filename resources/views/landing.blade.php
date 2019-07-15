@@ -235,7 +235,7 @@
                 <div class="alert alert-primary" role="alert">{{ session()->get('application-success') }}</div>
             @endif
             {{ Form::open(['method' => 'POST', 'route' => ['student.store'], 'class' => 'form-horizontal', 'id' => 'application-form']) }}
-            {{ Form::rowText('name', null, 'Vārds', ['required', 'autofocus']) }}
+            {{ Form::rowText('name', null, 'Vārds', ['required']) }}
             {{ Form::rowText('surname', null, 'Uzvārds', ['required']) }}
             {{ Form::rowEmail('email', null, 'E-pasts', ['required']) }}
             {{ Form::rowText('phone', null, 'Tālrunis', ['required']) }}
