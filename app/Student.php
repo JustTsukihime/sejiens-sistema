@@ -3,8 +3,11 @@
 namespace App;
 
 use Carbon\Carbon;
+use chillerlan\QRCode\QRCode;
+use chillerlan\QRCode\QROptions;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
+use JeroenDesloovere\VCard\VCard;
 
 class Student extends Model
 {
@@ -32,5 +35,31 @@ class Student extends Model
     public function scopeConfirmed(Builder $query)
     {
         return $query->whereNotNull('confirmed_at');
+    }
+
+    /**
+     * @return VCard
+     */
+    public function getVCard() {
+        $vcard = new VCard();
+
+        $vcard->addName($this->surname, $this->name);
+        $vcard->addEmail($this->email, 'HOME');
+        $vcard->addPhoneNumber($this->phone, 'CELL');
+
+        return $vcard;
+    }
+
+    public function getVCardQR() {
+        $qropt = new QROptions([
+            'outputType' => QRCode::OUTPUT_MARKUP_SVG,
+            'eccLevel'   => QRCode::ECC_L,
+            'addQuietzone' => false,
+            'cssClass' => 'card-img',
+        ]);
+
+        $qrcode = new QRCode($qropt);
+
+        return base64_encode($qrcode->render($this->getVCard()->buildVCard()));
     }
 }

@@ -20,6 +20,8 @@
                                 <dd class="col-lg-8">{{ $student->email }}</dd>
                                 <dt class="col-lg-4">Telefons</dt>
                                 <dd class="col-lg-8">{{ $student->phone }}</dd>
+                                <dt class="col-lg-4">Pievienot WA?</dt>
+                                <dd class="col-lg-8">{{ ($student->whatsapp =='yes' ? 'Jā' : 'Nē') }}</dd>
                                 <dt class="col-lg-4 mt-lg-3">Pieteicās</dt>
                                 <dd class="col-lg-8 mt-lg-3">{{ $student->created_at->format('d.m.Y. H:i') }}</dd>
                                 @if ($student->confirmed_at)
@@ -60,6 +62,15 @@
                         <button class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#force-confirm">Apstiprināt dalību</button>
                         @endif
                         <button class="btn btn-danger btn-block" data-toggle="modal" data-target="#destroy-student">Dzēst</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-header">vCard</div>
+                    <div class="card-body">
+                        <img class="card-img mb-2" src="data:image/svg+xml;base64,{{ $student->getVCardQR() }}">
+                        <a href="{{ route('student.vcard', $student) }}" class="btn btn-block btn-info">vCard lejupielāde</a>
                     </div>
                 </div>
             </div>

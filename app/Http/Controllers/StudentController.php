@@ -276,4 +276,9 @@ class StudentController extends Controller
         $student->confirm();
         return back();
     }
+
+    public function VCard(Student $student)
+    {
+        return $student->getVCard()->download();
+    }
 }

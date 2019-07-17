@@ -19,6 +19,7 @@ Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 
 Route::group(['prefix' => 'student', 'as' => 'student.'], function() {
     Route::get('management', 'StudentController@management')->name('management');
+    Route::get('{student}/vcard', 'StudentController@VCard')->name('vcard');
     Route::post('import', 'StudentController@import')->name('import');
     Route::post('importAttendees', 'StudentController@importAttendees')->name('importAttendees');
     Route::post('resolve', 'StudentController@resolve');
