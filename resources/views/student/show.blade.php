@@ -69,8 +69,8 @@
                 <div class="card">
                     <div class="card-header">vCard</div>
                     <div class="card-body">
-                        <img class="card-img mb-2" src="data:image/svg+xml;base64,{{ $student->getVCardQR() }}">
                         <a href="{{ route('student.vcard', $student) }}" class="btn btn-block btn-info">vCard lejupielāde</a>
+                        <img class="card-img mt-2" src="data:image/svg+xml;base64,{{ $student->getVCardQR() }}">
                     </div>
                 </div>
             </div>

@@ -279,6 +279,9 @@ class StudentController extends Controller
 
     public function VCard(Student $student)
     {
-        return $student->getVCard()->download();
+        $vcard = $student->getVCard();
+        return response()->streamDownload(function () use ($vcard) {
+            echo $vcard->getOutput();
+        }, $vcard->getFilename().'.'.$vcard->getFileExtension(), ['Content-type' => $vcard->getContentType()]);
     }
 }
