@@ -18,6 +18,7 @@
                         </dl>
                         <a href="{{ route('group.edit', $group) }}" class="btn btn-secondary">Rediģēt</a>
                         <a href="{{ action('GroupController@createMember', $group) }}" class="btn btn-secondary">Pievienot dalībnieku</a>
+                        <a href="{{ action('GroupController@membersVCard', $group) }}" class="btn btn-secondary">Lejupielādēt kontaktus</a>
                     </div>
                 </div>
             </div>

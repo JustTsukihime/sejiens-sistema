@@ -7,6 +7,7 @@ use App\Student;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
+use JeroenDesloovere\VCard\VCard;
 
 class GroupController extends Controller
 {
@@ -139,5 +140,19 @@ class GroupController extends Controller
 
         $group->members()->detach($request->student_id);
         return back();
+    }
+
+    public function membersVCard(Group $group)
+    {
+        $vcards = $group->getMemberVCards();
+
+        $outFile = '';
+        $vcards->each(function(VCard $vcard) use (&$outFile) {
+            $outFile .= $vcard->getOutput();
+        });
+
+        return response()->streamDownload(function () use ($outFile) {
+            echo $outFile;
+        }, $group->name.'.'.$vcards[0]->getFileExtension(), ['Content-type' => $vcards[0]->getContentType()]);
     }
 }

@@ -33,6 +33,7 @@ Route::group(['prefix' => 'group', 'as' => 'group.'], function() {
     Route::get('{group}/createMember', 'GroupController@createMember');
     Route::post('{group}/createMember', 'GroupController@storeMember');
     Route::post('{group}/removeMember', 'GroupController@removeMember');
+    Route::get('{group}/vcard', 'GroupController@membersVCard');
 });
 Route::resource('group', 'GroupController');
 

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
 
 class Group extends Model
 {
@@ -16,5 +17,19 @@ class Group extends Model
     public function leader()
     {
         return $this->belongsTo(User::class);
+    }
+
+    /**
+     * @return Collection
+     */
+    public function getMemberVCards()
+    {
+        $vcards = collect();
+
+        $this->members->each(function(Student $member) use ($vcards) {
+            $vcards->push($member->getVCard());
+        });
+
+        return $vcards;
     }
 }
