@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Auth;
 
 class Group extends Model
 {
@@ -31,5 +32,10 @@ class Group extends Model
         });
 
         return $vcards;
+    }
+
+    public static function getWhatsappGroup()
+    {
+        return self::firstOrCreate(['name' => 'Whatsapp'], ['leader_id' => Auth::user()->id]);
     }
 }

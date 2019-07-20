@@ -50,6 +50,16 @@
                     </div>
                 </div>
             </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                    <div class="card-header">Izveidot Whatsapp grupu</div>
+                    <div class="card-body btn-">
+                        {{ Form::open(['action' => 'GroupController@makeWhatsappGroup']) }}
+                        {{ Form::submit('Izveidot', ['class' => 'form-control btn btn-primary']) }}
+                        {{ Form::close() }}
+                    </div>
+                </div>
+            </div>
             {{--<div class="col-sm-6 col-md-4 col-lg-3 mb-3">--}}
             {{--<div class="card">--}}
             {{--<div class="card-header">Izveidot lietotājus</div>--}}

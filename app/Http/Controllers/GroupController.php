@@ -155,4 +155,17 @@ class GroupController extends Controller
             echo $outFile;
         }, $group->name.'.'.$vcards[0]->getFileExtension(), ['Content-type' => $vcards[0]->getContentType()]);
     }
+
+    public function makeWhatsappGroup() {
+        $group = Group::getWhatsappGroup();
+        $students = Student::whatsapp()->get();
+
+        $students->each(function ($student) use ($group) {
+            if(! $group->members->contains($student) ) {
+                $group->members()->attach($student);
+            }
+        });
+
+        return redirect()->route('group.show', $group);
+    }
 }

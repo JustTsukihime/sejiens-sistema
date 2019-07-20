@@ -37,6 +37,11 @@ class Student extends Model
         return $query->whereNotNull('confirmed_at');
     }
 
+    public function scopeWhatsapp(Builder $query)
+    {
+        return $query->where('whatsapp', 'yes');
+    }
+
     /**
      * @return VCard
      */

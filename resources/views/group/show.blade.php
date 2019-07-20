@@ -28,6 +28,8 @@
             <tr>
                 <th>Vārds</th>
                 <th>Telefons</th>
+                <th class="d-none d-sm-block">Pievienots</th>
+                <th>Darbība</th>
             </tr>
             </thead>
             <tbody>
@@ -35,6 +37,7 @@
                 <tr>
                     <td><a href="{{ route('student.show', $student) }}">{{ $student->name }} {{ $student->surname }}</a></td>
                     <td>{{ $student->phone }}</td>
+                    <td class="d-none d-sm-block">{{ $student->pivot->created_at }}</td>
                     <td>
                         {{ Form::open(['action' => ['GroupController@removeMember', $group]]) }}
                         {{ Form::hidden('student_id', $student->id) }}
