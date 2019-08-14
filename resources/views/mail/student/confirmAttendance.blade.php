@@ -8,7 +8,7 @@
 <table width="100%" style="background-color:rgba(0,161,156,0.45);font-size:13px;"
        align="center" bgcolor="#47a1ff" cellpadding="0" cellspacing="0">
     <tr>
-        <td align="center" style="background: #2ac3d3; "><img style="margin-bottom: -3px; " width="600px" src="https://datoriki.lv/wp-content/uploads/2019/08/sejiens2019.jpg"  ></td>
+        <td align="center" style="background: #2ac3d3; "><img style="margin-bottom: -3px; " width="600px" src="images/sejiens2019.jpg"  ></td>
     </tr>
     <tr>
         <td width="100%" style="background: #2ac3d3;">
@@ -153,7 +153,7 @@
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="https://www.facebook.com/ludfsp/"><img style="height: 45px;"
-                                                                                                                        src="https://datoriki.lv/wp-content/uploads/2019/08/facebook.png"
+                                                                                                                        src="images/facebook.png"
                                                                                                                         alt="FB logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.facebook.com/ludfsp/" style="text-decoration: none;">
                                                                 <font color="#333" ><b>/ludfsp</b></font></a></td>
@@ -170,7 +170,7 @@
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="http://datoriki.lv/"><img style="height: 55px;"
-                                                                                                           src="https://datoriki.lv/wp-content/uploads/2019/08/home.png"
+                                                                                                           src="images/home.png"
                                                                                                            alt="WEB logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="http://datoriki.lv/" style="text-decoration: none;">
                                                                 <font color="#333"><b>datoriki.lv</b></font></a></td>
@@ -185,7 +185,7 @@
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="https://www.instagram.com/datoriki/"><img style="height: 45px;"
-                                                                                                                           src="https://datoriki.lv/wp-content/uploads/2019/08/instagram.png"
+                                                                                                                           src="images/instagram.png"
                                                                                                                            alt="Instagram logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.instagram.com/datoriki/" style="text-decoration: none;">
                                                                 <font color="#333"><b>@datoriki</b></font></a></td>
@@ -201,7 +201,7 @@
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="https://www.facebook.com/events/453925892069462/"><img style="height: 45px;"
-                                                                                                                                        src="https://datoriki.lv/wp-content/uploads/2019/08/event.png"
+                                                                                                                                        src="images/event.png"
                                                                                                                                         alt="Event logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.facebook.com/events/453925892069462/" style="text-decoration: none;">
                                                                 <font color="#333"><b>FB pasākums</b></font></a></td>
