@@ -20,7 +20,7 @@ class StudentController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth')->except('store');
+        $this->middleware('auth')->except('store', 'confirmation', 'confirm');
     }
 
     /**
@@ -279,7 +279,7 @@ class StudentController extends Controller
 
     public function confirmation($hash)
     {
-        $student = Student::hash($hash)->whereNull('confirmed_at')->first();
+        $student = Student::hash($hash)->first();
 
         if (!$student)
             return redirect()->route('landing');
@@ -306,7 +306,6 @@ class StudentController extends Controller
         $student->update($request->only(['food', 'allergies', 'health', 'about', 'attending']));
         $student->confirm();
 
-        session()->flash('message', 'Paldies, tiekamies Sējienā!');
         return back();
     }
 

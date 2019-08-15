@@ -1,7 +1,7 @@
 Čau, {{ $student->name }}!
 
 Ja tu saņēmi šo e-pastu, tad Tu esi pieteicies Datorikas fakultātes pirmsaristotelim "Sējiens 2019".
-Vispirms - Aizpildi apstiprinājuma anketu! (Būs pieejama līdz 24. augustam) LINKS
+Vispirms - Aizpildi apstiprinājuma anketu! (Būs pieejama līdz 24. augustam) {{ route('student.confirmation', $student->hash) }}
 
 Kad esi to izdarījis - apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam, izmantojot mūsu špikeri.
 Atgādinām, ka pasākums ir bez dalības maksas, par ko izsakām milzīgu paldies mūsu draugiem - Accenture!
@@ -38,7 +38,7 @@ Esi notikumu centrā un neaizmirsti sekot LU Datorikas fakultātes un LU DF Stud
 https://www.facebook.com/ludfsp/
 https://www.facebook.com/LUDatorikasfakultate
 
-http://datoriki.lv
+https://datoriki.lv
 https://df.lu.lv
 
 https://twitter.com/LU_Datorika
@@ -50,4 +50,4 @@ https://www.facebook.com/events/453925892069462/
 
 Esam sarūpējuši arī kursa Facebook grupu. https://www.facebook.com/groups/2385578308396695/
 
-P.S. Sējienā būs arī iespējams iegūt savā īpašumā Datorikas fakultātes suvenīrus http://datoriki.lv/suveniri/
+P.S. Sējienā būs arī iespējams iegūt savā īpašumā Datorikas fakultātes suvenīrus https://datoriki.lv/suveniri/

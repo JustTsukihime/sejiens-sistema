@@ -105,7 +105,7 @@ class EmailController extends Controller
             $students = Student::where('id', $request->student_id)->get();
         } else {
             $students = Student::whereDoesntHave('emails', function (Builder $query) {
-                $query->where('type', $this->emailType);
+                $query->where('type', 'attendanceConfirmation');
             })->get();
         }
 
