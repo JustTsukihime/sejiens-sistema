@@ -20,6 +20,7 @@
         @include('navigation')
     @endauth
     @yield('content')
+    @include('footer')
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 

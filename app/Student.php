@@ -42,6 +42,11 @@ class Student extends Model
         return $query->where('whatsapp', 'yes');
     }
 
+    public function scopeHash(Builder $query, $hash)
+    {
+        return $query->where('hash', $hash);
+    }
+
     /**
      * @return VCard
      */

@@ -7,7 +7,7 @@
             </label>
         @endforeach
         @if(isset($subtitle))
-            <small class="form-text text-muted">{{ $subtitle }}</small>
+            <small class="form-text text-info">{{ $subtitle }}</small>
         @endif
         @if ($errors->has($name))
             <small class="form-text text-danger">{{ $errors->first($name) }}</small>

@@ -21,7 +21,7 @@ class FormServiceProvider extends ServiceProvider
         Form::component('rowSelect', 'snippets.components.select', ['name', 'values' => [], 'label' => null, 'selected' => null, 'attributes' => [], 'subtitle' => null]);
         Form::component('rowFile', 'snippets.components.file', ['name', 'label' => null, 'attributes' => [], 'subtitle' => null]);
         Form::component('rowSubmit', 'snippets.components.submit', ['label' => trans('labels.submit.label'), 'attributes' => []]);
-        Form::component('rowCheckbox', 'snippets.components.checkbox', ['name', 'label' => null, 'checkboxes' => []]);
+        Form::component('rowCheckbox', 'snippets.components.checkbox', ['name', 'label' => null, 'checkboxes' => [], 'attributes' => [], 'subtitle' => null]);
         Form::component('rowRadio', 'snippets.components.radio', ['name', 'label' => null, 'value' => null, 'radios' => []]);
     }
 

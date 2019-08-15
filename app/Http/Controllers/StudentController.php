@@ -277,6 +277,39 @@ class StudentController extends Controller
         return back();
     }
 
+    public function confirmation($hash)
+    {
+        $student = Student::hash($hash)->whereNull('confirmed_at')->first();
+
+        if (!$student)
+            return redirect()->route('landing');
+
+        return view('student.confirmation', compact('student'));
+    }
+
+    public function confirm(Request $request)
+    {
+        $this->validate($request, [
+            'hash' => 'bail|required',
+            'food' => 'required',
+            'allergies' => 'required',
+            'health' => 'required',
+            'about' => 'nullable',
+            'attending' => 'required',
+        ]);
+
+        $student = Student::hash($request->hash)->first();
+
+        if (!$student)
+            return redirect()->route('landing');
+
+        $student->update($request->only(['food', 'allergies', 'health', 'about', 'attending']));
+        $student->confirm();
+
+        session()->flash('message', 'Paldies, tiekamies Sējienā!');
+        return back();
+    }
+
     public function VCard(Student $student)
     {
         $vcard = $student->getVCard();
