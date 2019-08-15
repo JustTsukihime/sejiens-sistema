@@ -109,7 +109,11 @@ class EmailController extends Controller
             })->get();
         }
 
-        SendStudentConfirmationEmail::dispatch($students);
+        $i=0;
+        foreach ($students as $student) {
+            SendStudentConfirmationEmail::dispatch($student)->delay(now()->addSeconds(3*$i));
+            $i++;
+        }
 
         $request->session()->flash('notification.notice', 'Student confirmation email sending job dispatched.');
         return back();

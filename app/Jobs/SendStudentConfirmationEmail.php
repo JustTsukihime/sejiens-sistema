@@ -15,16 +15,16 @@ class SendStudentConfirmationEmail implements ShouldQueue
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     protected $emailType = 'attendanceConfirmation';
-    private $students;
+    private $student;
 
     /**
      * Create a new job instance.
      *
      * @param $students
      */
-    public function __construct($students)
+    public function __construct($student)
     {
-        $this->students = $students;
+        $this->student = $student;
     }
 
     /**
@@ -34,10 +34,7 @@ class SendStudentConfirmationEmail implements ShouldQueue
      */
     public function handle()
     {
-        foreach ($this->students as $student)
-        {
-            Mail::to($student)->send(new StudentConfirmAttendance($student));
-            $student->emails()->create(['type' => $this->emailType]);
-        }
+        Mail::to($this->student)->send(new StudentConfirmAttendance($this->student));
+        $this->student->emails()->create(['type' => $this->emailType]);
     }
 }
