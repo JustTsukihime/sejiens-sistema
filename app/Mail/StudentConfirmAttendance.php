@@ -34,7 +34,7 @@ class StudentConfirmAttendance extends Mailable
      */
     public function build()
     {
-        return $this->subject('Sējiens 2018: Apstiprinājums')
+        return $this->subject('Sējiens: Apstiprinājums')
             ->view('mail.student.confirmAttendance')
             ->text('mail.student.confirmAttendance_plain');
     }
