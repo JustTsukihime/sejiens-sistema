@@ -25,8 +25,8 @@
             </div>
 
             <div class="col-lg-3 ml-auto text-center">
-                <a href = "https://www.facebook.com/events/453925892069462/"><img src="{{ asset('/images/event.svg') }}" alt="event"></a>
-                <a href = "https://www.facebook.com/events/453925892069462/"><h5 class="mt-2">Sējiens 2019</h5></a>
+                <a href = "https://www.facebook.com/events/1388876664597973/"><img src="{{ asset('/images/event.svg') }}" alt="event"></a>
+                <a href = "https://www.facebook.com/events/1388876664597973/"><h5 class="mt-2">Sējiens 2019</h5></a>
             </div>
         </div>
         <div class="row">
