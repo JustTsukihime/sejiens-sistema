@@ -32,9 +32,20 @@ class Student extends Model
         return $this;
     }
 
+    public function reject()
+    {
+        $this->update(['attending' => 'none']);
+        return $this;
+    }
+
     public function scopeConfirmed(Builder $query)
     {
         return $query->whereNotNull('confirmed_at');
+    }
+
+    public function scopeNotConfirmed(Builder $query)
+    {
+        return $query->whereNull('confirmed_at');
     }
 
     public function scopeWhatsapp(Builder $query)
