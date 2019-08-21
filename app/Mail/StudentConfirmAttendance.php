@@ -6,7 +6,7 @@ use App\Student;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
+use Swift_Message;
 
 class StudentConfirmAttendance extends Mailable
 {
@@ -34,6 +34,11 @@ class StudentConfirmAttendance extends Mailable
      */
     public function build()
     {
+        $this->withSwiftMessage(function (Swift_Message $message) {
+            $message->getHeaders()
+                ->addTextHeader('List-Unsubscribe', '<'.action('StudentController@reject', $this->student->email).'>');
+        });
+
         return $this->subject('Sējiens: Apstiprinājums')
             ->view('mail.student.confirmAttendance')
             ->text('mail.student.confirmAttendance_plain');

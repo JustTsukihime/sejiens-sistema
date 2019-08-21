@@ -309,6 +309,17 @@ class StudentController extends Controller
         return back();
     }
 
+    public function reject($email)
+    {
+        $student = Student::notConfirmed()->where('email', $email)->first();
+
+        if ($student) {
+            $student->reject();
+        }
+
+        return view('student.rejection');
+    }
+
     public function VCard(Student $student)
     {
         $vcard = $student->getVCard();

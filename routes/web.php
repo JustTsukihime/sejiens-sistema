@@ -24,6 +24,7 @@ Route::group(['prefix' => 'student', 'as' => 'student.'], function() {
     Route::post('resolve', 'StudentController@resolve');
     Route::post('confirm', 'StudentController@confirm')->name('confirm');
     Route::get('confirm/{hash}', 'StudentController@confirmation')->name('confirmation');
+    Route::get('reject/{email}', 'StudentController@reject');
     Route::get('{student}/vcard', 'StudentController@VCard')->name('vcard');
     Route::post('{student}/addGroup', 'StudentController@addGroup');
     Route::post('{student}/forceConfirm', 'StudentController@forceConfirm');
