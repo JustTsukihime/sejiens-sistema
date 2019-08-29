@@ -277,6 +277,12 @@ class StudentController extends Controller
         return back();
     }
 
+    public function forceCancel(Student $student)
+    {
+        $student->reject();
+        return back();
+    }
+
     public function confirmation($hash)
     {
         $student = Student::hash($hash)->first();

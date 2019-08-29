@@ -60,6 +60,8 @@
                         <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#add-to-group">Pievienot grupai</button>
                         @if($student->confirmed_at == null)
                         <button class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#force-confirm">Apstiprināt dalību</button>
+                        @else
+                        <button class="btn btn-outline-warning btn-block" data-toggle="modal" data-target="#force-cancel">Atcelt dalību</button>
                         @endif
                         <button class="btn btn-danger btn-block" data-toggle="modal" data-target="#destroy-student">Dzēst</button>
                     </div>
@@ -134,6 +136,25 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Nē</button>
                     {{ Form::submit("Jā", ['class' => 'btn btn-primary']) }}
+                </div>
+                {{ Form::close() }}
+            </div>
+        </div>
+    </div>
+    {{-- Modal for forcing cancelled status --}}
+    <div class="modal fade" id="force-cancel" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                {{ Form::open(['action' => ['StudentController@forceCancel', $student], 'class' => 'd-inline']) }}
+                <div class="modal-header">
+                    <h5 class="modal-title">Atcelt dalību manuāli?</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Nē</button>
+                    {{ Form::submit("Jā", ['class' => 'btn btn-warning']) }}
                 </div>
                 {{ Form::close() }}
             </div>

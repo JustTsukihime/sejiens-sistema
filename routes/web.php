@@ -28,6 +28,7 @@ Route::group(['prefix' => 'student', 'as' => 'student.'], function() {
     Route::get('{student}/vcard', 'StudentController@VCard')->name('vcard');
     Route::post('{student}/addGroup', 'StudentController@addGroup');
     Route::post('{student}/forceConfirm', 'StudentController@forceConfirm');
+    Route::post('{student}/forceCancel', 'StudentController@forceCancel');
 //    Route::post('createUsers', 'StudentController@createUsers')->name('createUsers');
 });
 Route::resource('/student', 'StudentController');

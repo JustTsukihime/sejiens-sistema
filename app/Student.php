@@ -34,7 +34,7 @@ class Student extends Model
 
     public function reject()
     {
-        $this->update(['attending' => 'none']);
+        $this->update(['attending' => 'none', 'confirmed_at' => null]);
         return $this;
     }
 
