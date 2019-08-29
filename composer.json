@@ -12,6 +12,7 @@
         "ext-mbstring": "*",
         "ext-mysqli": "*",
         "ext-xml": "*",
+        "ext-zip": "*",
         "chillerlan/php-qrcode": "^2.0",
         "fideloper/proxy": "^4.0",
         "jeroendesloovere/vcard": "^1.7",

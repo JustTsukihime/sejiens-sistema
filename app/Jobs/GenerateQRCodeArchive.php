@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Storage;
 use Maatwebsite\Excel\Classes\LaravelExcelWorksheet;
 use Maatwebsite\Excel\Facades\Excel;
 use Maatwebsite\Excel\Writers\LaravelExcelWriter;
+use ZipArchive;
 
 class GenerateQRCodeArchive implements ShouldQueue
 {
@@ -49,7 +50,7 @@ class GenerateQRCodeArchive implements ShouldQueue
 
         $qr = new QRCode($qropt);
 
-        $zip = new \ZipArchive();
+        $zip = new ZipArchive();
         $tempzipfile = tempnam(sys_get_temp_dir(), 'sej_');
 
         if ($zip->open($tempzipfile, \ZipArchive::CREATE) !== true) {
@@ -60,25 +61,26 @@ class GenerateQRCodeArchive implements ShouldQueue
 
         foreach ($students as $student) {
             $qrsvg = $qr->render($student->hash);
-            $zip->addFromString(str_replace(' ', '.', "$student->name.$student->surname.png"), $qrsvg);
+            // Hash is used instead of name because Illustrator dislikes latvian character in filenames.
+            $zip->addFromString("$student->hash.png", $qrsvg);
         }
-
 
         $zip->close();
 
-        Storage::disk('public')->putFileAs('qr-archive', new File($tempzipfile), 'qr-export-'.date('dmY.His').'.zip');
-
+        $path = Storage::disk('public')->putFileAs('qr-archive', new File($tempzipfile), 'qr-export-'.date('dmY.His').'.zip');
         unlink($tempzipfile);
+        return $path;
     }
 
     public function createDataSetCSV(Collection $students) : array
     {
         $out = Excel::create('export-'.time(), function(LaravelExcelWriter $excel) use ($students) {
             $excel->sheet('Data', function(LaravelExcelWorksheet $sheet) use ($students) {
+                $sheet->appendRow(["Name", "@QRCode"]);
                 foreach($students as $student) {
                     $sheet->appendRow([
                         "$student->name $student->surname",
-                        str_replace(' ', '.', "$student->name.$student->surname.png"),
+                        "$student->hash.png",
                     ]);
                 }
             });
