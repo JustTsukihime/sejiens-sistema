@@ -49,7 +49,7 @@
                     @foreach($user->groups as $group)
                         <tr>
                             <td><a href="{{ route('group.show', $group) }}">{{ $group->name }}</a></td>
-                            <td>{{ $group->pivot->created_at->format('d.m.Y. H:i:s') }}</td>
+                            <td>{{ $group->created_at->format('d.m.Y. H:i:s') }}</td>
                         </tr>
                     @endforeach
                     </tbody>
