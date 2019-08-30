@@ -19,6 +19,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('group.index') }}">Grupas</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('user.index') }}">Lietotāji</a>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->

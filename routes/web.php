@@ -41,6 +41,7 @@ Route::group(['prefix' => 'group', 'as' => 'group.'], function() {
     Route::post('whatsapp', 'GroupController@makeWhatsappGroup');
 });
 Route::resource('group', 'GroupController');
+Route::resource('user', 'UserController');
 
 Route::post('/mail/studentConfirmation', 'EmailController@studentConfirmation');
 Route::post('/mail/send', 'EmailController@send')->name('mail.send');
