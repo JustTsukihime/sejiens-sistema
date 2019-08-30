@@ -29,7 +29,7 @@
             <div class="col-lg-4 col-xl-4">
                 <div class="card">
                     <div class="card-body">
-                        <a href="{{ route('student.edit', $user) }}" class="btn btn-block btn-info">Rediģēt</a>
+                        <a href="{{ route('user.edit', $user) }}" class="btn btn-block btn-info">Rediģēt</a>
                         <button class="btn btn-danger btn-block" data-toggle="modal" data-target="#destroy-user">Dzēst</button>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                     <thead>
                     <tr>
                         <th>Nosaukums</th>
-                        <th>Pievienots</th>
+                        <th>Izveidoja</th>
                     </tr>
                     </thead>
                     <tbody>
