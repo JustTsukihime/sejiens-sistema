@@ -17,7 +17,7 @@ body {
 
 hr {
   max-width: 50px;
-  border: 3px $light_blue;
+  border: 3px $light_yellow;
 
   &.light {
     border-color: $white;
@@ -25,7 +25,7 @@ hr {
 }
 
 a {
-  color: $light_blue;
+  color: $light_yellow;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -36,11 +36,11 @@ h1, h2, h3, h4, h5, h6, #application-form {
 }
 
 .bg-primary {
-  background-color: $light_blue;
+  background-color: $light_yellow;
 }
 
 .bg-secondary {
-  background-color: $blue;
+  background-color: $yellow;
 }
 
 .bg-dark {
@@ -99,7 +99,7 @@ img {
 
   @include media-breakpoint-up(lg) {
     border-color: transparent;
-    background-color: $light_blue;
+    background-color: $light_yellow;
   }
 
   .navbar-nav {
@@ -115,7 +115,7 @@ img {
       }
 
       &:hover, &:focus {
-        color: $light_blue;
+        color: $light_yellow;
 
         @include media-breakpoint-up(lg) {
           color: $gray-700;
@@ -179,11 +179,11 @@ iframe {
 }
 
 .text-highlight {
-  color: $light_blue;
+  color: $light_yellow;
 }
 
 .btn-apply {
-  @include button-variant($dark_blue, rgba(240, 95, 64, 0.5));
+  @include button-variant($dark_yellow, rgba(240, 95, 64, 0.5));
   padding: 1rem 2rem;
   font-weight: 700;
   text-transform: uppercase;
