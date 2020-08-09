@@ -11,7 +11,7 @@
                     {{ Form::rowText('surname', null, 'Uzvārds', ['required']) }}
                     {{ Form::rowText('phone', null, 'Telefons', ['required']) }}
                     {{ Form::rowEmail('email', null, 'E-pasts', ['required']) }}
-                    {{ Form::rowSelect('attending', ['both' => 'Visur', 'first' => 'R19', 'second' => 'Garoza'], 'Pieteicās', null, []) }}
+                    {{ Form::rowSelect('attending', ['both' => 'Visur', 'first' => 'Sējiens', 'second' => 'Pļāviens'], 'Pieteicās', null, []) }}
                     {{ Form::rowText('food', null, 'Gastronomiskā orientācija', []) }}
                     {{ Form::rowText('health', null, 'Veselība', []) }}
                     <div class="form-group row">

@@ -17,7 +17,7 @@ body {
 
 hr {
   max-width: 50px;
-  border: 3px $light_blue;
+  border: 3px $light_yellow;
 
   &.light {
     border-color: $white;
@@ -25,7 +25,7 @@ hr {
 }
 
 a {
-  color: $light_blue;
+  color: $dark_yellow;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -36,11 +36,11 @@ h1, h2, h3, h4, h5, h6, #application-form {
 }
 
 .bg-primary {
-  background-color: $light_blue;
+  background-color: $dark_yellow !important
 }
 
 .bg-secondary {
-  background-color: $blue;
+  background-color: $yellow;
 }
 
 .bg-dark {
@@ -99,7 +99,7 @@ img {
 
   @include media-breakpoint-up(lg) {
     border-color: transparent;
-    background-color: $light_blue;
+    background-color: $dark_yellow;
   }
 
   .navbar-nav {
@@ -115,10 +115,10 @@ img {
       }
 
       &:hover, &:focus {
-        color: $light_blue;
+        color: #fff;
 
         @include media-breakpoint-up(lg) {
-          color: $gray-700;
+          color: #fff;
         }
       }
     }
@@ -179,11 +179,11 @@ iframe {
 }
 
 .text-highlight {
-  color: $light_blue;
+  color: $dark_yellow;
 }
 
 .btn-apply {
-  @include button-variant($dark_blue, rgba(240, 95, 64, 0.5));
+  @include button-variant($dark_yellow, rgba(240, 95, 64, 0.5));
   padding: 1rem 2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -203,4 +203,36 @@ iframe {
     max-width: 380px;
     margin: auto;
   }
+}
+
+.text-primary {
+  color: #d97510 !important;
+}
+
+.text-secondary {
+  color: #000 !important;
+}
+
+.btn-primary {
+  background-color: $dark_yellow !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover {
+  background-color: #ad5e0e !important;
+}
+
+.btn-primary:active {
+  background-color: #583007 !important;
+}
+
+.form-control:focus {
+  // border-color: #fbe9ac;
+  // outline: 0;
+  box-shadow: 0 0 0 0.2rem #ad5e0e;
+}
+
+#seko .container .row div a:hover {
+  color: #80460c !important;
+  text-decoration: none !important;
 }

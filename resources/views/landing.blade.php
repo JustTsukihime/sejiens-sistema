@@ -25,13 +25,13 @@
 <header class="masthead text-center text-white d-flex">
     <div class="container my-auto">
         <div class="row">
-            <div class="col-lg-12 mx-auto">
-                <img src="images/pingvins.png" class="rounded mx-auto d-block img-fluid">
+            <div class="col-lg-12 mx-auto mt-3 pt-5">
+                <img src="images/lacis.png" class="rounded mx-auto d-block img-fluid">
             </div>
 
-            <div class="col-lg-8 mx-auto">
-                <h1>Sējiens 2019</h1>
-                <h3>30. augusts - 1. septembris</h3>
+            <div class="col-lg-8 mx-auto pt-5">
+                <h1>Sējiens 2020</h1>
+                <h3>4. septembris</h3>
                 <a class="btn btn-apply js-scroll-trigger mt-2" href="#pieteikties">PIETEIKTIES</a>
             </div>
         </div>
@@ -44,14 +44,14 @@
                 <h2 class="section-heading text-white">Hey, pirmkursniek!</h2>
                 <hr class="light my-4">
                 <p class="text-faded mb-4">
-                    Rudens tuvojas straujiem soļiem un tam uz papēžiem jau min ziema. Kas kopīgs ziemai un datoriķiem? Bet protams, mūsu mīļākās operētājsistēmas talismans- pingvīns!
-                    Kā jau zinām, pingvīniem ir tendence turēties kopā. Sējienā iepazīsies ar citiem pirmkursniekiem un spēsi atrast draugus, ar kuriem turēties kopā, lai izturētu visskarbākās ziemas.
-                </p>
-                <p class="text-faded mb-4">
                     Tu esi godam izturējis centralizēto eksāmenu kārtošanu, pinķerīgo pieteikuma veidošanu un ilgu neziņas un satraukuma brīdi! Nu Tev sācies jauns un piedzīvojumiem pilns dzīves posms un beidzot vari saukt sevi par Latvijas Universitātes Datorikas fakultātes studentu!
                 </p>
                 <p class="text-faded mb-4">
-                    <b>Tevi iespējams māc šaubas, vai viss būs labi, vai orientēsies universitātē, vai iepazīsies un iedraudzēsies ar jaunajiem kursabiedriem?</b>
+                Rudens tuvojas straujiem soļiem un tam līdzi ierodas arī jaunais studiju gads. Lai spētu bezbailīgi stāties pretī jauniem izaicinājumiem, ir jābūt spēcīgam, izturīgam un ar intelektu apveltītam kā zvēram, kas savvaļā apdzīvo arī mūsu platuma grādus – kā lācim! 
+                Tautā saka, katrs pats savas laimes kalējs, tomēr Datorikas fakultātē Tu nebūsi viens – kopīgi izkalt savus laimes lāčus varēsi ar jaunajiem kursabiedriem, kurus iepazīsi Sējiena laikā.
+                </p>
+                <p class="text-faded mb-4">
+                    <b>Tevi iespējams māc šaubas, vai viss būs labi, vai orientēsies universitātē, un iedraudzēsies ar jaunajiem kursabiedriem?</b>
                 </p>
 
             </div>
@@ -126,7 +126,7 @@
                 <div class="mt-5 mx-auto">
                     <p>Lai pirmajā studiju dienā universitātē Tu jau justos kā mājās, būtu iepazinies ar daudziem kursabiedriem,
                         mēs aicinām piedalīties vienā no spilgtākajiem mūsu fakultātes notikumiem –
-                        <span class="text-primary font-weight-bold">pirmsaristotelī “Sējiens 2019”, kas notiks no 30. augusta līdz 1. septembrim.</span>
+                        <span class="text-primary font-weight-bold">pirmsaristotelī “Sējiens 2020”, kas notiks šī gada 4. septembrī.</span>
                     </p>
                     <p>
                         Piedalies aizraujošā pirmsstudiju piedzīvojumā,
@@ -139,13 +139,11 @@
         <div class="row">
             <div class="col-lg-6 col-md-8 text-center">
                 <div class="mt-5 mx-auto">
-                    <p><span class="text-primary font-weight-bold">Piektdienā, 30. augustā, tiksimies Latvijas Universitātes galvenajā ēkā
+                    <p><span class="text-primary font-weight-bold">Piektdienā, 4. septembrī, tiksimies Latvijas Universitātes galvenajā ēkā
                           (Raiņa bulvāris 19)</span>, lai iepazītu gan universitātes telpas, gan arī savus jaunos kursabiedrus,
                         iesaistoties dažādos interesantos piedzīvojumos. </p>
-                    <p>Vēlāk kopīgi dosimies ārpus Rīgas, kur uzturēsimies līdz pat pasākuma beigām un trenēsim gan prātu,
-                        gan ķermeni un pat dosimies nakts trasē, lai kļūtu par īstiem studentiem. </p>
-                    <p> 1. septembrī brauksim atpakaļ uz Rīgu, lai <span class="text-primary font-weight-bold"> sagatavotos
-                          Latvijas Universitātes studentu svētkiem “Aristotelis”</span> un parādītu pārējām fakultātēm, cik DF ir
+                    <p> 6. septembrī mēs tiksimies atkārtoti, lai <span class="text-primary font-weight-bold"> sagatavotos
+                        Latvijas Universitātes studentu svētkiem “Aristotelis”</span> un parādītu pārējām fakultātēm, cik DF ir
                         saliedēta un “skaļa” fakultāte!</p>
                 </div>
             </div>
@@ -210,7 +208,7 @@
                 </div>
             </div>
             <div class="col-12 text-center">
-                <p class="text-secondary mt-3">Sējiens ir viens no nozīmīgākajiem Latvijas Universitātes Datorikas fakultātes pasākumiem, un  Datorikas fakultātes Studentu pašpārvalde parūpēsies, lai Tu un Tavi topošie kursa biedri iepazītos un sadraudzētos neformālā gaisotnē, pakustētos un padomātu dažādās interesnatās aktivitātēs, uzzinātu svarīgāko, kas sagaida universitātes dzīvē, un, protams, neaizmirstami pavadītu pēdejo vasaras nogali!</p>
+                <p class="text-secondary mt-3">Sējiens ir viens no nozīmīgākajiem Latvijas Universitātes Datorikas fakultātes pasākumiem, un  Datorikas fakultātes Studentu pašpārvalde parūpēsies, lai Tu un Tavi topošie kursa biedri iepazītos un sadraudzētos neformālā gaisotnē, pakustētos un padomātu dažādās interesnatās aktivitātēs, uzzinātu svarīgāko, kas sagaida universitātes dzīvē, un, protams, neaizmirstami pavadītu pēdējos brīvos brīžus pirms studiju sākuma!</p>
             </div>
         </div>
     </div>
