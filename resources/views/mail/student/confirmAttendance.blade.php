@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Sējiens 2019</title>
+    <title>Sējiens 2020</title>
 </head>
 <body style="font-family: arial; letter-spacing: 0.5px;">
 <table width="100%" style="background-color:rgba(0,161,156,0.45);font-size:13px;"
        align="center" bgcolor="#47a1ff" cellpadding="0" cellspacing="0">
     <tr>
-        <td align="center" style="background: #2ac3d3; "><img style="margin-bottom: -3px; " width="600px" src="{{ asset('/images/sejiens2019.jpg') }}"  ></td>
+        <td align="center" style="background: #2ac3d3; "><img style="margin-bottom: -3px; " width="600px" src="{{ asset('/images/sejiens2020.png') }}"  ></td>
     </tr>
     <tr>
         <td width="100%" style="background: #2ac3d3;">
@@ -47,11 +47,11 @@
                                     <table width="85%" align="center">
                                         <tr>
                                             <td style="line-height:1.5; font-size: 11.5pt" >Ja tu saņēmi šo e-pastu, tad Tu esi pieteicies Datorikas fakultātes
-                                                pirmsaristotelim <b>"Sējiens 2019"</b>.
+                                                pirmsaristotelim <b>"Sējiens 2020"</b>.
                                                 <p>Vispirms - <a href="{{ route('student.confirmation', $student->hash) }}"> <font color='#2ac3d3'><b>Aizpildi apstiprinājuma anketu!</b></font></a> (Būs pieejama līdz 24. augustam)</p>
-                                                Kad esi to izdarījis - apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam, izmantojot mūsu špikeri.
+                                                Kad esi to izdarījis - apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam.
                                                 <br/>Atgādinām, ka pasākums ir <b>bez dalības maksas</b>, par ko izsakām milzīgu paldies mūsu draugiem - <b>Accenture</b>!
-                                                <p>Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka <b>1. septembrī plkst. 18.30 mēs visi tiekamies pie Latvijas Universitātes galvenās ēkas</b>, lai kopīgi dotos Aristoteļa gājienā! Dalība brīvprātīgā piespiedu kārtā.</p>
+                                                <p>Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka <b>6. septembrī plkst. 18.30 mēs visi tiekamies pie Latvijas Universitātes galvenās ēkas</b>, lai kopīgi dotos Aristoteļa gājienā! Dalība brīvprātīgā piespiedu kārtā.</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -63,10 +63,10 @@
                                         <tr>
                                             <td><font color='#2ac3d3' style="line-height:1.5; font-size: 18px"><b>Svarīgi!</b></font>
                                                 <font style="line-height:1.5; font-size: 11.5pt">
-                                                    <br>Sējiens sāksies 30.augustā. Pirmās daļas sākums ir plkst. <b>10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832"><font color='#2ac3d3'><b>Raiņa bulvārī 19</b></font></a>, bet, ja pievienosies mums tikai uz otro daļu, tad  plkst. <b> 16.50</b> tiekamies turpat <a href="https://goo.gl/maps/Nw87VyMxQ832"><font color='#2ac3d3'><b> Latvijas Universitātes foajē.</b></font></a></font>
+                                                    <br>Sējiens sāksies 4.augustā. Tā sākums ir plkst. <b>10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832"><font color='#2ac3d3'><b>Raiņa bulvārī 19</b></font></a>.</font>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!-- <tr>
                                             <td height="15"></td>
                                         </tr>
                                         <tr>
@@ -101,10 +101,10 @@
                                                     </td>
 
                                                     <td width="10%"></td>
-                                                </tr>
+                                                </tr> -->
                                             </table>
-                                            <span>Ņem vērā, <b>laikapstākļi mēdz būt dažādi</b>, tāpēc šeit ir pieminēts tikai survival-kit, bez kura nekādi nevarēsi iztikt. Par visu pārējo parūpējies pats.
-                                                            <br><br><b>Nakts trase</b> ir nopietns pārbaudījums gan ķermenim, gan prātam, un dažreiz gadās tā, ka drēbes to neiztur, tāpēc paņem līdzi kādu maiņas apģērba komplektu.
+                                            <!-- <span>Ņem vērā, <b>laikapstākļi mēdz būt dažādi</b>, tāpēc šeit ir pieminēts tikai survival-kit, bez kura nekādi nevarēsi iztikt. Par visu pārējo parūpējies pats.
+                                                            <br><br><b>Nakts trase</b> ir nopietns pārbaudījums gan ķermenim, gan prātam, un dažreiz gadās tā, ka drēbes to neiztur, tāpēc paņem līdzi kādu maiņas apģērba komplektu. -->
                                                                 <br><br>Ja rodas kādas neskaidrības - raksti uz <span href="mailto:sejiens@datoriki.lv" style="color:#2ac3d3;"><b>sejiens@datoriki.lv</b></span>.
                                                             <br>
                                         </td>
