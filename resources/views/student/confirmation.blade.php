@@ -6,7 +6,7 @@
             @if($student->confirmed_at)
                 <h2 class="mb-4">{{ $student->name }}, paldies, apstiprināji dalību, tiekamies Sējienā!</h2>
             @else
-                <h2 class="mb-4">{{ $student->name }}, apsiprini savu dalību Sējienā!</h2>
+                <h2 class="mb-4">{{ $student->name }}, apstiprini savu dalību Sējienā!</h2>
                 <div class="offset-lg-2 col-lg-8">
                     {{ Form::model($student, ['method' => 'POST', 'route' => ['student.confirm'], 'class' => 'form-horizontal', 'id' => 'application-form']) }}
                     {{ Form::hidden('hash', $student->hash) }}
@@ -14,7 +14,7 @@
                     {{ Form::rowText('allergies', null, 'Alerģijas?', ['required']) }}
                     {{ Form::rowText('health', null, 'Veselības stāvoklis?', ['required'], 'Traumas, ierobežojumi') }}
                     {{ Form::rowText('about', null, 'Īsumā par sevi', [], 'Kas esi, ko dari dzīvē, kāpēc nāc uz datoriķiem, ko vēlies sasniegt?') }}
-                    {{ Form::rowSelect('attending', ['both'=>'Visu pasākumu','first'=>'Pirmo daļu Raiņa bulvārī','second'=>'Oto daļu ārpus Rīgas'], 'Kuru pasākuma daļu apmeklēsi?', ['required']) }}
+                    {{ Form::rowSelect('attending', ['both'=>'Sējiens & Pļāviens','first'=>'Sējiens 4. septembrī Raiņa bulvārī 19','second'=>'Pļāviens 5. septembrī Rīgā'], 'Kuru pasākuma daļu apmeklēsi?', ['required']) }}
                     {{ Form::rowCheckbox('warning', 'Ja plāni mainās, ziņošu orgiem', [['label' => 'Piekrītu', 'value' => 'yes']], ['required'], 'Ja man nebūs iespēja ierasties uz pasākumu, es to laicīgi ziņošu organizatoriem (vismaz dienu iepriekš), rakstot uz sejiens@datoriki.lv') }}
                     {{ Form::rowSubmit('Apstiprināt dalību', ['class' => 'form-control btn btn-primary col-lg-6']) }}
                     {{ Form::close() }}
