@@ -107,7 +107,7 @@
                                             </table>
                                             <!-- <span>Ņem vērā, <b>laikapstākļi mēdz būt dažādi</b>, tāpēc šeit ir pieminēts tikai survival-kit, bez kura nekādi nevarēsi iztikt. Par visu pārējo parūpējies pats.
                                                             <br><br><b>Nakts trase</b> ir nopietns pārbaudījums gan ķermenim, gan prātam, un dažreiz gadās tā, ka drēbes to neiztur, tāpēc paņem līdzi kādu maiņas apģērba komplektu. -->
-                                                            <br><p style="text-align: center;">Ja rodas kādas neskaidrības - raksti uz <span class="text-primary" href="mailto:sejiens@datoriki.lv><b>sejiens@datoriki.lv</b></span>.</p>
+                                                            <br><p style="text-align: center;">Ja rodas kādas neskaidrības - raksti uz <span class="text-primary" href="mailto:sejiens@datoriki.lv"><b>sejiens@datoriki.lv</b></span>.</p>
                                                             <br>
                                         </td>
                                     </table>
