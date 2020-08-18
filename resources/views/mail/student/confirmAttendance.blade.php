@@ -64,7 +64,8 @@
                                         <tr>
                                             <td><font color='#000' style="line-height:1.5; font-size: 18px"><b>Svarīgi!</b></font>
                                                 <font style="line-height:1.5; font-size: 11.5pt">
-                                                    <br>Sējiens norisināsies 4.augustā. Tā sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832" style="text-decoration: none;"><font color='#d97510'><b>Raiņa bulvārī 19</b></font></a>. Reģistrācija no plkst. 9.30.</font>
+                                                    <br>Sējiens norisināsies 4. augustā. Tā sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832" style="text-decoration: none;"><font color='#d97510'><b>Raiņa bulvārī 19</b></font></a>. Reģistrācija no plkst. 9.30.
+                                                    <br>Pļāviens norisināsies 5. septembrī. Tā sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/iairssUDR5RMpKRd7" style="text-decoration: none;"><font color='#d97510'><b>Burtnieku ielā 34</b></font></a>. Ierašanās no plkst. 9.30.</font>
                                             </td>
                                         </tr>
                                         <!-- <tr>
@@ -201,10 +202,10 @@
                                             <td>
                                                 <table>
                                                     <tr>
-                                                        <td rowspan="2"><a href="https://www.facebook.com/events/453925892069462/"><img style="height: 45px;"
+                                                        <td rowspan="2"><a href="https://www.facebook.com/events/955436328262160/"><img style="height: 45px;"
                                                                                                                                         src="{{ asset('/images/event.png') }}"
                                                                                                                                         alt="Event logo"></a></td>
-                                                        <td style="text-indent: 10px;" ><a href="https://www.facebook.com/events/453925892069462/" style="text-decoration: none;">
+                                                        <td style="text-indent: 10px;" ><a href="https://www.facebook.com/events/955436328262160/" style="text-decoration: none;">
                                                                 <font color="#d97510"><b>Sējiens FB pasākums</b></font></a></td>
                                                     </tr>
                                                 </table>
@@ -220,10 +221,10 @@
                                 <td>
                                     <table width="85%" align="center">
                                         <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Esam sarūpējuši arī <a style="text-decoration: none;" href="https://www.facebook.com/groups/2385578308396695/"><font color='#d97510'><b>kursa Facebook grupu. </b></font></a></td>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Esam sarūpējuši <a style="text-decoration: none;" href="https://www.facebook.com/groups/2571684193162234"><font color='#d97510'><b>kursa Facebook grupu. </b></font></a></td>
                                         </tr>
                                         <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Neaizmirsti arī atzīmēties <a style="text-decoration: none;" href="https://www.facebook.com/event/?????"><font color='#d97510'><b>Pļāviena FB pasākumā. </b></font></a></td>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Neaizmirsti arī atzīmēties <a style="text-decoration: none;" href="https://www.facebook.com/events/951030595414200"><font color='#d97510'><b>Pļāviena FB pasākumā. </b></font></a></td>
                                         </tr>
                                         <tr>
                                             <td style="line-height:1.5; font-size: 11.5pt; text-align: center; font-style:italic; padding-top: 15px;"><font color="#000">P.S. Sējienā būs arī iespējams iegūt savā īpašumā <a href="http://datoriki.lv/suveniri/"><font color='#000'>Datorikas fakultātes suvenīrus. </font></a></td>

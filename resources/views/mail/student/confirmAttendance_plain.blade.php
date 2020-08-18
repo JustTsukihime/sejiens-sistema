@@ -11,7 +11,8 @@ Turpinot ar Sējienu iesākto pēdējo nedēļas nogali pirms studiju sākuma, a
 Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka 6. septembrī plkst. 15.30 mēs visi tiekamies pie Latvijas Nacionālās bibliotēkās, lai kopīgi dotos uz Aristoteļa svētkiem LU Akadēmiskajā centrā! Dalība brīvprātīgā piespiedu kārtā.
 
 Svarīgi!
-Sējiens norisināsies 4.septembrī. Tā sākums ir plkst. 10.00 Raiņa bulvārī 19. Reģistrācija no plkst. 9.30.
+Sējiens norisināsies 4. septembrī. Tā sākums ir plkst. 10.00 Raiņa bulvārī 19. Reģistrācija no plkst. 9.30.
+Pļāviens norisināsies 5. septembrī. Tā sākums ir plkst.10.00 Burtnieku ielā 34. Ierašanās no plkst. 9.30.
 
 Ja rodas kādas neskaidrības - raksti uz sejiens@datoriki.lv
 
@@ -29,7 +30,7 @@ https://www.instagram.com/datoriki/
 https://www.instagram.com/datorikasfakultate/
 
 Sējiena FB event: https://www.facebook.com/events/955436328262160
-Pļāviena FB event: 
+Pļāviena FB event: https://www.facebook.com/events/951030595414200
 
 Esam sarūpējuši kursa Facebook grupu: https://www.facebook.com/groups/2571684193162234
 
