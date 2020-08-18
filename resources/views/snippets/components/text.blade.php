@@ -3,7 +3,7 @@
     <div class="col-sm-8">
         {{ Form::text($name, $value, array_merge(['class' => 'form-control'], $attributes)) }}
         @if(isset($subtitle))
-            <small class="form-text text-info" style="color:#007bff;">{{ $subtitle }}</small>
+            <small class="form-text text-info">{{ $subtitle }}</small>
         @endif
         @if ($errors->has($name))
             <small class="form-text text-danger">{{ $errors->first($name) }}</small>
