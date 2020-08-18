@@ -224,7 +224,10 @@
                                             <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Esam sarūpējuši <a style="text-decoration: none;" href="https://www.facebook.com/groups/2571684193162234"><font color='#d97510'><b>kursa Facebook grupu. </b></font></a></td>
                                         </tr>
                                         <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Neaizmirsti arī atzīmēties <a style="text-decoration: none;" href="https://www.facebook.com/events/951030595414200"><font color='#d97510'><b>Pļāviena FB pasākumā. </b></font></a></td>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Kā arī <a style="text-decoration: none;" href="https://discord.gg/bT5CkVU"><font color='#d97510'><b>kursa Discord serveri. </b></font></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Tāpat neaizmirsti atzīmēties <a style="text-decoration: none;" href="https://www.facebook.com/events/951030595414200"><font color='#d97510'><b>Pļāviens FB pasākumā. </b></font></a></td>
                                         </tr>
                                         <tr>
                                             <td style="line-height:1.5; font-size: 11.5pt; text-align: center; font-style:italic; padding-top: 15px;"><font color="#000">P.S. Sējienā būs arī iespējams iegūt savā īpašumā <a href="http://datoriki.lv/suveniri/"><font color='#000'>Datorikas fakultātes suvenīrus. </font></a></td>
