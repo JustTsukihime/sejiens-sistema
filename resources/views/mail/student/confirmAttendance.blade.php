@@ -5,13 +5,13 @@
     <title>Sējiens 2020</title>
 </head>
 <body style="font-family: arial; letter-spacing: 0.5px;">
-<table width="100%" style="background-color:rgba(0,161,156,0.45);font-size:13px;"
+<table width="100%" style="background-color:rgba(253,207,74,0.45);font-size:13px;"
        align="center" bgcolor="#47a1ff" cellpadding="0" cellspacing="0">
     <tr>
-        <td align="center" style="background: #2ac3d3; "><img style="margin-bottom: -3px; " width="600px" src="{{ asset('/images/sejiens2020.png') }}"  ></td>
+        <td align="center" style="background: #fcc013; "><img style="margin-bottom: -3px; " width="600px" src="{{ asset('/images/sejiens2020.png') }}"  ></td>
     </tr>
     <tr>
-        <td width="100%" style="background: #2ac3d3;">
+        <td width="100%" style="background: #fcc013;">
             <div><p></p></div>
         </td>
     </tr>
@@ -48,10 +48,11 @@
                                         <tr>
                                             <td style="line-height:1.5; font-size: 11.5pt" >Ja tu saņēmi šo e-pastu, tad Tu esi pieteicies Datorikas fakultātes
                                                 pirmsaristotelim <b>"Sējiens 2020"</b>.
-                                                <p>Vispirms - <a href="{{ route('student.confirmation', $student->hash) }}"> <font color='#2ac3d3'><b>Aizpildi apstiprinājuma anketu!</b></font></a> (Būs pieejama līdz 24. augustam)</p>
+                                                <p>Vispirms - aizpildi <a href="{{ route('student.confirmation', $student->hash) }}"> <font color='#d97510'><b>apstiprinājuma anketu!</b></font></a> (Būs pieejama līdz 28. augustam.)</p>
                                                 Kad esi to izdarījis - apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam.
                                                 <br/>Atgādinām, ka pasākums ir <b>bez dalības maksas</b>, par ko izsakām milzīgu paldies mūsu draugiem - <b>Accenture</b>!
-                                                <p>Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka <b>6. septembrī plkst. 18.30 mēs visi tiekamies pie Latvijas Universitātes galvenās ēkas</b>, lai kopīgi dotos Aristoteļa gājienā! Dalība brīvprātīgā piespiedu kārtā.</p>
+                                                <p>Turpinot ar Sējienu iesākto pēdējo nedēļas nogali pirms studiju sākuma, <b>aicinām Tevi sestdien, 5. septembrī, piedalīties</b> Datorikas fakultātes Studentu pašpārvaldes rīkotajā semestra uzsākšanas <b>pasākumā – “Pļāviens”</b>, kurā sportiskās un saliedējošās aktivitātes varēsi iepazīt kursabiedrus svaigā gaisā.</p>
+                                                <p>Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka <b>6. septembrī plkst. 15.30 mēs visi tiekamies pie Latvijas Nacionālās bibliotēkās, lai kopīgi dotos uz Aristoteļa svētkiem LU Akadēmiskajā centrā!</b> Dalība brīvprātīgā piespiedu kārtā.</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -61,9 +62,10 @@
                                             <td height="15"></td>
                                         </tr>
                                         <tr>
-                                            <td><font color='#2ac3d3' style="line-height:1.5; font-size: 18px"><b>Svarīgi!</b></font>
+                                            <td><font color='#000' style="line-height:1.5; font-size: 18px"><b>Svarīgi!</b></font>
                                                 <font style="line-height:1.5; font-size: 11.5pt">
-                                                    <br>Sējiens sāksies 4.augustā. Tā sākums ir plkst. <b>10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832"><font color='#2ac3d3'><b>Raiņa bulvārī 19</b></font></a>.</font>
+                                                    <br>Sējiens norisināsies 4. augustā. Tā sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832" style="text-decoration: none;"><font color='#d97510'><b>Raiņa bulvārī 19</b></font></a>. Reģistrācija no plkst. 9.30.
+                                                    <br>Pļāviens norisināsies 5. septembrī. Tā sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/iairssUDR5RMpKRd7" style="text-decoration: none;"><font color='#d97510'><b>Burtnieku ielā 34</b></font></a>. Ierašanās no plkst. 9.30.</font>
                                             </td>
                                         </tr>
                                         <!-- <tr>
@@ -105,7 +107,7 @@
                                             </table>
                                             <!-- <span>Ņem vērā, <b>laikapstākļi mēdz būt dažādi</b>, tāpēc šeit ir pieminēts tikai survival-kit, bez kura nekādi nevarēsi iztikt. Par visu pārējo parūpējies pats.
                                                             <br><br><b>Nakts trase</b> ir nopietns pārbaudījums gan ķermenim, gan prātam, un dažreiz gadās tā, ka drēbes to neiztur, tāpēc paņem līdzi kādu maiņas apģērba komplektu. -->
-                                                                <br><br>Ja rodas kādas neskaidrības - raksti uz <span href="mailto:sejiens@datoriki.lv" style="color:#2ac3d3;"><b>sejiens@datoriki.lv</b></span>.
+                                                            <br><p style="text-align: center;">Ja rodas kādas neskaidrības - raksti uz <span href="mailto:sejiens@datoriki.lv" style="color:#d97510;"><b>sejiens@datoriki.lv</b></span>.</p>
                                                             <br>
                                         </td>
                                     </table>
@@ -117,13 +119,13 @@
                         </table>
                     </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td>
                         <table width="100%" style="background-color:rgb(179, 215, 182);" bgcolor="#e9e9e9" cellpadding="0"
                                cellspacing="0">
                         </table>
                     </td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td>
                         <table width="100%" style="background-color:rgb(255,255,255)" bgcolor="#ffffff" cellpadding="0"
@@ -135,7 +137,7 @@
                                 <td>
                                     <table width="85%" align="center">
                                         <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#333"><b>Esi notikumu centrā un neaizmirsti sekot LU Datorikas fakultātes un LU DF Studentu pašpārvaldes sociālajiem tīkliem:</b></font></td>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000"><b>Esi notikumu centrā un neaizmirsti sekot LU Datorikas fakultātes un LU DF Studentu pašpārvaldes sociālajiem tīkliem:</b></font></td>
                                         </tr>
                                     </table>
                                 </td>
@@ -156,12 +158,12 @@
                                                                                                                         src="{{ asset('/images/facebook.png') }}"
                                                                                                                         alt="FB logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.facebook.com/ludfsp/" style="text-decoration: none;">
-                                                                <font color="#333" ><b>/ludfsp</b></font></a></td>
+                                                                <font color="#d97510" ><b>/ludfsp</b></font></a></td>
                                                     </tr>
                                                     <tr>
                                                         <td style="text-indent: 10px;" >
                                                             <a href="https://www.facebook.com/LUDatorikasfakultate/" style="text-decoration: none;">
-                                                                <font color="#333"><b>/LUDatorikasfakultate</b></font></a>
+                                                                <font color="#d97510"><b>/LUDatorikasfakultate</b></font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -173,11 +175,11 @@
                                                                                                            src="{{ asset('/images/home.png') }}"
                                                                                                            alt="WEB logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="http://datoriki.lv/" style="text-decoration: none;">
-                                                                <font color="#333"><b>datoriki.lv</b></font></a></td>
+                                                                <font color="#d97510"><b>datoriki.lv</b></font></a></td>
                                                     </tr>
                                                     <tr>
                                                         <td style="text-indent: 10px;" ><a href="http://www.df.lu.lv/" style="text-decoration: none;">
-                                                                <font color="#333"><b>df.lu.lv</b></font></a></td>
+                                                                <font color="#d97510"><b>df.lu.lv</b></font></a></td>
                                                     </tr>
                                                 </table>
                                             </td>
@@ -188,11 +190,11 @@
                                                                                                                            src="{{ asset('/images/instagram.png') }}"
                                                                                                                            alt="Instagram logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.instagram.com/datoriki/" style="text-decoration: none;">
-                                                                <font color="#333"><b>@datoriki</b></font></a></td>
+                                                                <font color="#d97510"><b>@datoriki</b></font></a></td>
                                                     </tr>
                                                     <tr>
                                                         <td style="text-indent: 10px;" ><a href="https://www.instagram.com/datorikasfakultate/" style="text-decoration: none;">
-                                                                <font color="#333"><b>@datorikasfakultate</b></font></a></td>
+                                                                <font color="#d97510"><b>@datorikasfakultate</b></font></a></td>
                                                     </tr>
                                                 </table>
                                             </td>
@@ -200,11 +202,11 @@
                                             <td>
                                                 <table>
                                                     <tr>
-                                                        <td rowspan="2"><a href="https://www.facebook.com/events/453925892069462/"><img style="height: 45px;"
+                                                        <td rowspan="2"><a href="https://www.facebook.com/events/955436328262160/"><img style="height: 45px;"
                                                                                                                                         src="{{ asset('/images/event.png') }}"
                                                                                                                                         alt="Event logo"></a></td>
-                                                        <td style="text-indent: 10px;" ><a href="https://www.facebook.com/events/453925892069462/" style="text-decoration: none;">
-                                                                <font color="#333"><b>FB pasākums</b></font></a></td>
+                                                        <td style="text-indent: 10px;" ><a href="https://www.facebook.com/events/955436328262160/" style="text-decoration: none;">
+                                                                <font color="#d97510"><b>Sējiens FB pasākums</b></font></a></td>
                                                     </tr>
                                                 </table>
                                             </td>
@@ -219,10 +221,16 @@
                                 <td>
                                     <table width="85%" align="center">
                                         <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#333">Esam sarūpējuši arī <a style="text-decoration: none;" href="https://www.facebook.com/groups/2385578308396695/"><font color='#2ac3d3'><b>kursa Facebook grupu. </b></font></a></td>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Esam sarūpējuši <a style="text-decoration: none;" href="https://www.facebook.com/groups/2571684193162234"><font color='#d97510'><b>kursa Facebook grupu. </b></font></a></td>
                                         </tr>
                                         <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center; font-style:italic; padding-top: 15px;"><font color="#333">P.S. Sējienā būs arī iespējams iegūt savā īpašumā <a href="http://datoriki.lv/suveniri/">Datorikas fakultātes suvenīrus</a></td>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Kā arī <a style="text-decoration: none;" href="https://discord.gg/bT5CkVU"><font color='#d97510'><b>kursa Discord serveri. </b></font></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Tāpat neaizmirsti atzīmēties <a style="text-decoration: none;" href="https://www.facebook.com/events/951030595414200"><font color='#d97510'><b>Pļāviens FB pasākumā. </b></font></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center; font-style:italic; padding-top: 15px;"><font color="#000">P.S. Sējienā būs arī iespējams iegūt savā īpašumā <a href="http://datoriki.lv/suveniri/"><font color='#000'>Datorikas fakultātes suvenīrus. </font></a></td>
                                         </tr>
                                     </table>
                                 </td>

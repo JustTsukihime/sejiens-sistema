@@ -1,14 +1,18 @@
 Čau, {{ $student->name }}!
 
 Ja tu saņēmi šo e-pastu, tad Tu esi pieteicies Datorikas fakultātes pirmsaristotelim "Sējiens 2020".
-Vispirms - Aizpildi apstiprinājuma anketu! (Būs pieejama līdz 29. augustam) {{ route('student.confirmation', $student->hash) }}
+Vispirms - aizpildi apstiprinājuma anketu! (Būs pieejama līdz 28. augustam.) {{ route('student.confirmation', $student->hash) }}
 
 Kad esi to izdarījis - apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam.
 Atgādinām, ka pasākums ir bez dalības maksas, par ko izsakām milzīgu paldies mūsu draugiem - Accenture!
-Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka 6. septembrī plkst. 18.30 mēs visi tiekamies pie Latvijas Universitātes galvenās ēkas, lai kopīgi dotos Aristoteļa gājienā! Dalība brīvprātīgā piespiedu kārtā.
+
+Turpinot ar Sējienu iesākto pēdējo nedēļas nogali pirms studiju sākuma, aicinām Tevi sestdien, 5. septembrī, piedalīties Datorikas fakultātes Studentu pašpārvaldes rīkotajā semestra uzsākšanas pasākumā – “Pļāviens”, kurā sportiskās un saliedējošās aktivitātes varēsi iepazīt kursabiedrus svaigā gaisā.
+
+Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka 6. septembrī plkst. 15.30 mēs visi tiekamies pie Latvijas Nacionālās bibliotēkās, lai kopīgi dotos uz Aristoteļa svētkiem LU Akadēmiskajā centrā! Dalība brīvprātīgā piespiedu kārtā.
 
 Svarīgi!
-Sējiens sāksies 4.septembrī. Tā sākums ir plkst. 10.00 Raiņa bulvārī 19.
+Sējiens norisināsies 4. septembrī. Tā sākums ir plkst. 10.00 Raiņa bulvārī 19. Reģistrācija no plkst. 9.30.
+Pļāviens norisināsies 5. septembrī. Tā sākums ir plkst.10.00 Burtnieku ielā 34. Ierašanās no plkst. 9.30.
 
 Ja rodas kādas neskaidrības - raksti uz sejiens@datoriki.lv
 
@@ -25,8 +29,11 @@ https://twitter.com/LU_Datorika
 https://www.instagram.com/datoriki/
 https://www.instagram.com/datorikasfakultate/
 
-https://www.facebook.com/events/453925892069462/
+Sējiena FB event: https://www.facebook.com/events/955436328262160
+Pļāviena FB event: https://www.facebook.com/events/951030595414200
 
-Esam sarūpējuši arī kursa Facebook grupu. https://www.facebook.com/groups/2385578308396695/
+Esam sarūpējuši kursa Facebook grupu: https://www.facebook.com/groups/2571684193162234
+
+Kā arī kursa Discord serveri: https://discord.gg/bT5CkVU
 
 P.S. Sējienā būs arī iespējams iegūt savā īpašumā Datorikas fakultātes suvenīrus https://datoriki.lv/suveniri/
