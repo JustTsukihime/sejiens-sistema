@@ -1,12 +1,13 @@
 Čau, {{ $student->name }}!
 
 Ja tu saņēmi šo e-pastu, tad Tu esi pieteicies Datorikas fakultātes pirmsaristotelim "Sējiens 2020".
-Vispirms - aizpildi apstiprinājuma anketu! (Būs pieejama līdz 28. augustam.) {{ route('student.confirmation', $student->hash) }}
 
-Kad esi to izdarījis - apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam.
 Atgādinām, ka pasākums ir bez dalības maksas, par ko izsakām milzīgu paldies mūsu draugiem - Accenture!
 
 Turpinot ar Sējienu iesākto pēdējo nedēļas nogali pirms studiju sākuma, aicinām Tevi sestdien, 5. septembrī, piedalīties Datorikas fakultātes Studentu pašpārvaldes rīkotajā semestra uzsākšanas pasākumā – “Pļāviens”, kurā sportiskās un saliedējošās aktivitātes varēsi iepazīt kursabiedrus svaigā gaisā.
+
+Lūdzu, aizpildi apstiprinājuma anketu dalībai pasākumā! (Būs pieejama līdz 28. augustam.) {{ route('student.confirmation', $student->hash) }}
+Kad esi to izdarījis - apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam.
 
 Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka 6. septembrī plkst. 15.30 mēs visi tiekamies pie Latvijas Nacionālās bibliotēkās, lai kopīgi dotos uz Aristoteļa svētkiem LU Akadēmiskajā centrā! Dalība brīvprātīgā piespiedu kārtā.
 

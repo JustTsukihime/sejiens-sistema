@@ -46,12 +46,11 @@
                                 <td>
                                     <table width="85%" align="center">
                                         <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt" >Ja tu saņēmi šo e-pastu, tad Tu esi pieteicies Datorikas fakultātes
-                                                pirmsaristotelim <b>"Sējiens 2020"</b>.
-                                                <p>Vispirms - aizpildi <a href="{{ route('student.confirmation', $student->hash) }}"> <font color='#d97510'><b>apstiprinājuma anketu!</b></font></a> (Būs pieejama līdz 28. augustam.)</p>
-                                                Kad esi to izdarījis - apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam.
-                                                <br/>Atgādinām, ka pasākums ir <b>bez dalības maksas</b>, par ko izsakām milzīgu paldies mūsu draugiem - <b>Accenture</b>!
+                                            <td style="line-height:1.5; font-size: 11.5pt" >Ja tu saņēmi šo e-pastu, tad Tu esi pieteicies Datorikas fakultātes pirmsaristotelim <b>"Sējiens 2020"</b>.
+                                                <p>Atgādinām, ka pasākums ir <b>bez dalības maksas</b>, par ko izsakām milzīgu paldies mūsu draugiem – <b>Accenture</b>!</p>
                                                 <p>Turpinot ar Sējienu iesākto pēdējo nedēļas nogali pirms studiju sākuma, <b>aicinām Tevi sestdien, 5. septembrī, piedalīties</b> Datorikas fakultātes Studentu pašpārvaldes rīkotajā semestra uzsākšanas <b>pasākumā – “Pļāviens”</b>, kurā sportiskās un saliedējošās aktivitātes varēsi iepazīt kursabiedrus svaigā gaisā.</p>
+                                                <p>Lūdzu, aizpildi <a href="{{ route('student.confirmation', $student->hash) }}"> <font color='#d97510'><b>apstiprinājuma anketu</b></font></a> dalībai pasākumā! (Būs pieejama līdz 28. augustam.)</p>
+                                                Kad esi to izdarījis – apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam.
                                                 <p>Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka <b>6. septembrī plkst. 15.30 mēs visi tiekamies pie Latvijas Nacionālās bibliotēkās, lai kopīgi dotos uz Aristoteļa svētkiem LU Akadēmiskajā centrā!</b> Dalība brīvprātīgā piespiedu kārtā.</p>
                                             </td>
                                         </tr>
@@ -64,7 +63,7 @@
                                         <tr>
                                             <td><font color='#000' style="line-height:1.5; font-size: 18px"><b>Svarīgi!</b></font>
                                                 <font style="line-height:1.5; font-size: 11.5pt">
-                                                    <br>Sējiens norisināsies 4. augustā. Tā sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832" style="text-decoration: none;"><font color='#d97510'><b>Raiņa bulvārī 19</b></font></a>. Reģistrācija no plkst. 9.30.
+                                                    <br>Sējiens norisināsies 4. septembrī. Tā sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832" style="text-decoration: none;"><font color='#d97510'><b>Raiņa bulvārī 19</b></font></a>. Reģistrācija no plkst. 9.30.
                                                     <br>Pļāviens norisināsies 5. septembrī. Tā sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/iairssUDR5RMpKRd7" style="text-decoration: none;"><font color='#d97510'><b>Burtnieku ielā 34</b></font></a>. Ierašanās no plkst. 9.30.</font>
                                             </td>
                                         </tr>
