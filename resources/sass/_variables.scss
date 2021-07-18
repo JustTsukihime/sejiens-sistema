@@ -7,15 +7,19 @@
 // $dark_blue:   #003B49;
 //$teal:    #20c997 !default;
 //$cyan:    #17a2b8 !default;
-
-$yellow:  #fcc013;
-//$pink:    #e83e8c !default;
-$light_yellow:  #f5c932;
+// $light_yellow:  #f5c932;
 //$yellow:  #ffc107 !default;
-$dark_yellow:   #d97510;
+//$yellow:  #fcc013;
+// $dark_yellow:   #d97510;
 
-$primary:       $light_yellow;
-$secondary:     $yellow;
+
+$pink: #ff83b5;
+$dark_pink:    #cf377e;
+$light_pink: #ff83b5;
+
+
+$primary:       $light_pink;
+$secondary:     $pink;
 //$success:       $green !default;
 //$info:          $cyan !default;
 //$warning:       $yellow !default;

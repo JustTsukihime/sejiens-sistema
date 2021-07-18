@@ -17,7 +17,7 @@ body {
 
 hr {
   max-width: 50px;
-  border: 3px $light_yellow;
+  border: 3px $light_pink;
 
   &.light {
     border-color: $white;
@@ -25,7 +25,7 @@ hr {
 }
 
 a {
-  color: $dark_yellow;
+  color: $dark_pink;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -36,11 +36,11 @@ h1, h2, h3, h4, h5, h6, #application-form {
 }
 
 .bg-primary {
-  background-color: $dark_yellow !important
+  background-color: $dark_pink !important
 }
 
 .bg-secondary {
-  background-color: $yellow;
+  background-color: $pink;
 }
 
 .bg-dark {
@@ -99,7 +99,7 @@ img {
 
   @include media-breakpoint-up(lg) {
     border-color: transparent;
-    background-color: $dark_yellow;
+    background-color: $dark_pink;
   }
 
   .navbar-nav {
@@ -179,11 +179,11 @@ iframe {
 }
 
 .text-highlight {
-  color: $dark_yellow;
+  color: $dark_pink;
 }
 
 .btn-apply {
-  @include button-variant($dark_yellow, rgba(240, 95, 64, 0.5));
+  @include button-variant($dark_pink, rgba(207, 55, 126, 0.5));
   padding: 1rem 2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -206,7 +206,7 @@ iframe {
 }
 
 .text-primary {
-  color: #d97510 !important;
+  color: #76aa32 !important;
 }
 
 .text-secondary {
@@ -214,29 +214,29 @@ iframe {
 }
 
 .btn-primary {
-  background-color: $dark_yellow !important;
+  background-color: $dark_pink !important;
   color: #fff !important;
 }
 
 .btn-primary:hover {
-  background-color: #ad5e0e !important;
+  background-color: #ac185d !important;
 }
 
 .btn-primary:active {
-  background-color: #583007 !important;
+  background-color: #ac185d !important;
 }
 
 .form-control:focus {
   // border-color: #fbe9ac;
   // outline: 0;
-  box-shadow: 0 0 0 0.2rem #ad5e0e;
+  box-shadow: 0 0 0 0.2rem #ac185d;
 }
 
 #seko .container .row div a:hover {
-  color: #80460c !important;
+  color: #ac185d !important;
   text-decoration: none !important;
 }
 
 span.text-primary b a {
-  color: #d97510 !important;
+  color: #76aa32 !important;
 }
