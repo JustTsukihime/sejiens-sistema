@@ -23,6 +23,10 @@
                 <a href = "https://www.instagram.com/datoriki/"><h5 class="mt-2">datoriki</h5></a>
                 <a href = "https://www.instagram.com/datorikasfakultate/"><h5 class="mt-2">datorikasfakultate</h5></a>
             </div>
+            <!-- <div class="col-lg-3 ml-auto text-center">
+                <a href = "https://www.facebook.com/events/955436328262160/"><img src="{{ asset('/images/event.svg') }}" alt="event"></a>
+                <a href = "https://www.facebook.com/events/955436328262160/"><h5 class="mt-2">Sējiens 2020</h5></a>
+            </div> -->
         </div>
         <div class="row">
             <div class="col-12">

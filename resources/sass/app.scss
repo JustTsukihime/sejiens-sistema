@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6, #application-form {
 }
 
 .bg-primary {
-  background-color: $dark_pink !important
+  background-color: $dark_pink !important;
 }
 
 .bg-secondary {
@@ -214,16 +214,16 @@ iframe {
 }
 
 .btn-primary {
-  background-color: $dark_pink !important;
-  color: #fff !important;
+  background-color: $dark_pink;
+  color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #ac185d !important;
+  background-color: #ac185d;
 }
 
 .btn-primary:active {
-  background-color: #ac185d !important;
+  background-color: #ac185d;
 }
 
 .form-control:focus {
@@ -233,10 +233,10 @@ iframe {
 }
 
 #seko .container .row div a:hover {
-  color: #ac185d !important;
-  text-decoration: none !important;
+  color: #ac185d;
+  text-decoration: none;
 }
 
 span.text-primary b a {
-  color: #76aa32 !important;
+  color: #76aa32;
 }

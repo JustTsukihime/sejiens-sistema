@@ -26,11 +26,11 @@
     <div class="container my-auto">
         <div class="row">
             <div class="col-lg-12 mx-auto mt-3 pt-5">
-                <img src="images/snake.png" class="rounded mx-auto d-block img-fluid">
+                <img src="images/logo.png" class="rounded mx-auto d-block img-fluid">
             </div>
 
             <div class="col-lg-8 mx-auto pt-5">
-                <h1>Sējiens 2021</h1>
+                <h1>{{ config('app.name', 'Sējiens') }}</h1>
                 <h3>1. septembris</h3>
                 <a class="btn btn-apply js-scroll-trigger mt-2" href="#pieteikties">PIETEIKTIES</a>
             </div>
@@ -47,7 +47,6 @@
                     Tu esi godam izturējis centralizēto eksāmenu kārtošanu, pinķerīgo pieteikuma veidošanu un ilgu neziņas un satraukuma brīdi! Nu Tev sācies jauns un piedzīvojumiem pilns dzīves posms un beidzot vari saukt sevi par Latvijas Universitātes Datorikas fakultātes studentu!
                 </p>
                 <p class="text-faded mb-4">
-                    <!-- remake the text -->
                     Jaunais akadēmiskais gads jau ir pavisam tuvu, lai to uzveiktu, būs jāiemācās izdzīvot studiju džungļos, tāpēc mūsu draudzīgais pitoniņš tev palīdzēs apgūt visas vajadzīgās iemaņas un iepazīt savus jaunos kursa biedrus, kuri būs tava atslēga uz panākumiem Datorikas fakultātē.
                     Universitātes savvaļas izdzīvošanas pamācības spēsim tev dot pasākumā "Sējiens", kur izbaudīsi pirmos soļus plašajā universitātes dzīve kopā ar jau pieredzējušajiem datoriķiem, kas nodos savas zināšanas.
                 </p>
