@@ -26,12 +26,12 @@
     <div class="container my-auto">
         <div class="row">
             <div class="col-lg-12 mx-auto mt-3 pt-5">
-                <img src="images/lacis.png" class="rounded mx-auto d-block img-fluid">
+                <img src="images/logo.png" class="rounded mx-auto d-block img-fluid">
             </div>
 
             <div class="col-lg-8 mx-auto pt-5">
-                <h1>Sējiens 2020</h1>
-                <h3>4. septembris</h3>
+                <h1>{{ config('app.name', 'Sējiens') }}</h1>
+                <h3>1. septembris</h3>
                 <a class="btn btn-apply js-scroll-trigger mt-2" href="#pieteikties">PIETEIKTIES</a>
             </div>
         </div>
@@ -47,8 +47,8 @@
                     Tu esi godam izturējis centralizēto eksāmenu kārtošanu, pinķerīgo pieteikuma veidošanu un ilgu neziņas un satraukuma brīdi! Nu Tev sācies jauns un piedzīvojumiem pilns dzīves posms un beidzot vari saukt sevi par Latvijas Universitātes Datorikas fakultātes studentu!
                 </p>
                 <p class="text-faded mb-4">
-                Rudens tuvojas straujiem soļiem un tam līdzi ierodas arī jaunais studiju gads. Lai spētu bezbailīgi stāties pretī jauniem izaicinājumiem, ir jābūt spēcīgam, izturīgam un ar intelektu apveltītam kā zvēram, kas savvaļā apdzīvo arī mūsu platuma grādus – kā lācim! 
-                Tautā saka, katrs pats savas laimes kalējs, tomēr Datorikas fakultātē Tu nebūsi viens – kopīgi izkalt savus laimes lāčus varēsi ar jaunajiem kursabiedriem, kurus iepazīsi Sējiena laikā.
+                    Jaunais akadēmiskais gads jau ir pavisam tuvu, lai to uzveiktu, būs jāiemācās izdzīvot studiju džungļos, tāpēc mūsu draudzīgais pitoniņš tev palīdzēs apgūt visas vajadzīgās iemaņas un iepazīt savus jaunos kursa biedrus, kuri būs tava atslēga uz panākumiem Datorikas fakultātē.
+                    Universitātes savvaļas izdzīvošanas pamācības spēsim tev dot pasākumā "Sējiens", kur izbaudīsi pirmos soļus plašajā universitātes dzīve kopā ar jau pieredzējušajiem datoriķiem, kas nodos savas zināšanas.
                 </p>
                 <p class="text-faded mb-4">
                     <b>Tevi iespējams māc šaubas, vai viss būs labi, vai orientēsies universitātē, un iedraudzēsies ar jaunajiem kursabiedriem?</b>
@@ -126,7 +126,7 @@
                 <div class="mt-5 mx-auto">
                     <p>Lai pirmajā studiju dienā universitātē Tu jau justos kā mājās, būtu iepazinies ar daudziem kursabiedriem,
                         mēs aicinām piedalīties vienā no spilgtākajiem mūsu fakultātes notikumiem –
-                        <span class="text-primary font-weight-bold">pirmsaristotelī “Sējiens 2020”, kas notiks šī gada 4. septembrī.</span>
+                        <span class="text-primary font-weight-bold">pirmsaristotelī “Sējiens 2021”, kas notiks šī gada 1. septembrī.</span>
                     </p>
                     <p>
                         Piedalies aizraujošā pirmsstudiju piedzīvojumā,
@@ -139,10 +139,10 @@
         <div class="row">
             <div class="col-lg-6 col-md-8 text-center">
                 <div class="mt-5 mx-auto">
-                    <p><span class="text-primary font-weight-bold">Piektdienā, 4. septembrī, tiksimies Latvijas Universitātes galvenajā ēkā
+                    <p><span class="text-primary font-weight-bold">Trešdienā, 1. septembrī, tiksimies Latvijas Universitātes galvenajā ēkā
                           (Raiņa bulvāris 19)</span>, lai iepazītu gan universitātes telpas, gan arī savus jaunos kursabiedrus,
                         iesaistoties dažādos interesantos piedzīvojumos. </p>
-                    <p> 6. septembrī mēs tiksimies atkārtoti, lai <span class="text-primary font-weight-bold"> sagatavotos
+                    <p> 5. septembrī mēs tiksimies atkārtoti, lai <span class="text-primary font-weight-bold"> sagatavotos
                         Latvijas Universitātes studentu svētkiem “Aristotelis”</span> un parādītu pārējām fakultātēm, cik DF ir
                         saliedēta un “skaļa” fakultāte!</p>
                 </div>
@@ -204,7 +204,7 @@
         <div class="row mt-4">
             <div class="col-12 text-center">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/B_Eweo4d3Ck" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s9sPLpHsm4s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-12 text-center">
@@ -228,6 +228,8 @@
 <section class="bg-secondary text-white" id="pieteikties">
     <div class="container text-center">
         <h2 class="mb-4">Piesakies</h2>
+        <h4 class="text-white mb-5">* Lai piedalītos pasākumā, lūdzu nodrošini, ka esi ieguvis digitālo COVID-19 sertifikātu!
+        </h4>
         <div class="offset-lg-2 col-lg-8">
             @if(session()->has('application-success'))
                 <div class="alert alert-primary" role="alert">{{ session()->get('application-success') }}</div>
