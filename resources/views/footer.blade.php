@@ -21,7 +21,7 @@
             <div class="col-lg-3 ml-auto text-center">
                 <a href = "https://www.instagram.com/datoriki/"><img src="{{ asset('/images/instagram.svg') }}" alt="event"></a>
                 <a href = "https://www.instagram.com/datoriki/"><h5 class="mt-2">datoriki</h5></a>
-                <a href = "https://www.instagram.com/datorikasfakultate/"><h5 class="mt-2">datorikasfakultate</h5></a>
+                <a href = "https://www.instagram.com/lu_datorikasfakultate/"><h5 class="mt-2">lu_datorikasfakultate</h5></a>
             </div>
             <!-- <div class="col-lg-3 ml-auto text-center">
                 <a href = "https://www.facebook.com/events/955436328262160/"><img src="{{ asset('/images/event.svg') }}" alt="event"></a>
