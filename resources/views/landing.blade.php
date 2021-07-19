@@ -31,7 +31,7 @@
 
             <div class="col-lg-8 mx-auto pt-5">
                 <h1>{{ config('app.name', 'Sējiens') }}</h1>
-                <h3>1. septembris</h3>
+                <h3>3. septembris</h3>
                 <a class="btn btn-apply js-scroll-trigger mt-2" href="#pieteikties">PIETEIKTIES</a>
             </div>
         </div>
@@ -126,7 +126,7 @@
                 <div class="mt-5 mx-auto">
                     <p>Lai pirmajā studiju dienā universitātē Tu jau justos kā mājās, būtu iepazinies ar daudziem kursabiedriem,
                         mēs aicinām piedalīties vienā no spilgtākajiem mūsu fakultātes notikumiem –
-                        <span class="text-primary font-weight-bold">pirmsaristotelī “Sējiens 2021”, kas notiks šī gada 1. septembrī.</span>
+                        <span class="text-primary font-weight-bold">pirmsaristotelī “Sējiens 2021”, kas notiks šī gada 3. septembrī.</span>
                     </p>
                     <p>
                         Piedalies aizraujošā pirmsstudiju piedzīvojumā,
@@ -139,7 +139,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-8 text-center">
                 <div class="mt-5 mx-auto">
-                    <p><span class="text-primary font-weight-bold">Trešdienā, 1. septembrī, tiksimies Latvijas Universitātes galvenajā ēkā
+                    <p><span class="text-primary font-weight-bold">Piektdienā, 3. septembrī, tiksimies Latvijas Universitātes galvenajā ēkā
                           (Raiņa bulvāris 19)</span>, lai iepazītu gan universitātes telpas, gan arī savus jaunos kursabiedrus,
                         iesaistoties dažādos interesantos piedzīvojumos. </p>
                     <p> 5. septembrī mēs tiksimies atkārtoti, lai <span class="text-primary font-weight-bold"> sagatavotos
