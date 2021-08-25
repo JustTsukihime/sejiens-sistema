@@ -31,7 +31,7 @@
 
             <div class="col-lg-8 mx-auto pt-5">
                 <h1>{{ config('app.name', 'Sējiens') }}</h1>
-                <h3>3. septembris</h3>
+                <h3>3. - 4. septembris</h3>
                 <a class="btn btn-apply js-scroll-trigger mt-2" href="#pieteikties">PIETEIKTIES</a>
             </div>
         </div>
