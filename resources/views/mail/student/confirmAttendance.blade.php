@@ -50,8 +50,8 @@
                                                 <p>Atgādinām, ka pasākums ir <b>bez dalības maksas</b>, par ko izsakām milzīgu paldies mūsu draugiem – <b>Accenture</b>!</p>
                                                 <p><b>Gaidīsim Tevi Sējiena pirmajā daļā piektdien, 3. septembrī</b> Datorikas fakultātes telpās, Raiņa bulvārī 19. Pirmās daļas laikā izpētīt universitātes telpas un iepazīties ar saviem kursabiedriem.</p>
                                                 <p>Turpinot pēdējo pirmsmācību nedēļu, <b>aicinām Tevi sestdien, 4. septembrī, piedalīties</b> Datorikas fakultātes Studentu pašpārvaldes rīkotajā semestra uzsākšanas <b>pasākumā otrajā daļā</b>, kurā sportiskās un saliedējošās aktivitātes varēsi iepazīt kursabiedrus svaigā gaisā, Biķernieku mežā, netālu no Veselības centra Biķernieki.</p>
-                                                <p>Ja vēl neesi to izdarījis, lūdzu, aizpildi <a href="{{ route('student.confirmation', $student->hash) }}"> <font color='#cf374b'><b>apstiprinājuma anketu</b></font></a> dalībai pasākumā! (Būs pieejama līdz 1. septembrim.)</p>
-                                                Kad esi to izdarījis – apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam. Iesakam arī uzmest aci uz šīs dienas laikapstākļu prognozei.
+                                                <p>Lūdzu, aizpildi <a href="{{ route('student.confirmation', $student->hash) }}"> <font color='#cf374b'><b>apstiprinājuma anketu</b></font></a> dalībai pasākumā! It īpaši, ja ir kādas alerģijas vai uztura ierobežojumi. (Būs pieejama līdz 1. septembrim.)</p>
+                                                Kad esi to izdarījis – apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam. Iesakam arī uzmest aci šīs dienas laikapstākļu prognozei.
                                                 <p>Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka <b>6. septembrī plkst. 16.00 mēs visi tiekamies pie Latvijas Nacionālās bibliotēkās, lai kopīgi dotos uz Aristoteļa svētkiem LU Akadēmiskajā centrā!</b> Dalība brīvprātīgā piespiedu kārtā.</p>
                                             </td>
                                         </tr>
@@ -162,7 +162,7 @@
                                     <table width="80%" align="center">
                                         <tr>
                                             <td><font color="#ffffff">
-                                        <tr>
+                                        <tr align="center">
                                             <td>
                                                 <table>
                                                     <tr>
