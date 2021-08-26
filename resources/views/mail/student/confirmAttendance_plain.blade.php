@@ -1,19 +1,29 @@
 Čau, {{ $student->name }}!
 
-Ja tu saņēmi šo e-pastu, tad Tu esi pieteicies Datorikas fakultātes pirmsaristotelim "Sējiens 2020".
 
-Atgādinām, ka pasākums ir bez dalības maksas, par ko izsakām milzīgu paldies mūsu draugiem - Accenture!
+Ja tu saņēmi šo e-pastu, tad Tu esi pieteicies Datorikas fakultātes pirmsaristotelim "Sējiens 2021".
 
-Turpinot ar Sējienu iesākto pēdējo nedēļas nogali pirms studiju sākuma, aicinām Tevi sestdien, 5. septembrī, piedalīties Datorikas fakultātes Studentu pašpārvaldes rīkotajā semestra uzsākšanas pasākumā – “Pļāviens”, kurā sportiskās un saliedējošās aktivitātes varēsi iepazīt kursabiedrus svaigā gaisā.
+Atgādinām, ka pasākums ir bez dalības maksas, par ko izsakām milzīgu paldies mūsu draugiem – Accenture!
 
-Lūdzu, aizpildi apstiprinājuma anketu dalībai pasākumā! (Būs pieejama līdz 28. augustam.) {{ route('student.confirmation', $student->hash) }}
-Kad esi to izdarījis - apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam.
+Gaidīsim Tevi Sējiena pirmajā daļā piektdien, 3. septembrī Datorikas fakultātes telpās, Raiņa bulvārī 19. Pirmās daļas laikā izpētīt universitātes telpas un iepazīties ar saviem kursabiedriem.
 
-Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka 6. septembrī plkst. 15.30 mēs visi tiekamies pie Latvijas Nacionālās bibliotēkās, lai kopīgi dotos uz Aristoteļa svētkiem LU Akadēmiskajā centrā! Dalība brīvprātīgā piespiedu kārtā.
+Turpinot pēdējo pirmsmācību nedēļu, aicinām Tevi sestdien, 4. septembrī, piedalīties Datorikas fakultātes Studentu pašpārvaldes rīkotajā semestra uzsākšanas pasākumā otrajā daļā, kurā sportiskās un saliedējošās aktivitātes varēsi iepazīt kursabiedrus svaigā gaisā, Biķernieku mežā, netālu no Veselības centra Biķernieki.
+
+Lūdzu, aizpildi apstiprinājuma anketu dalībai pasākumā! It īpaši, ja ir kādas alerģijas vai uztura ierobežojumi. (Būs pieejama līdz 1. septembrim.) {{ route('student.confirmation', $student->hash) }}
+Kad esi to izdarījis – apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam. Iesakam arī uzmest aci šīs dienas laikapstākļu prognozei.
+
+Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka 6. septembrī plkst. 16.00 mēs visi tiekamies pie Latvijas Nacionālās bibliotēkās, lai kopīgi dotos uz Aristoteļa svētkiem LU Akadēmiskajā centrā! Dalība brīvprātīgā piespiedu kārtā.
+
+
+*** Atgādinam, lai piedalītos pasākumos, tev ir nepieciešams COVID-19 vakcinācijas sertifikāts vai arī COVID-19 pārslimošanas sertifikāts! ***
+
+COVID-19 vakcinācijas sertifikātu var iegūt COVID-19 digitālā sertifikāta lapā https://covid19sertifikats.lv.
+Šis sertifikāts apliecina, ka esi vakcinējies pret COVID-19 un ir pagājušas četrpadsmit dienas pēc pilna vakcinācijas kursa pabeigšanas.
+COVID-19 pārslimošanas sertifikāts ir nepieciešams tiem, kuri ir pārslimojuši COVID-19 infekciju.
 
 Svarīgi!
-Sējiens norisināsies 4. septembrī. Tā sākums ir plkst. 10.00 Raiņa bulvārī 19. Reģistrācija no plkst. 9.30.
-Pļāviens norisināsies 5. septembrī. Tā sākums ir plkst.10.00 Burtnieku ielā 34. Ierašanās no plkst. 9.30.
+Sējiena pirmā daļa norisināsies 3. septembrī. Tās sākums ir plkst.10.00 Raiņa bulvārī 19. Reģistrācija no plkst. 9.30.
+Sējiena otrā daļa norisināsies 4. septembrī. Tās sākums ir plkst.11.00 Biķernieku mežā. Ierašanās no plkst. 10.30. https://goo.gl/maps/CAaTEJYQsrQBs8uj8
 
 Ja rodas kādas neskaidrības - raksti uz sejiens@datoriki.lv
 

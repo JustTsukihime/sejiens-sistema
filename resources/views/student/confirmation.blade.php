@@ -14,8 +14,7 @@
                     {{ Form::rowText('allergies', null, 'Alerģijas?', ['required']) }}
                     {{ Form::rowText('health', null, 'Veselības stāvoklis?', ['required'], 'Traumas, ierobežojumi') }}
                     {{ Form::rowText('about', null, 'Īsumā par sevi', [], 'Kas esi, ko dari dzīvē, kāpēc nāc uz datoriķiem, ko vēlies sasniegt?') }}
-                    {{ Form::rowSelect('attending', ['both'=>'Visu pasākumu','first'=>'Pirmo daļu Raiņa bulvārī','second'=>'Oto daļu Biķernieku mežā'], 'Kuru pasākuma daļu apmeklēsi?', ['required']) }}
-                    {{ Form::rowCheckbox('warning', 'Par COVID-19 sertifikātu', [['label' => 'Piekrītu', 'value' => 'yes']], ['required'], 'Apstiprinu, ka pasākumā spēju piedalīties ar COVID-19 pārslimošanas vai vakcinācijas sertifikātu.' }}
+                    {{ Form::rowSelect('attending', ['both'=>'Visu pasākumu','first'=>'Pirmo daļu Raiņa bulvārī','second'=>'Otro daļu Biķernieku mežā'], 'Kuru pasākuma daļu apmeklēsi?', ['required']) }}
                     {{ Form::rowCheckbox('warning', 'Ja plāni mainās, ziņošu orgiem', [['label' => 'Piekrītu', 'value' => 'yes']], ['required'], 'Ja man nebūs iespēja ierasties uz pasākumu, es to laicīgi ziņošu organizatoriem (vismaz dienu iepriekš), rakstot uz sejiens@datoriki.lv') }}
                     {{ Form::rowSubmit('Apstiprināt dalību', ['class' => 'form-control btn btn-primary col-lg-6']) }}
                     {{ Form::close() }}
