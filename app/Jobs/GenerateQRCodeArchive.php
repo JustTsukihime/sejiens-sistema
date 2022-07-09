@@ -74,7 +74,7 @@ class GenerateQRCodeArchive implements ShouldQueue
 
     public function createDataSetCSV(Collection $students) : array
     {
-        $out = Excel::create('export-'.time(), function(LaravelExcelWriter $excel) use ($students) {
+        $out = Excel::store('export-'.time(), function(LaravelExcelWriter $excel) use ($students) {
             $excel->sheet('Data', function(LaravelExcelWorksheet $sheet) use ($students) {
                 $sheet->appendRow(["Name", "@QRCode"]);
                 foreach($students as $student) {

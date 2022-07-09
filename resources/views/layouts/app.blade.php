@@ -12,7 +12,7 @@
     <title>{{ config('app.name', 'Sējiens') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @vite(['resources/sass/app.scss'])
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
@@ -22,7 +22,7 @@
     @yield('content')
     @include('footer')
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    @vite(['resources/js/app.js'])
 
     @guest
     <!-- Google Tag Manager -->

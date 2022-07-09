@@ -61,7 +61,7 @@
     <div class="modal fade" id="destroy-user" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
-                {{ Form::open(['action' => ['UserController@destroy', $user], 'class' => 'd-inline']) }}
+                {{ Form::open(['action' => [[\App\Http\Controllers\UserController::class, 'destroy'], $user], 'class' => 'd-inline']) }}
                 <div class="modal-header">
                     <h5 class="modal-title">Dzēst lietotāju?</h5>
                     <button type="button" class="close" data-dismiss="modal">

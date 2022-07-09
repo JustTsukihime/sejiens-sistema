@@ -11,7 +11,7 @@
                     <div class="card-body">
                         <a href="{{ route('group.show', $group) }}" class="card-link">Atpakaļ uz grupas sarakstu</a>
 
-                        {{ Form::open(['action' => ['GroupController@storeMember', $group]]) }}
+                        {{ Form::open(['action' => [[\App\Http\Controllers\GroupController::class, 'storeMember'], $group]]) }}
                         {{ Form::hidden('student_id', null, ['id' => 'student-id']) }}
                         <video muted autoplay playsinline id="qr-video" class="w-100"></video>
 
@@ -34,7 +34,7 @@
                                 camQrResult.textContent = result;
 
                                 $.post({
-                                    url: '{{ action('StudentController@resolve') }}',
+                                    url: '{{ action([\App\Http\Controllers\StudentController::class, 'resolve']) }}',
                                     data: {'type': 'qr', 'hash': result},
                                     success: function (data) {
                                         studentId.value = data.id;

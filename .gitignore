@@ -3,6 +3,7 @@
 /public/js
 /public/fonts
 /public/images
+/public/build
 /public/hot
 /public/storage
 /storage/*.key

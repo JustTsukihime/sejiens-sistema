@@ -33,7 +33,7 @@
                 <div class="card">
                     <div class="card-header">Sūtīt apstiprinājuma e-pastu dalībniekam</div>
                     <div class="card-body btn-">
-                        {{ Form::open(['action' => 'EmailController@studentConfirmation']) }}
+                        {{ Form::open(['action' => [[\App\Http\Controllers\EmailController::class, 'studentConfirmation']]]) }}
                         {{ Form::select('student_id', $students->pluck('email', 'id'), null, ['class' => 'form-control mb-2', 'placeholder' => 'Choose student\'s email']) }}
                         {{ Form::submit('Sūtīt', ['class' => 'form-control btn btn-primary']) }}
                         {{ Form::close() }}
@@ -44,7 +44,7 @@
                 <div class="card">
                     <div class="card-header">Sūtīt apstiprinājuma e-pastus dalībniekiem</div>
                     <div class="card-body btn-">
-                        {{ Form::open(['action' => 'EmailController@studentConfirmation']) }}
+                        {{ Form::open(['action' => [[\App\Http\Controllers\EmailController::class, 'studentConfirmation']]]) }}
                         {{ Form::submit('Sūtīt', ['class' => 'form-control btn btn-primary']) }}
                         {{ Form::close() }}
                     </div>
@@ -54,7 +54,7 @@
                 <div class="card">
                     <div class="card-header">Izveidot Whatsapp grupu</div>
                     <div class="card-body btn-">
-                        {{ Form::open(['action' => 'GroupController@makeWhatsappGroup']) }}
+                        {{ Form::open(['action' => [[\App\Http\Controllers\GroupController::class, 'makeWhatsappGroup']]]) }}
                         {{ Form::submit('Izveidot', ['class' => 'form-control btn btn-primary']) }}
                         {{ Form::close() }}
                     </div>

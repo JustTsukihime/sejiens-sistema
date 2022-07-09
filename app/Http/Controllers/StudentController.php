@@ -159,7 +159,7 @@ class StudentController extends Controller
 
         $students = [];
 
-        $data = Excel::load($request->file('file')->getPathname())->all();
+        $data = Excel::import($request->file('file')->getPathname())->all();
 //        list($timestamp, $fullname, $phone, $email, $attending, $food, $health, $tshirt, $mentor, $whatsapp) = $data->getHeading();
         list($timestamp, $fullname, $phone, $email, $tshirt, $mentor, $whatsapp) = $data->getHeading();
 
@@ -202,7 +202,7 @@ class StudentController extends Controller
             'Esmu īsts datoriķis, tāpēc apmeklēšu abas daļas' => 'both',
         ];
 
-        $data = Excel::load($request->file('file')->getPathname())->all();
+        $data = Excel::import($request->file('file')->getPathname())->all();
         list($timestamp, $name, $surname, $food, $allergies, $health, $attending, $about, $tos, $comments) = $data->getHeading();
 
         $skipped = [];

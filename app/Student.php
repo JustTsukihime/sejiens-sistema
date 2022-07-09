@@ -81,6 +81,6 @@ class Student extends Model
 
         $qrcode = new QRCode($qropt);
 
-        return base64_encode($qrcode->render($this->getVCard()->buildVCard()));
+        return $qrcode->render($this->getVCard()->buildVCard());
     }
 }

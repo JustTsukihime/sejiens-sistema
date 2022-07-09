@@ -17,8 +17,8 @@
                             <dd class="col-sm-6"><a href="{{ route('user.show', $group->leader) }}">{{ $group->leader->name }}</a></dd>
                         </dl>
                         <a href="{{ route('group.edit', $group) }}" class="btn btn-secondary">Rediģēt</a>
-                        <a href="{{ action('GroupController@createMember', $group) }}" class="btn btn-secondary">Pievienot dalībnieku</a>
-                        <a href="{{ action('GroupController@membersVCard', $group) }}" class="btn btn-secondary">Lejupielādēt kontaktus</a>
+                        <a href="{{ action([\App\Http\Controllers\GroupController::class, 'createMember'], $group) }}" class="btn btn-secondary">Pievienot dalībnieku</a>
+                        <a href="{{ action([\App\Http\Controllers\GroupController::class, 'membersVCard'], $group) }}" class="btn btn-secondary">Lejupielādēt kontaktus</a>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     <td>{{ $student->phone }}</td>
                     <td class="d-none d-sm-block">{{ $student->pivot->created_at }}</td>
                     <td>
-                        {{ Form::open(['action' => ['GroupController@removeMember', $group]]) }}
+                        {{ Form::open(['action' => [[\App\Http\Controllers\GroupController::class, 'removeMember'], $group]]) }}
                         {{ Form::hidden('student_id', $student->id) }}
                         {{ Form::submit('Izņemt', ['class' => 'btn btn-warning']) }}
                         {{ Form::close() }}

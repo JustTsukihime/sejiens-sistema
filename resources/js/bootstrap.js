@@ -5,10 +5,12 @@
  * code may be modified to fit the specific needs of your application.
  */
 
-try {
-    window.$ = window.jQuery = require('jquery');
+import jquery from 'jquery';
+import bootstrap from 'bootstrap';
 
-    require('bootstrap');
+try {
+    window.$ = window.jQuery = jquery;
+
 } catch (e) {}
 
 /**
@@ -17,7 +19,8 @@ try {
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = require('axios');
+ import axios from 'axios';
+ window.axios = axios;
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 

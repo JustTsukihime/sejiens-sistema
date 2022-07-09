@@ -40,5 +40,7 @@ class GenerateQRCodeArchive extends Command
     {
         $path = GeneratorJob::dispatchNow();
         $this->info(asset('storage/'.$path));
+        
+        return 0;
     }
 }

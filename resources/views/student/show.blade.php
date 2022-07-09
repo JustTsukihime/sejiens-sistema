@@ -9,7 +9,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card-body">
-                                <img class="card-img mb-2" src="data:image/svg+xml;base64,{{ base64_encode($qrcode->render($student->hash)) }}">
+                                <img class="card-img mb-2" src="{{ $qrcode->render($student->hash) }}">
                                 <h4 class="card-title text-center">{{ $student->name }} {{ $student->surname }}</h4>
                                 <h6 class="card-subtitle text-center text-muted">Dalībnieks</h6>
                             </div>
@@ -72,7 +72,7 @@
                     <div class="card-header">vCard</div>
                     <div class="card-body">
                         <a href="{{ route('student.vcard', $student) }}" class="btn btn-block btn-info">vCard lejupielāde</a>
-                        <img class="card-img mt-2" src="data:image/svg+xml;base64,{{ $student->getVCardQR() }}">
+                        <img class="card-img mt-2" src="{{ $student->getVCardQR() }}">
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
     <div class="modal fade" id="add-to-group" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
-                {{ Form::open(['action' => ['StudentController@addGroup', $student], 'class' => 'd-inline']) }}
+                {{ Form::open(['action' => [[\App\Http\Controllers\StudentController::class, 'addGroup'], $student], 'class' => 'd-inline']) }}
                 <div class="modal-header">
                     <h5 class="modal-title">Pievienot grupai</h5>
                     <button type="button" class="close" data-dismiss="modal">
@@ -126,7 +126,7 @@
     <div class="modal fade" id="force-confirm" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
-                {{ Form::open(['action' => ['StudentController@forceConfirm', $student], 'class' => 'd-inline']) }}
+                {{ Form::open(['action' => [[\App\Http\Controllers\StudentController::class, 'forceConfirm'], $student], 'class' => 'd-inline']) }}
                 <div class="modal-header">
                     <h5 class="modal-title">Apstiprināt dalību manuāli?</h5>
                     <button type="button" class="close" data-dismiss="modal">
@@ -145,7 +145,7 @@
     <div class="modal fade" id="force-cancel" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
-                {{ Form::open(['action' => ['StudentController@forceCancel', $student], 'class' => 'd-inline']) }}
+                {{ Form::open(['action' => [[\App\Http\Controllers\StudentController::class, 'forceCancel'], $student], 'class' => 'd-inline']) }}
                 <div class="modal-header">
                     <h5 class="modal-title">Atcelt dalību manuāli?</h5>
                     <button type="button" class="close" data-dismiss="modal">
