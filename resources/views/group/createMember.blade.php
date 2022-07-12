@@ -10,6 +10,7 @@
                     <div class="card-header">Pievienot dalībnieku</div>
                     <div class="card-body">
                         <a href="{{ route('group.show', $group) }}" class="card-link">Atpakaļ uz grupas sarakstu</a>
+                        <span id="endpoint-link" data-href="{{ action([\App\Http\Controllers\StudentController::class, 'resolve']) }}" class="hidden"></span>
 
                         {{ Form::open(['action' => [[\App\Http\Controllers\GroupController::class, 'storeMember'], $group]]) }}
                         {{ Form::hidden('student_id', null, ['id' => 'student-id']) }}
@@ -18,37 +19,7 @@
                         <b>Nolasīts: </b><span id="cam-qr-result">nekas</span>
                         <b>Atrasts: </b><span id="student-name">nav</span>
                         {{ Form::submit('Pievienot', ['class' => 'form-control btn btn-primary']) }}
-                        <script type="module">
-                            import QrScanner from "/js/qr-scanner/qr-scanner.min.js";
-
-                            const video = document.getElementById('qr-video');
-                            const camQrResult = document.getElementById('cam-qr-result');
-                            const studentId = document.getElementById('student-id');
-                            const studentName = document.getElementById('student-name');
-
-                            var oldQR = null;
-
-                            function resolve(result) {
-                                if (oldQR == result) return;
-
-                                camQrResult.textContent = result;
-
-                                $.post({
-                                    url: '{{ action([\App\Http\Controllers\StudentController::class, 'resolve']) }}',
-                                    data: {'type': 'qr', 'hash': result},
-                                    success: function (data) {
-                                        studentId.value = data.id;
-                                        studentName.textContent = data.name;
-                                    }
-                                });
-
-                                oldQR = result;
-                            }
-
-                            const scanner = new QrScanner(video, result => resolve(result));
-                            scanner.start();
-
-                        </script>
+                        @vite(['resources/js/scanner.js'])
                         {{ Form::close() }}
                     </div>
                 </div>
