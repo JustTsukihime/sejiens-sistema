@@ -17,7 +17,7 @@ body {
 
 hr {
   max-width: 50px;
-  border: 3px $light_pink;
+  border: 3px $dark_blue;
 
   &.light {
     border-color: $white;
@@ -25,7 +25,7 @@ hr {
 }
 
 a {
-  color: $dark_pink;
+  color: $dark_blue;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -36,11 +36,11 @@ h1, h2, h3, h4, h5, h6, #application-form {
 }
 
 .bg-primary {
-  background-color: $dark_pink !important;
+  background-color: $black !important;
 }
 
 .bg-secondary {
-  background-color: $pink;
+  background-color: $black;
 }
 
 .bg-dark {
@@ -99,7 +99,7 @@ img {
 
   @include media-breakpoint-up(lg) {
     border-color: transparent;
-    background-color: $dark_pink;
+    background-color: $black;
   }
 
   .navbar-nav {
@@ -179,14 +179,15 @@ iframe {
 }
 
 .text-highlight {
-  color: $dark_pink;
+  color: $dark_blue;
 }
 
 .btn-apply {
-  @include button-variant($dark_pink, rgba(207, 55, 126, 0.5));
-  padding: 1rem 2rem;
+  @include button-variant($light_orange, rgba(207, 55, 126, 0.5));
+  padding: 2rem 3rem;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 30px;
   border: none;
   border-radius: 300px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -206,7 +207,7 @@ iframe {
 }
 
 .text-primary {
-  color: #76aa32 !important;
+  color: #007bff !important;
 }
 
 .text-secondary {
@@ -214,7 +215,7 @@ iframe {
 }
 
 .btn-primary {
-  background-color: $dark_pink;
+  background-color: $light_orange;
   color: #fff;
 }
 

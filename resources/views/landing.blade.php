@@ -30,8 +30,9 @@
             </div>
 
             <div class="col-lg-8 mx-auto pt-5">
-                <h1>{{ config('app.name', 'Sējiens') }}</h1>
-                <h3>3. - 4. septembris</h3>
+                <h1 style = "font-size:75px">{{ config('app.name', 'Sējiens') }}</h1>
+                <h3 style = "font-size:50px">2. - 4. septembris</h3>
+                <br>
                 <a class="btn btn-apply js-scroll-trigger mt-2" href="#pieteikties">PIETEIKTIES</a>
             </div>
         </div>
@@ -44,11 +45,14 @@
                 <h2 class="section-heading text-white">Hey, pirmkursniek!</h2>
                 <hr class="light my-4">
                 <p class="text-faded mb-4">
-                    Tu esi godam izturējis centralizēto eksāmenu kārtošanu, pinķerīgo pieteikuma veidošanu un ilgu neziņas un satraukuma brīdi! Nu Tev sācies jauns un piedzīvojumiem pilns dzīves posms un beidzot vari saukt sevi par Latvijas Universitātes Datorikas fakultātes studentu!
+                Nu ko, tas brīdis ir klāt - centralizētie eksāmeni nokārtoti, dokumenti universitātē iesniegti, kā arī parakstīti (vai arī vēl nav parakstīti, es nezinu).
+Tas nozīmē, ka ir sācies jauns, ar piedzīvojumiem bagāts posms tavā dzīvē - studijas Latvijas Universitātes Datorikas fakultātē!
                 </p>
                 <p class="text-faded mb-4">
-                    Jaunais akadēmiskais gads jau ir pavisam tuvu, lai to uzveiktu, būs jāiemācās izdzīvot studiju džungļos, tāpēc mūsu draudzīgais pitoniņš tev palīdzēs apgūt visas vajadzīgās iemaņas un iepazīt savus jaunos kursa biedrus, kuri būs tava atslēga uz panākumiem Datorikas fakultātē.
-                    Universitātes savvaļas izdzīvošanas pamācības spēsim tev dot pasākumā "Sējiens", kur izbaudīsi pirmos soļus plašajā universitātes dzīve kopā ar jau pieredzējušajiem datoriķiem, kas nodos savas zināšanas.
+                Jaunais studiju gads jau ir tepat aiz stūra, un lai to pievarētu, būs jāiemācās jaunas iemaņas un viltības, lai izdzīvotu RB 19 gaiteņos un auditorijās.
+Tāpēc mūsu viltīgā lapsa tev iemācīs visas nepieciešamās viltības, un palīdzēs iepazīt savus jaunos kursabiedrus, kuri būs tavi labākie draugi turpmākos 4 gadus!
+Pirmo palīdzību un iemaņas, kā izdzīvot RB 19 telpās, dosim mācību gada pirmajā pasākumā - "Sējiens", kura laikā spēsi izjust, kāda tad ir tā studentu dzīve vecāku kursu studentu pavadībā,
+kuri savas zināšanas par studijām nodos tev! 
                 </p>
                 <p class="text-faded mb-4">
                     <b>Tevi iespējams māc šaubas, vai viss būs labi, vai orientēsies universitātē, un iedraudzēsies ar jaunajiem kursabiedriem?</b>
@@ -71,7 +75,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-3 text-center">
+            
                 <div class="mt-5 mx-auto">
                     <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
@@ -91,6 +95,9 @@
                                 <img class="d-block w-100" src="images/album/5.jpg" alt="5 slide">
                             </div>
                             <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/6.jpg" alt="6 slide">
+                            </div>
+                            <div class="carousel-item">
                                 <img class="d-block w-100" src="images/album/7.jpg" alt="7 slide">
                             </div>
                             <div class="carousel-item">
@@ -106,52 +113,6 @@
                                 <img class="d-block w-100" src="images/album/11.jpg" alt="11 slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="images/album/12.jpg" alt="12 slide">
-                            </div>
-
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                    <p class="text-dark mt-1">Pagājušā gada bildes</p>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-8 text-center">
-                <div class="mt-5 mx-auto">
-                    <p>Lai pirmajā studiju dienā universitātē Tu jau justos kā mājās, būtu iepazinies ar daudziem kursabiedriem,
-                        mēs aicinām piedalīties vienā no spilgtākajiem mūsu fakultātes notikumiem –
-                        <span class="text-primary font-weight-bold">pirmsaristotelī “Sējiens 2021”, kas notiks šī gada 3. septembrī.</span>
-                    </p>
-                    <p>
-                        Piedalies aizraujošā pirmsstudiju piedzīvojumā,
-                        kurā iegūtās prasmes varēsi izmantot arī turpmāk, lai neapjuktu, sastopoties ar negulētām naktīm,
-                        kontroldarbiem un sesiju.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-8 text-center">
-                <div class="mt-5 mx-auto">
-                    <p><span class="text-primary font-weight-bold">Piektdienā, 3. septembrī, tiksimies Latvijas Universitātes galvenajā ēkā
-                          (Raiņa bulvāris 19)</span>, lai iepazītu gan universitātes telpas, gan arī savus jaunos kursabiedrus,
-                        iesaistoties dažādos interesantos piedzīvojumos. </p>
-                    <p> 5. septembrī mēs tiksimies atkārtoti, lai <span class="text-primary font-weight-bold"> sagatavotos
-                        Latvijas Universitātes studentu svētkiem “Aristotelis”</span> un parādītu pārējām fakultātēm, cik DF ir
-                        saliedēta un “skaļa” fakultāte!</p>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-3 text-center">
-                <div class="mt-5 mx-auto">
-                    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
                                 <img class="d-block w-100" src="images/album/13.jpg" alt="13 slide">
                             </div>
                             <div class="carousel-item">
@@ -178,7 +139,44 @@
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/album/21.jpg" alt="21 slide">
                             </div>
-                            <div class="carousel-item">
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                    <p class="text-dark mt-1">Pagājušo gadu bildes</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="mt-5 mx-auto">
+                    <p>Lai pirmajā studiju dienā universitātē Tu jau justos kā mājās, būtu iepazinies ar daudziem kursabiedriem,
+                        mēs aicinām piedalīties vienā no spilgtākajiem mūsu fakultātes notikumiem –
+                        <span class="text-primary font-weight-bold">pirmsaristotelī “Sējiens 2022”, kas notiks šī gada 2. septembrī.</span>
+                    </p>
+                    <p>
+                        Piedalies aizraujošā pirmsstudiju piedzīvojumā,
+                        kurā iegūtās prasmes varēsi izmantot arī turpmāk, lai neapjuktu, sastopoties ar negulētām naktīm,
+                        kontroldarbiem un sesiju.
+                    </p><p><span class="text-primary font-weight-bold">Piektdienā, 2. septembrī, tiksimies Latvijas Universitātes galvenajā ēkā
+                          (Raiņa bulvāris 19)</span>, lai iepazītu gan universitātes telpas, gan arī savus jaunos kursabiedrus,
+                        iesaistoties dažādos interesantos piedzīvojumos. Vakarā dodamies ārpus Rīgas, lai turpinātu studentu saliedēšanu. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="text-center">
+                <div class="mt-5 mx-auto">
+                    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
                                 <img class="d-block w-100" src="images/album/22.jpg" alt="22 slide">
                             </div>
                             <div class="carousel-item">
@@ -186,6 +184,48 @@
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/album/24.jpg" alt="24 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/25.jpg" alt="25 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/26.jpg" alt="26 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/27.jpg" alt="27 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/28.jpg" alt="28 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/29.jpg" alt="29 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/30.jpg" alt="30 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/31.jpg" alt="31 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/32.jpg" alt="32 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/33.jpg" alt="33 slide">
+                            </div>
+                           <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/34.jpg" alt="34 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/35.jpg" alt="35 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/36.jpg" alt="36 slide">
+                            </div>
+                             <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/37.jpg" alt="37 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/38.jpg" alt="38 slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
@@ -197,16 +237,88 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <p class="text-dark mt-1">Pagājušā gada bildes</p>
+                    <p class="text-dark mt-1">Pagājušo gadu bildes</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="mt-5 mx-auto">
+                    
+                    <p><span class="text-primary font-weight-bold">Sestdienā, 3. septembrī</span>, studentus sagaida disciplīna, komandas darbs un izturība, kā arī jautras un ekstrēmas aktivitātes un kopumā labākā pavadītā diena studentu dzīvēs. Šī būs diena, kad students nostiprinās saikni ar saviem jaunajiem kursabiedriem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="text-center">
+                <div class="mt-5 mx-auto">
+                    <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/album/39.jpg" alt="39 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/40.jpg" alt="40 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/41.jpg" alt="41 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/42.jpg" alt="42 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/43.jpg" alt="43 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/44.jpg" alt="44 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/45.jpg" alt="45 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/46.jpg" alt="46 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/47.jpg" alt="47 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/48.jpg" alt="48 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/49.jpg" alt="49 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/50.jpg" alt="50 slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/album/51.jpg" alt="51 slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <p class="text-dark mt-1">Pagājušo gadu bildes</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="mt-5 mx-auto">
+                    <p> 4. septembrī mēs tiksimies atkārtoti, lai <span class="text-primary font-weight-bold"> sagatavotos
+                        Latvijas Universitātes studentu svētkiem “Aristotelis”</span> un parādītu pārējām fakultātēm, cik DF ir
+                        saliedēta un “skaļa” fakultāte!</p>
                 </div>
             </div>
         </div>
         <div class="row mt-4">
-            <div class="col-12 text-center">
+            <!--<div class="col-12 text-center">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s9sPLpHsm4s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
-            </div>
+            </div>-->
             <div class="col-12 text-center">
                 <p class="text-secondary mt-3">Sējiens ir viens no nozīmīgākajiem Latvijas Universitātes Datorikas fakultātes pasākumiem, un  Datorikas fakultātes Studentu pašpārvalde parūpēsies, lai Tu un Tavi topošie kursa biedri iepazītos un sadraudzētos neformālā gaisotnē, pakustētos un padomātu dažādās interesnatās aktivitātēs, uzzinātu svarīgāko, kas sagaida universitātes dzīvē, un, protams, neaizmirstami pavadītu pēdējos brīvos brīžus pirms studiju sākuma!</p>
             </div>
@@ -228,8 +340,6 @@
 <section class="bg-secondary text-white" id="pieteikties">
     <div class="container text-center">
         <h2 class="mb-4">Piesakies</h2>
-        <h4 class="text-white mb-5">* Lai piedalītos pasākumā, lūdzu nodrošini, ka esi ieguvis digitālo COVID-19 sertifikātu!
-        </h4>
         <div class="offset-lg-2 col-lg-8">
             @if(session()->has('application-success'))
                 <div class="alert alert-primary" role="alert">{{ session()->get('application-success') }}</div>
@@ -245,7 +355,7 @@
             {{ Form::close() }}
         </div>
         <h4 class="text-white pt-2 mt-5">Mēs, Datorikas fakultātes Studentu pašpārvalde, apstrādāsim Tavus datus, lai informētu Tevi par pasākumu un jaunumiem, kas saistīti ar studiju uzsākšanu. Tavus datus mēs nenodosim trešajām personām. Ja Tev ir jautājumi, sazinies ar mums info@datoriki.lv.
-        </h4>
+                    </h4>
     </div>
 </section>
 @endsection

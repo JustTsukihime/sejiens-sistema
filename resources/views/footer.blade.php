@@ -39,17 +39,22 @@
     <div class="container">
         <div id="sponsors" class="text-center">
             <div class="row">
-                <div class="col-lg-4 mr-auto text-center">
+            <div class="col-lg-3 mr-auto text-center">
                     <a href="https://www.accenture.com/lv-en/">
                         <img src="{{ asset('/images/accenture_logo.svg') }}" alt="Accenture">
                     </a>
                 </div>
-                <div class="col-lg-4 mr-auto text-center">
+                <div class="col-lg-3 mr-auto text-center">
+                    <a href="https://www.tietoevry.com/">
+                        <img src="{{ asset('/images/tietoevry_logo.png') }}" alt="Tietoevry">
+                    </a>
+                </div>
+                <div class="col-lg-3 pl-5 mr-auto text-center">
                     <a href="http://datoriki.lv/">
                         <img src="{{ asset('/images/dfsp_logo.svg') }}" alt="DF SP Logo">
                     </a>
                 </div>
-                <div class="col-lg-4 mr-auto text-center">
+                <div class="col-lg-3 mr-auto text-center">
                     <a href="http://www.df.lu.lv/">
                         <img src="{{ asset('/images/lu_logo.png') }}" alt="DF Logo">
                     </a>
