@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Sējiens 2021</title>
+    <title>Sējiens 2022</title>
 </head>
 <body style="font-family: arial; letter-spacing: 0.5px;">
 <table width="100%" style="background-color:rgba(140, 198, 62, 0.55);font-size:13px;"
@@ -46,25 +46,15 @@
                                 <td>
                                     <table width="85%" align="center">
                                         <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt" >Ja tu saņēmi šo e-pastu, tad Tu esi pieteicies Datorikas fakultātes pirmsaristotelim <b>"Sējiens 2021"</b>.
-                                                <p>Atgādinām, ka pasākums ir <b>bez dalības maksas</b>, par ko izsakām milzīgu paldies mūsu draugiem – <b>Accenture</b>!</p>
-                                                <p><b>Gaidīsim Tevi Sējiena pirmajā daļā piektdien, 3. septembrī</b> Datorikas fakultātes telpās, Raiņa bulvārī 19. Pirmās daļas laikā izpētīt universitātes telpas un iepazīties ar saviem kursabiedriem.</p>
-                                                <p>Turpinot pēdējo pirmsmācību nedēļu, <b>aicinām Tevi sestdien, 4. septembrī, piedalīties</b> Datorikas fakultātes Studentu pašpārvaldes rīkotajā semestra uzsākšanas <b>pasākumā otrajā daļā</b>, kurā sportiskās un saliedējošās aktivitātes varēsi iepazīt kursabiedrus svaigā gaisā, Biķernieku mežā, netālu no Veselības centra Biķernieki.</p>
+                                            <td style="line-height:1.5; font-size: 11.5pt" >Ja tu saņēmi šo e-pastu, tad Tu esi pieteicies Datorikas fakultātes pirmsaristotelim <b>"Sējiens 2022"</b>.
+                                                <p>Atgādinām, ka pasākums ir <b>bez dalības maksas</b>, par ko izsakām milzīgu paldies mūsu draugiem – <b>Accenture un Tietoevry</b>!</p>
+                                                <p><b>Gaidīsim Tevi Sējiena pirmajā daļā piektdien, 2. septembrī</b> Datorikas fakultātes telpās, Raiņa bulvārī 19. Pirmās daļas laikā izpētīsim universitātes telpas un iepazīsimies ar saviem jaunajiem kursabiedriem.</p>
+                                                <p>Turpinot Sējienu, <b>kopīgi dosimies uz kādu Datoriķiem tuvu vietu, tepat Latvijā, kādas stundas braucienā no Rīgas (vai varbūt arī ne?)</b> , kur vakarā kopīgi pavadīsim laiku, atpūtīsimies, iepazīsim savus kursa biedrus, un vienkārši pavadīsim labi laiku, lai sagatavotos nākamajai dienai.
+Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās pārbaudīs tavas spējas dažādos aspektos, kā arī būs vieslekcijas no mūsu fantastiskajiem sponsoriem, un baumo, ka vakarā būs jau tavs pirmais baļļuks studentijā!</p>
+<p>Un sējiena pēdējajā dienā, trešajā dienā, kopīgi dosimies uz mājiņām, lai jau vakarā kopīgi dotos uz Aristoteļa svētkiem Doma Laukumā.</p>
                                                 <p>Lūdzu, aizpildi <a href="{{ route('student.confirmation', $student->hash) }}"> <font color='#cf374b'><b>apstiprinājuma anketu</b></font></a> dalībai pasākumā! It īpaši, ja ir kādas alerģijas vai uztura ierobežojumi. (Būs pieejama līdz 1. septembrim.)</p>
-                                                Kad esi to izdarījis – apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam. Iesakam arī uzmest aci šīs dienas laikapstākļu prognozei.
-                                                <p>Pat tad, ja neplāno doties uz Sējienu, noteikti atzīmē sev kalendārā, ka <b>6. septembrī plkst. 16.00 mēs visi tiekamies pie Latvijas Nacionālās bibliotēkās, lai kopīgi dotos uz Aristoteļa svētkiem LU Akadēmiskajā centrā!</b> Dalība brīvprātīgā piespiedu kārtā.</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="line-height:1.25; font-size: 20px"><b><font color='#af192d'>*** Atgādinam, lai piedalītos pasākumos, tev ir nepieciešams COVID-19 vakcinācijas sertifikāts vai arī COVID-19 pārslimošanas sertifikāts! ***</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td height="15"></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt" >COVID-19 vakcinācijas sertifikātu var iegūt <a href="https://covid19sertifikats.lv"> <font color='#cf374b'><b>COVID-19 digitālā sertifikāta lapā</b></font></a>.
-                                                <br>Šis sertifikāts apliecina, ka esi vakcinējies pret COVID-19 un ir pagājušas četrpadsmit dienas pēc pilna vakcinācijas kursa pabeigšanas.</br>
-                                                <p>COVID-19 pārslimošanas sertifikāts ir nepieciešams tiem, kuri ir pārslimojuši COVID-19 infekciju.</p>
+                                                Kad esi to izdarījis – apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam. Iesakam arī uzmest aci šīs dienas laikapstākļu prognozei, jo kā tautā saka - nav nepiemēroti laikapstākļi, ir nepiemērots apģērbs!
+                                                <p>n pat tad, ja kādu mistisku iemeslu dēļ pēkšņi netiec uz Sējienu, noteikti atzīmē sev kalendārā, ka <b>4. septembrī plkst. 17:45 mēs visi tiekamies Raiņa bulvārī 19, lai kopīgi dotos uz Aristoteļa svētkiem Doma laukumā.</b> Tu jau nevarētu ierasties!</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -76,8 +66,8 @@
                                         <tr>
                                             <td><font color='#000' style="line-height:1.5; font-size: 18px"><b>Svarīgi!</b></font>
                                                 <font style="line-height:1.5; font-size: 11.5pt">
-                                                    <br>Sējiena pirmā daļa norisināsies 3. septembrī. Tās sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832" style="text-decoration: none;"><font color='#cf374b'><b>Raiņa bulvārī 19</b></font></a>. Reģistrācija no plkst. 9.30.
-                                                    <br>Sējiena otrā daļa norisināsies 4. septembrī. Tās sākums ir <b>plkst.11.00</b> <a href="https://goo.gl/maps/CAaTEJYQsrQBs8uj8" style="text-decoration: none;"><font color='#cf374b'><b>Biķernieku mežā</b></font></a>. Ierašanās no plkst. 10.30.</font>
+                                                    <br>Sējiena pirmā daļa norisināsies 2. septembrī. Tās sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832" style="text-decoration: none;"><font color='#cf374b'><b>Raiņa bulvārī 19</b></font></a>. Reģistrācija no plkst. 9.30.
+                                                    <br>Sējiena otrā daļa norisināsies tepat Latvijā, kādas stundas braucienā no Rīgas, izbraukšana 2. septembrī <b>plkst.18.30</b>
                                             </td>
                                         </tr>
                                         <!-- <tr>
@@ -233,11 +223,11 @@
                                     <table width="85%" align="center">
                                         <!-- <tr>
                                             <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Esam sarūpējuši <a style="text-decoration: none;" href="https://www.facebook.com/groups/2571684193162234"><font color='#cf374b'><b>kursa Facebook grupu. </b></font></a></td>
-                                        </tr>
+                                        </tr>-->
                                         <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Kā arī <a style="text-decoration: none;" href="https://discord.gg/bT5CkVU"><font color='#cf374b'><b>kursa Discord serveri. </b></font></a></td>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Kā arī <a style="text-decoration: none;" href="https://discord.gg/5FY8T5YnkQ"><font color='#cf374b'><b>kursa Discord serveri. </b></font></a></td>
                                         </tr>
-                                        <tr>
+                                        <!-- <tr>
                                             <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Tāpat neaizmirsti atzīmēties <a style="text-decoration: none;" href="https://www.facebook.com/events/951030595414200"><font color='#cf374b'><b>Pļāviens FB pasākumā. </b></font></a></td>
                                         </tr> -->
                                         <tr>
