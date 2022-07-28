@@ -314,11 +314,11 @@ kuri savas zināšanas par studijām nodos tev!
             </div>
         </div>
         <div class="row mt-4">
-            <!--<div class="col-12 text-center">
+            <div class="col-12 text-center">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s9sPLpHsm4s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/OoLdJO9Zv60" title="Sejiens video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-            </div>-->
+            </div>
             <div class="col-12 text-center">
                 <p class="text-secondary mt-3">Sējiens ir viens no nozīmīgākajiem Latvijas Universitātes Datorikas fakultātes pasākumiem, un  Datorikas fakultātes Studentu pašpārvalde parūpēsies, lai Tu un Tavi topošie kursa biedri iepazītos un sadraudzētos neformālā gaisotnē, pakustētos un padomātu dažādās interesnatās aktivitātēs, uzzinātu svarīgāko, kas sagaida universitātes dzīvē, un, protams, neaizmirstami pavadītu pēdējos brīvos brīžus pirms studiju sākuma!</p>
             </div>
