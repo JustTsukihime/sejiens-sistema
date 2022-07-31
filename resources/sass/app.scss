@@ -133,11 +133,10 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: auto;
 
   @include media-breakpoint-up(lg) {
     height: 100vh;
-    min-height: 650px;
+    min-height: 1150px;
     padding-top: 0;
     padding-bottom: 0;
   }
