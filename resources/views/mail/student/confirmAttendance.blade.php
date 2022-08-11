@@ -5,13 +5,13 @@
     <title>Sējiens 2022</title>
 </head>
 <body style="font-family: arial; letter-spacing: 0.5px;">
-<table width="100%" style="background-color:rgba(140, 198, 62, 0.55);font-size:13px;"
-       align="center" bgcolor="#8cc63e" cellpadding="0" cellspacing="0">
+<table width="100%" style="background-color:#007bff;font-size:13px;"
+       align="center" bgcolor="#007bff" cellpadding="0" cellspacing="0">
     <tr>
-        <td align="center" style="background: #ff83b5; "><img style="margin-bottom: -3px; " width="600px" src="{{ asset('/images/banner.png') }}"  ></td>
+        <td align="center" style="background: #007bff; "><img style="margin-bottom: -3px; " width="600px" src="{{ asset('/images/banner.png') }}"  ></td>
     </tr>
     <tr>
-        <td width="100%" style="background: #ff83b5;">
+        <td width="100%" style="background: #007bff;">
             <div><p></p></div>
         </td>
     </tr>
@@ -51,10 +51,10 @@
                                                 <p><b>Gaidīsim Tevi Sējiena pirmajā daļā piektdien, 2. septembrī</b> Datorikas fakultātes telpās, Raiņa bulvārī 19. Pirmās daļas laikā izpētīsim universitātes telpas un iepazīsimies ar saviem jaunajiem kursabiedriem.</p>
                                                 <p>Turpinot Sējienu, <b>kopīgi dosimies uz kādu Datoriķiem tuvu vietu, tepat Latvijā, kādas stundas braucienā no Rīgas (vai varbūt arī ne?)</b> , kur vakarā kopīgi pavadīsim laiku, atpūtīsimies, iepazīsim savus kursa biedrus, un vienkārši pavadīsim labi laiku, lai sagatavotos nākamajai dienai.
 Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās pārbaudīs tavas spējas dažādos aspektos, kā arī būs vieslekcijas no mūsu fantastiskajiem sponsoriem, un baumo, ka vakarā būs jau tavs pirmais baļļuks studentijā!</p>
-<p>Un sējiena pēdējajā dienā, trešajā dienā, kopīgi dosimies uz mājiņām, lai jau vakarā kopīgi dotos uz Aristoteļa svētkiem Doma Laukumā.</p>
-                                                <p>Lūdzu, aizpildi <a href="{{ route('student.confirmation', $student->hash) }}"> <font color='#cf374b'><b>apstiprinājuma anketu</b></font></a> dalībai pasākumā! It īpaši, ja ir kādas alerģijas vai uztura ierobežojumi. (Būs pieejama līdz 1. septembrim.)</p>
+<p>Un sējiena pēdējajā dienā, trešajā dienā, kopīgi dosimies uz Rīgu, lai dotos uz Aristoteļa svētkiem Doma Laukumā.</p>
+                                                <p>Lūdzu, aizpildi <a href="{{ route('student.confirmation', $student->hash) }}"> <font color='#fe8000'><b>apstiprinājuma anketu</b></font></a> dalībai pasākumā! It īpaši, ja ir kādas alerģijas vai uztura ierobežojumi. (Būs pieejama līdz 1. septembrim.)</p>
                                                 Kad esi to izdarījis – apsveicam, tagad Tu esi dalībnieku sarakstā, tāpēc vari sākt gatavoties pasākumam. Iesakam arī uzmest aci šīs dienas laikapstākļu prognozei, jo kā tautā saka - nav nepiemēroti laikapstākļi, ir nepiemērots apģērbs!
-                                                <p>n pat tad, ja kādu mistisku iemeslu dēļ pēkšņi netiec uz Sējienu, noteikti atzīmē sev kalendārā, ka <b>4. septembrī plkst. 17:45 mēs visi tiekamies Raiņa bulvārī 19, lai kopīgi dotos uz Aristoteļa svētkiem Doma laukumā.</b> Tu jau nevarētu ierasties!</p>
+                                                <p>Un pat tad, ja kādu mistisku iemeslu dēļ pēkšņi netiec uz Sējienu, noteikti atzīmē sev kalendārā, ka <b>4. septembrī plkst. 17:40 mēs visi tiekamies Doma laukumā, uz Aristoteļa oficiālo daļu, un tad kopā gājienā uz Raiņa bulvāri 19.</b> Tu jau nevarētu ierasties!</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -66,11 +66,12 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                         <tr>
                                             <td><font color='#000' style="line-height:1.5; font-size: 18px"><b>Svarīgi!</b></font>
                                                 <font style="line-height:1.5; font-size: 11.5pt">
-                                                    <br>Sējiena pirmā daļa norisināsies 2. septembrī. Tās sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832" style="text-decoration: none;"><font color='#cf374b'><b>Raiņa bulvārī 19</b></font></a>. Reģistrācija no plkst. 9.30.
-                                                    <br>Sējiena otrā daļa norisināsies tepat Latvijā, kādas stundas braucienā no Rīgas, izbraukšana 2. septembrī <b>plkst.18.30</b>
+                                                    <br>Sējiena pirmā daļa norisināsies 2. septembrī. Tās sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832" style="text-decoration: none;"><font color='#fe8000'><b>Raiņa bulvārī 19</b></font></a>. Reģistrācija no plkst. 9.00.
+                                                    <br>Sējiena otrā daļa norisināsies tepat Latvijā, kādas stundas braucienā no Rīgas, izbraukšana 2. septembrī <b>plkst.18.00</b>
+                                                    <br>Tiem, kas piedalīsies tikai uz otro daļu, būs jāierodas pie <a href="https://goo.gl/maps/GzqypqVqYSB5KybG7" style="text-decoration: none;"><font color='#fe8000'><b>Aspazijas bulvāra 5</b></font></a>, <b>plkst. 17.45,</b> kur jūs gaidīs pārējie pasākuma dalībnieki ar orgiem.
                                             </td>
                                         </tr>
-                                        <!-- <tr>
+                                        <tr>
                                             <td height="15"></td>
                                         </tr>
                                         <tr>
@@ -83,32 +84,29 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                     <td valign="top">
                                                         <u>Vispārīgi:</u>
                                                         <ul type="none" style="line-height:2; padding-left: 10px; margin-top: 0">
-                                                            <li><input type="checkbox"> Siltas zeķes un apģērbu</li>
+                                                            <li><input type="checkbox"> Siltas zeķes un apģērbu, kuru nav žēl</li>
                                                             <li><input type="checkbox"> Personīgās higiēnas līdzekļi</li>
                                                             <li><input type="checkbox"> Dvielis</li>
-                                                            <li><input type="checkbox"> Guļammaiss</li>
-                                                            <li><input type="checkbox"> Paklājiņš vai matracis</li>
-                                                            <li><input type="checkbox"> Nedaudz skaidras naudas</li>
+                                                            <li><input type="checkbox"> Guļammaiss, paklājiņš vai matracis</li>
+                                                            <li><input type="checkbox"> Skaidra nauda</li>
+                                                            <li><input type="checkbox"> Kaut kas mazs uzkožams pasākuma laikā</li>
 
                                                         </ul>
                                                     </td>
                                                     <td valign="top">
                                                         <u>Nakts trasei un citām aktivitātēm:</u>
                                                         <ul type="none" style="line-height:2; padding-left: 10px; margin-top: 0">
-                                                            <li><input type="checkbox"> Drēbes, kuru nav žēl</li>
                                                             <li><input type="checkbox"> Lukturītis</li>
-                                                            <li><input type="checkbox"> Gumijas zābaki/citi ērti un izturīgi apavi</li>
                                                             <li><input type="checkbox"> Maiņas drēbes, apavi</li>
                                                             <li><input type="checkbox"> Lietusmētelis</li>
-                                                            <li><input type="checkbox"> Uzkodas un dzeramais naktstrasei</li>
                                                         </ul>
                                                     </td>
 
                                                     <td width="10%"></td>
-                                                </tr> -->
+                                                </tr>
                                             </table>
-                                            <!-- <span>Ņem vērā, <b>laikapstākļi mēdz būt dažādi</b>, tāpēc šeit ir pieminēts tikai survival-kit, bez kura nekādi nevarēsi iztikt. Par visu pārējo parūpējies pats.
-                                                            <br><br><b>Nakts trase</b> ir nopietns pārbaudījums gan ķermenim, gan prātam, un dažreiz gadās tā, ka drēbes to neiztur, tāpēc paņem līdzi kādu maiņas apģērba komplektu. -->
+                                            <span>Ņem vērā, <b>laikapstākļi mēdz būt dažādi</b>, tāpēc šeit ir pieminēts tikai survival-kit, bez kā var arī iztikt, bet pašam būs grūtāk. Par visu pārējo parūpējies pats.
+                                                            <br><br><b>Nakts trase</b> ir nopietns pārbaudījums gan ķermenim, gan prātam, un dažreiz gadās tā, ka drēbes to neiztur, tāpēc paņem līdzi kādu maiņas apģērba komplektu. 
                                                             <br><p style="text-align: center;">Ja rodas kādas neskaidrības - raksti uz <span class="text-primary" href="mailto:sejiens@datoriki.lv"><b>sejiens@datoriki.lv</b></span>.</p>
                                                             <br>
                                         </td>
@@ -160,12 +158,12 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                                                                                         src="{{ asset('/images/facebook.png') }}"
                                                                                                                         alt="FB logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.facebook.com/ludfsp/" style="text-decoration: none;">
-                                                                <font color="#cf374b" ><b>/ludfsp</b></font></a></td>
+                                                                <font color="#fe8000" ><b>/ludfsp</b></font></a></td>
                                                     </tr>
                                                     <tr>
                                                         <td style="text-indent: 10px;" >
                                                             <a href="https://www.facebook.com/LUDatorikasfakultate/" style="text-decoration: none;">
-                                                                <font color="#cf374b"><b>/LUDatorikasfakultate</b></font></a>
+                                                                <font color="#fe8000"><b>/LUDatorikasfakultate</b></font></a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -177,11 +175,11 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                                                                            src="{{ asset('/images/home.png') }}"
                                                                                                            alt="WEB logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="http://datoriki.lv/" style="text-decoration: none;">
-                                                                <font color="#cf374b"><b>datoriki.lv</b></font></a></td>
+                                                                <font color="#fe8000"><b>datoriki.lv</b></font></a></td>
                                                     </tr>
                                                     <tr>
                                                         <td style="text-indent: 10px;" ><a href="http://www.df.lu.lv/" style="text-decoration: none;">
-                                                                <font color="#cf374b"><b>df.lu.lv</b></font></a></td>
+                                                                <font color="#fe8000"><b>df.lu.lv</b></font></a></td>
                                                     </tr>
                                                 </table>
                                             </td>
@@ -192,25 +190,25 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                                                                                            src="{{ asset('/images/instagram.png') }}"
                                                                                                                            alt="Instagram logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.instagram.com/datoriki/" style="text-decoration: none;">
-                                                                <font color="#cf374b"><b>@datoriki</b></font></a></td>
+                                                                <font color="#fe8000"><b>@datoriki</b></font></a></td>
                                                     </tr>
                                                     <tr>
                                                         <td style="text-indent: 10px;" ><a href="https://www.instagram.com/lu_datorikasfakultate/" style="text-decoration: none;">
-                                                                <font color="#cf374b"><b>@lu_datorikasfakultate</b></font></a></td>
+                                                                <font color="#fe8000"><b>@lu_datorikasfakultate</b></font></a></td>
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <!-- <td>
+                                            <td>
                                                 <table>
                                                     <tr>
-                                                        <td rowspan="2"><a href="https://www.facebook.com/events/955436328262160/"><img style="height: 45px;"
+                                                        <td rowspan="2"><a href="https://www.facebook.com/events/619103526149412/"><img style="height: 45px;"
                                                                                                                                         src="{{ asset('/images/event.png') }}"
                                                                                                                                         alt="Event logo"></a></td>
-                                                        <td style="text-indent: 10px;" ><a href="https://www.facebook.com/events/955436328262160/" style="text-decoration: none;">
-                                                                <font color="#cf374b"><b>Sējiens FB pasākums</b></font></a></td>
+                                                        <td style="text-indent: 10px;" ><a href="https://www.facebook.com/events/619103526149412/" style="text-decoration: none;">
+                                                                <font color="#fe8000"><b>Sējiens FB pasākums</b></font></a></td>
                                                     </tr>
                                                 </table>
-                                            </td> -->
+                                            </td>
                                         </tr>
                                     </table>
                                 </td>
@@ -222,13 +220,13 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                 <td>
                                     <table width="85%" align="center">
                                         <!-- <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Esam sarūpējuši <a style="text-decoration: none;" href="https://www.facebook.com/groups/2571684193162234"><font color='#cf374b'><b>kursa Facebook grupu. </b></font></a></td>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Esam sarūpējuši <a style="text-decoration: none;" href="https://www.facebook.com/groups/2571684193162234"><font color='#fe8000'><b>kursa Facebook grupu. </b></font></a></td>
                                         </tr>-->
                                         <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Kā arī <a style="text-decoration: none;" href="https://discord.gg/5FY8T5YnkQ"><font color='#cf374b'><b>kursa Discord serveri. </b></font></a></td>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Kā arī <a style="text-decoration: none;" href="https://discord.gg/5FY8T5YnkQ"><font color='#fe8000'><b>kursa Discord serveri. </b></font></a></td>
                                         </tr>
                                         <!-- <tr>
-                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Tāpat neaizmirsti atzīmēties <a style="text-decoration: none;" href="https://www.facebook.com/events/951030595414200"><font color='#cf374b'><b>Pļāviens FB pasākumā. </b></font></a></td>
+                                            <td style="line-height:1.5; font-size: 11.5pt; text-align: center;"><font color="#000">Tāpat neaizmirsti atzīmēties <a style="text-decoration: none;" href="https://www.facebook.com/events/951030595414200"><font color='#fe8000'><b>Pļāviens FB pasākumā. </b></font></a></td>
                                         </tr> -->
                                         <tr>
                                             <td style="line-height:1.5; font-size: 11.5pt; text-align: center; font-style:italic; padding-top: 15px;"><font color="#000">P.S. Sējienā būs arī iespējams iegūt savā īpašumā <a href="http://datoriki.lv/suveniri/"><font color='#000'>Datorikas fakultātes suvenīrus. </font></a></td>
