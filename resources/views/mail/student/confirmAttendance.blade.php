@@ -155,7 +155,7 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="https://www.facebook.com/ludfsp/"><img style="height: 45px;"
-                                                                                                                        src="{{ asset('/images/facebook.svg') }}"
+                                                                                                                        src="{{ asset('/images/facebook.png') }}"
                                                                                                                         alt="FB logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.facebook.com/ludfsp/" style="text-decoration: none;">
                                                                 <font color="#fe8000" ><b>/ludfsp</b></font></a></td>
@@ -172,7 +172,7 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="http://datoriki.lv/"><img style="height: 55px;"
-                                                                                                           src="{{ asset('/images/home.svg') }}"
+                                                                                                           src="{{ asset('/images/home.png') }}"
                                                                                                            alt="WEB logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="http://datoriki.lv/" style="text-decoration: none;">
                                                                 <font color="#fe8000"><b>datoriki.lv</b></font></a></td>
@@ -187,7 +187,7 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="https://www.instagram.com/datoriki/"><img style="height: 45px;"
-                                                                                                                           src="{{ asset('/images/instagram.svg') }}"
+                                                                                                                           src="{{ asset('/images/instagram.png') }}"
                                                                                                                            alt="Instagram logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.instagram.com/datoriki/" style="text-decoration: none;">
                                                                 <font color="#fe8000"><b>@datoriki</b></font></a></td>
@@ -202,7 +202,7 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="https://www.facebook.com/events/619103526149412/"><img style="height: 45px;"
-                                                                                                                                        src="{{ asset('/images/event.svg') }}"
+                                                                                                                                        src="{{ asset('/images/event.png') }}"
                                                                                                                                         alt="Event logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.facebook.com/events/619103526149412/" style="text-decoration: none;">
                                                                 <font color="#fe8000"><b>Sējiens FB pasākums</b></font></a></td>
