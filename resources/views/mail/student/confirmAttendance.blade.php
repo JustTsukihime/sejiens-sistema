@@ -68,7 +68,7 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                 <font style="line-height:1.5; font-size: 11.5pt">
                                                     <br>Sējiena pirmā daļa norisināsies 2. septembrī. Tās sākums ir <b>plkst.10.00</b> <a href="https://goo.gl/maps/Nw87VyMxQ832" style="text-decoration: none;"><font color='#fe8000'><b>Raiņa bulvārī 19</b></font></a>. Reģistrācija no plkst. 9.00.
                                                     <br>Sējiena otrā daļa norisināsies tepat Latvijā, kādas stundas braucienā no Rīgas, izbraukšana 2. septembrī <b>plkst.18.00</b>
-                                                    <br>Tiem, kas piedalīsies tikai uz otro daļu, būs jāierodas pie <a href="https://goo.gl/maps/GzqypqVqYSB5KybG7" style="text-decoration: none;"><font color='#fe8000'><b>Aspazijas bulvāra 5</b></font></a>, <b>plkst. 17.45,</b> kur jūs gaidīs pārējie pasākuma dalībnieki ar orgiem.
+                                                    <br>Tiem, kas piedalīsies tikai uz otro daļu, būs jāierodas pie <a href="https://goo.gl/maps/GzqypqVqYSB5KybG7" style="text-decoration: none;"><font color='#fe8000'><b>Aspazijas bulvāra 5</b></font></a>, <b>plkst. 17.30,</b> kur jūs gaidīs pārējie pasākuma dalībnieki ar orgiem.
                                             </td>
                                         </tr>
                                         <tr>
@@ -155,7 +155,7 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="https://www.facebook.com/ludfsp/"><img style="height: 45px;"
-                                                                                                                        src="{{ asset('/images/facebook.png') }}"
+                                                                                                                        src="{{ asset('/images/facebook.svg') }}"
                                                                                                                         alt="FB logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.facebook.com/ludfsp/" style="text-decoration: none;">
                                                                 <font color="#fe8000" ><b>/ludfsp</b></font></a></td>
@@ -172,7 +172,7 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="http://datoriki.lv/"><img style="height: 55px;"
-                                                                                                           src="{{ asset('/images/home.png') }}"
+                                                                                                           src="{{ asset('/images/home.svg') }}"
                                                                                                            alt="WEB logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="http://datoriki.lv/" style="text-decoration: none;">
                                                                 <font color="#fe8000"><b>datoriki.lv</b></font></a></td>
@@ -187,7 +187,7 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="https://www.instagram.com/datoriki/"><img style="height: 45px;"
-                                                                                                                           src="{{ asset('/images/instagram.png') }}"
+                                                                                                                           src="{{ asset('/images/instagram.svg') }}"
                                                                                                                            alt="Instagram logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.instagram.com/datoriki/" style="text-decoration: none;">
                                                                 <font color="#fe8000"><b>@datoriki</b></font></a></td>
@@ -202,7 +202,7 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="https://www.facebook.com/events/619103526149412/"><img style="height: 45px;"
-                                                                                                                                        src="{{ asset('/images/event.png') }}"
+                                                                                                                                        src="{{ asset('/images/event.svg') }}"
                                                                                                                                         alt="Event logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.facebook.com/events/619103526149412/" style="text-decoration: none;">
                                                                 <font color="#fe8000"><b>Sējiens FB pasākums</b></font></a></td>
