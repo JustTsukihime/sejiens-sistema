@@ -202,7 +202,7 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="https://www.facebook.com/events/619103526149412/"><img style="height: 45px;"
-                                                                                                                                        src="{{ asset('/images/event.png') }}"
+                                                                                                                                        src="{{ asset('/images/event.svg') }}"
                                                                                                                                         alt="Event logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.facebook.com/events/619103526149412/" style="text-decoration: none;">
                                                                 <font color="#fe8000"><b>Sējiens FB pasākums</b></font></a></td>
