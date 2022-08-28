@@ -29,6 +29,7 @@ Route::group(['prefix' => 'student', 'as' => 'student.'], function() {
     Route::post('importAttendees', [StudentController::class, 'importAttendees'])->name('importAttendees');
     Route::post('resolve', [StudentController::class, 'resolve']);
     Route::post('confirm', [StudentController::class, 'confirm'])->name('confirm');
+    Route::post('qrarchive', [StudentController::class, 'downloadQRArchive']);
     Route::get('confirm/{hash}', [StudentController::class, 'confirmation'])->name('confirmation');
     Route::get('reject/{email}', [StudentController::class, 'reject']);
     Route::get('{student}/vcard', [StudentController::class, 'VCard'])->name('vcard');

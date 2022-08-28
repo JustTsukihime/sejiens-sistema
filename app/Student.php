@@ -58,6 +58,11 @@ class Student extends Model
         return $query->where('hash', $hash);
     }
 
+    public function getFullNameAttribute() : string
+    {
+        return "{$this->name} {$this->surname}";
+    }
+
     /**
      * @return VCard
      */

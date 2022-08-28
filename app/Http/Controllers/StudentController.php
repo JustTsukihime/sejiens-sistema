@@ -7,10 +7,12 @@ use App\Http\Requests\StudentRequest;
 use App\Student;
 use App\StudentFilters;
 use App\User;
+use App\Jobs\GenerateQRCodeArchive;
 use Carbon\Carbon;
 use chillerlan\QRCode\QRCode;
 use chillerlan\QRCode\QROptions;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Maatwebsite\Excel\Facades\Excel;
 
 class StudentController extends Controller
@@ -129,6 +131,11 @@ class StudentController extends Controller
     {
         $students = Student::orderBy('email')->get();
         return view('student.management', compact('students'));
+    }
+
+    public function downloadQRArchive()
+    {
+        return Storage::disk('public')->download(GenerateQRCodeArchive::dispatchNow());
     }
 
     public function resolve(Request $request)

@@ -2,20 +2,18 @@
 
 namespace App\Jobs;
 
+use App\Exports\ConfirmedStudentsExport;
 use App\Student;
 use chillerlan\QRCode\QRCode;
 use chillerlan\QRCode\QROptions;
 use Illuminate\Bus\Queueable;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Http\File;
 use Illuminate\Support\Facades\Storage;
-use Maatwebsite\Excel\Classes\LaravelExcelWorksheet;
 use Maatwebsite\Excel\Facades\Excel;
-use Maatwebsite\Excel\Writers\LaravelExcelWriter;
 use ZipArchive;
 
 class GenerateQRCodeArchive implements ShouldQueue
@@ -57,7 +55,7 @@ class GenerateQRCodeArchive implements ShouldQueue
             return;
         }
 
-        $zip->addFile($this->createDataSetCSV($students)['full'],'AI-data-set.csv');
+        $zip->addFromString('AI-data-set.csv', $this->createStudentsCSV());
 
         foreach ($students as $student) {
             $qrsvg = $qr->render($student->hash);
@@ -72,20 +70,8 @@ class GenerateQRCodeArchive implements ShouldQueue
         return $path;
     }
 
-    public function createDataSetCSV(Collection $students) : array
+    public function createStudentsCSV() : string
     {
-        $out = Excel::store('export-'.time(), function(LaravelExcelWriter $excel) use ($students) {
-            $excel->sheet('Data', function(LaravelExcelWorksheet $sheet) use ($students) {
-                $sheet->appendRow(["Name", "@QRCode"]);
-                foreach($students as $student) {
-                    $sheet->appendRow([
-                        "$student->name $student->surname",
-                        "$student->hash.png",
-                    ]);
-                }
-            });
-        })->store('csv', false, true);
-
-        return $out;
+        return Excel::raw(new ConfirmedStudentsExport, \Maatwebsite\Excel\Excel::CSV);
     }
 }
