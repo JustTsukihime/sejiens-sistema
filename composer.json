@@ -7,7 +7,6 @@
     "require": {
         "php": "^8.0",
         "ext-bcmath": "*",
-        "ext-imap": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
         "ext-mysqli": "*",

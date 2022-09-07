@@ -6,16 +6,16 @@ const studentId = document.getElementById('student-id');
 const studentName = document.getElementById('student-name');
 const endpoint =  document.getElementById('endpoint-link').getAttribute('data-href');
 
-var oldQR = null;
+var oldQR = {};
 
 function resolve(result) {
-    if (oldQR == result) return;
-
-    camQrResult.textContent = result;
+    if (oldQR.data == result.data) return;
+    
+    camQrResult.textContent = result.data;
 
     $.post({
         url: endpoint,
-        data: {'type': 'qr', 'hash': result},
+        data: {'type': 'qr', 'hash': result.data},
         success: function (data) {
             studentId.value = data.id;
             studentName.textContent = data.name;
@@ -25,5 +25,8 @@ function resolve(result) {
     oldQR = result;
 }
 
-const scanner = new QrScanner(video, result => resolve(result));
+const scanner = new QrScanner(video, result => resolve(result), {
+    highlightScanRegion: true,
+    maxScansPerSecond: 10,
+});
 scanner.start();
