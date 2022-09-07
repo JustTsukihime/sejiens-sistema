@@ -41,7 +41,7 @@
             <div class="row">
             <div class="col-lg-3 mr-auto text-center">
                     <a href="https://www.accenture.com/lv-en/">
-                        <img src="{{ asset('/images/accenture_logo.svg') }}" alt="Accenture">
+                        <img src="{{ asset('/images/logo_accenture.svg') }}" alt="Accenture" class = "w-100 h-75">
                     </a>
                 </div>
                 <div class="col-lg-3 mr-auto text-center">
