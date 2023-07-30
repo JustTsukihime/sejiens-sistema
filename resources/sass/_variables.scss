@@ -3,25 +3,26 @@ $blue:    #007bff !default;
 // $blue:  #005A66;
 //$pink:    #e83e8c !default;
 $light_blue:  #008993;
-//$yellow:  #ffc107 !default;
+$yellow:  #ffc107 !default;
 $dark_blue:   #003766;
 //$teal:    #20c997 !default;
 //$cyan:    #17a2b8 !default;
-// $light_yellow:  #f5c932;
-//$yellow:  #ffc107 !default;
+$light_yellow:  #fee458;
 //$yellow:  #fcc013;
-// $dark_yellow:   #d97510;
+$dark_yellow:   #d97510;
 $light_orange: #fe8000;
 $dark_orange: #c66400;
 $black: #000000;
+$light_green: #3d915b;
+$dark_green: #2b7947;
 
 //$pink: #ff83b5;
 //$dark_pink:    #cf377e;
 //$light_pink: #ff83b5;
 
 
-$primary:       $light_blue;
-$secondary:     $blue;
+$primary:       $light_green;
+$secondary:     $dark_green;
 //$success:       $green !default;
 //$info:          $cyan !default;
 //$warning:       $yellow !default;

@@ -9,17 +9,17 @@
         </div>
         <div class="row">
             <div class="col-lg-3 ml-auto text-center">
-                <a href = "https://www.facebook.com/ludfsp"><img src="{{ asset('/images/facebook.svg') }}" alt="facebook"></a>
+                <a href = "https://www.facebook.com/ludfsp"><img src="{{ asset('/images/facebook2023.svg') }}" alt="facebook"></a>
                 <a href = "https://www.facebook.com/ludfsp"><h5 class="mt-2">ludfsp</h5></a>
                 <a href = "https://www.facebook.com/LUDatorikasfakultate"><h5 class="mt-2">LUDatorikasfakultate</h5></a>
             </div>
             <div class="col-lg-3 ml-auto text-center">
-                <a href = "http://datoriki.lv/"><img src="{{ asset('/images/home.svg') }}" alt="datoriki"></a>
+                <a href = "http://datoriki.lv/"><img src="{{ asset('/images/home2023.svg') }}" alt="datoriki"></a>
                 <a href = "http://datoriki.lv/"><h5 class="mt-2">datoriki.lv</h5></a>
                 <a href = "https://www.df.lu.lv/"><h5 class="mt-2">df.lu.lv</h5></a>
             </div>
             <div class="col-lg-3 ml-auto text-center">
-                <a href = "https://www.instagram.com/datoriki/"><img src="{{ asset('/images/instagram.svg') }}" alt="event"></a>
+                <a href = "https://www.instagram.com/datoriki/"><img src="{{ asset('/images/instagram2023.svg') }}" alt="event"></a>
                 <a href = "https://www.instagram.com/datoriki/"><h5 class="mt-2">datoriki</h5></a>
                 <a href = "https://www.instagram.com/lu_datorikasfakultate/"><h5 class="mt-2">lu_datorikasfakultate</h5></a>
             </div>
@@ -44,11 +44,11 @@
                         <img src="{{ asset('/images/logo_accenture.svg') }}" alt="Accenture" class = "w-100 h-75">
                     </a>
                 </div>
-                <div class="col-lg-3 mr-auto text-center">
+                <!--<div class="col-lg-3 mr-auto text-center">
                     <a href="https://www.tietoevry.com/">
                         <img src="{{ asset('/images/tietoevry_logo.png') }}" alt="Tietoevry">
                     </a>
-                </div>
+                </div>-->
                 <div class="col-lg-3 pl-5 mr-auto text-center">
                     <a href="http://datoriki.lv/">
                         <img src="{{ asset('/images/dfsp_logo.svg') }}" alt="DF SP Logo">

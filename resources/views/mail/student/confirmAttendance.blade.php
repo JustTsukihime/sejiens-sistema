@@ -8,7 +8,7 @@
 <table width="100%" style="background-color:#007bff;font-size:13px;"
        align="center" bgcolor="#007bff" cellpadding="0" cellspacing="0">
     <tr>
-        <td align="center" style="background: #007bff; "><img style="margin-bottom: -3px; " width="600px" src="{{ asset('/images/banner.png') }}"  ></td>
+        <td align="center" style="background: #007bff; "><img style="margin-bottom: -3px; " width="600px" src="{{ asset('/images/banner2023.png') }}"  ></td>
     </tr>
     <tr>
         <td width="100%" style="background: #007bff;">
@@ -47,7 +47,7 @@
                                     <table width="85%" align="center">
                                         <tr>
                                             <td style="line-height:1.5; font-size: 11.5pt" >Ja tu saņēmi šo e-pastu, tad Tu esi pieteicies Datorikas fakultātes pirmsaristotelim <b>"Sējiens 2022"</b>.
-                                                <p>Atgādinām, ka pasākums ir <b>bez dalības maksas</b>, par ko izsakām milzīgu paldies mūsu draugiem – <b>Accenture un Tietoevry</b>!</p>
+                                                <p>Atgādinām, ka pasākums ir <b>bez dalības maksas</b>, par ko izsakām milzīgu paldies mūsu draugam – <b>Accenture<!-- un Tietoevry--></b>!</p>
                                                 <p><b>Gaidīsim Tevi Sējiena pirmajā daļā piektdien, 2. septembrī</b> Datorikas fakultātes telpās, Raiņa bulvārī 19. Pirmās daļas laikā izpētīsim universitātes telpas un iepazīsimies ar saviem jaunajiem kursabiedriem.</p>
                                                 <p>Turpinot Sējienu, <b>kopīgi dosimies uz kādu Datoriķiem tuvu vietu, tepat Latvijā, kādas stundas braucienā no Rīgas (vai varbūt arī ne?)</b> , kur vakarā kopīgi pavadīsim laiku, atpūtīsimies, iepazīsim savus kursa biedrus, un vienkārši pavadīsim labi laiku, lai sagatavotos nākamajai dienai.
 Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās pārbaudīs tavas spējas dažādos aspektos, kā arī būs vieslekcijas no mūsu fantastiskajiem sponsoriem, un baumo, ka vakarā būs jau tavs pirmais baļļuks studentijā!</p>
@@ -198,17 +198,17 @@ Sējiena otrajā dienā tevi sagaida dažādas sportiskas aktivitātes, kurās p
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td>
+                                            <!--<td>
                                                 <table>
                                                     <tr>
                                                         <td rowspan="2"><a href="https://www.facebook.com/events/619103526149412/"><img style="height: 45px;"
-                                                                                                                                        src="{{ asset('/images/event.png') }}"
+                                                                                                                                        src="{{ asset('/images/event2023.png') }}"
                                                                                                                                         alt="Event logo"></a></td>
                                                         <td style="text-indent: 10px;" ><a href="https://www.facebook.com/events/619103526149412/" style="text-decoration: none;">
                                                                 <font color="#fe8000"><b>Sējiens FB pasākums</b></font></a></td>
                                                     </tr>
                                                 </table>
-                                            </td>
+                                            </td>-->
                                         </tr>
                                     </table>
                                 </td>
