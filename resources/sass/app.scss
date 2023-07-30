@@ -17,7 +17,7 @@ body {
 
 hr {
   max-width: 50px;
-  border: 3px $dark_blue;
+  border: 3px $dark_green;
 
   &.light {
     border-color: $white;
@@ -25,7 +25,7 @@ hr {
 }
 
 a {
-  color: $dark_blue;
+  color: $dark_green;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6, #application-form {
 }
 
 .bg-dark {
-  background-color: $dark;
+  background-color: $dark_green;
 }
 
 .text-faded {
@@ -128,7 +128,7 @@ img {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background: url("../images/fons.png") center center;
+  background: url("../images/fons2023.png") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -183,7 +183,7 @@ iframe {
 }
 
 .btn-apply {
-  @include button-variant($light_orange, rgba(207, 55, 126, 0.5));
+  @include button-variant($light_yellow, rgba(207, 55, 126, 0.5));
   padding: 2rem 3rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -207,7 +207,7 @@ iframe {
 }
 
 .text-primary {
-  color: #007bff !important;
+  color: $primary !important;
 }
 
 .text-secondary {
@@ -215,7 +215,7 @@ iframe {
 }
 
 .btn-primary {
-  background-color: $light_orange;
+  background-color: $light_yellow;
   color: #fff;
 }
 
