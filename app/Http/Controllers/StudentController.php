@@ -210,7 +210,7 @@ class StudentController extends Controller
         ];
 
         $data = Excel::import($request->file('file')->getPathname())->all();
-        list($timestamp, $name, $surname, $food, $allergies, $health, $attending, $about, $songs, $tos, $comments) = $data->getHeading();
+        list($timestamp, $name, $surname, $food, $allergies, $health, $attending, $about, $songs, $gender, $tos, $comments) = $data->getHeading();
 
         $skipped = [];
         foreach ($data->values() as $student) {
@@ -227,6 +227,7 @@ class StudentController extends Controller
                 'attending' => $attendance[$student->$attending],
                 'about' => $student->$about,
                 'songs' => $student->$songs,
+                'gender' => $student->$gender,
                 'comments' => $student->$comments,
                 'confirmed_at' => Carbon::createFromFormat('d/m/Y H:i:s', $student->$timestamp),
             ])->save();
@@ -310,6 +311,7 @@ class StudentController extends Controller
             'health' => 'required',
             'about' => 'nullable',
             'songs' => 'nullable',
+            'gender' => 'nullable',
             'attending' => 'required',
         ]);
 
@@ -318,7 +320,7 @@ class StudentController extends Controller
         if (!$student)
             return redirect()->route('landing');
 
-        $student->update($request->only(['food', 'allergies', 'health', 'about', 'songs', 'attending']));
+        $student->update($request->only(['food', 'allergies', 'health', 'about', 'songs', 'gender', 'attending']));
         $student->confirm();
 
         return back();

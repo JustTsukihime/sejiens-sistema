@@ -39,6 +39,10 @@
                                         <dt class="col-lg-4">Par sevi</dt>
                                         <dd class="col-lg-8">{{ $student->about }}</dd>
                                     @endif
+                                    @if($student->gender)
+                                        <dt class="col-lg-4">Piekrita sadzīvot vienā istabā ar cita dzimuma pārstāvjiem?</dt>
+                                        <dd class="col-lg-8">{{ $student->gender }}</dd>
+                                    @endif
                                     @if($student->songs)
                                         <dt class="col-lg-4">Dziesmas</dt>
                                         <dd class="col-lg-8">{{ $student->songs }}</dd>
