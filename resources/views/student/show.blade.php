@@ -16,6 +16,10 @@
                         </div>
                         <div class="col-md-8">
                             <dl class="row m-3">
+                                <dt class="col-lg-4">Personas kods</dt>
+                                <dd class="col-lg-8">{{ $student->perskods }}</dd>
+                                <dt class="col-lg-4">St. Apl. Num.</dt>
+                                <dd class="col-lg-8">{{ $student->aplkods }}</dd>
                                 <dt class="col-lg-4">E-pasts</dt>
                                 <dd class="col-lg-8">{{ $student->email }}</dd>
                                 <dt class="col-lg-4">Telefons</dt>

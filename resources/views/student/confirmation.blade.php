@@ -10,6 +10,8 @@
                 <div class="offset-lg-2 col-lg-8">
                     {{ Form::model($student, ['method' => 'POST', 'route' => ['student.confirm'], 'class' => 'form-horizontal', 'id' => 'application-form']) }}
                     {{ Form::hidden('hash', $student->hash) }}
+                    {{ Form::rowText('perskods', null, 'Personas kods', ['required']) }}
+                    {{ Form::rowText('aplkods', null, 'Studenta apliecības numurs', ['required']) }}
                     {{ Form::rowTextarea('about', null, 'Īsumā par sevi', array('class' => 'form-control inputbox', 'rows' => '5'), 'Kas esi, ko dari dzīvē, kāpēc nāc uz datoriķiem, ko vēlies sasniegt?') }}
                     {{ Form::rowText('food', null, 'Ko tu (ne)ēd?', ['required'], 'Visēdājs, veģetārietis, vegāns u.c.') }}
                     {{ Form::rowText('allergies', null, 'Vai ir kādas Alerģijas, par kurām mums būtu jāzin?', ['required']) }}
