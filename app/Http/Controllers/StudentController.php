@@ -210,7 +210,7 @@ class StudentController extends Controller
         ];
 
         $data = Excel::import($request->file('file')->getPathname())->all();
-        list($timestamp, $name, $surname, $food, $allergies, $health, $attending, $about, $songs, $gender, $tos, $comments) = $data->getHeading();
+        list($timestamp, $name, $surname, $aplkods, $perskods, $food, $allergies, $health, $attending, $about, $songs, $gender, $tos, $comments) = $data->getHeading();
 
         $skipped = [];
         foreach ($data->values() as $student) {
@@ -221,6 +221,8 @@ class StudentController extends Controller
             }
 
             $model->fill([
+                'aplkods' => $student->$aplkods,
+                'perskods' => $student->$perskods,
                 'food' => $student->$food,
                 'allergies' => $student->$allergies,
                 'health' => $student->$health,
@@ -306,6 +308,8 @@ class StudentController extends Controller
     {
         $this->validate($request, [
             'hash' => 'bail|required',
+            'aplkods' => 'nullable',
+            'perskods' => 'nullable',
             'food' => 'required',
             'allergies' => 'required',
             'health' => 'required',
@@ -320,7 +324,7 @@ class StudentController extends Controller
         if (!$student)
             return redirect()->route('landing');
 
-        $student->update($request->only(['food', 'allergies', 'health', 'about', 'songs', 'gender', 'attending']));
+        $student->update($request->only(['perskods', 'aplkods', 'food', 'allergies', 'health', 'about', 'songs', 'gender', 'attending']));
         $student->confirm();
 
         return back();
