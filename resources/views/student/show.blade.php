@@ -39,6 +39,8 @@
                                     <dd class="col-lg-8">{{ $student->health }}</dd>
                                     <dt class="col-lg-4">Krekls</dt>
                                     <dd class="col-lg-8">{{ $student->tshirt }}</dd>
+                                    <dt class="col-lg-4">Ēšana</dt>
+                                    <dd class="col-lg-8">{{ $student->food }}</dd>
                                     @if($student->about)
                                         <dt class="col-lg-4">Par sevi</dt>
                                         <dd class="col-lg-8">{{ $student->about }}</dd>
