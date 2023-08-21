@@ -112,7 +112,7 @@ class StudentController extends Controller
             'phone' => 'required',
         ]);
 
-        $student->update($request->only(['name', 'surname', 'email', 'phone', 'attending', 'food', 'health']));
+        $student->update($request->only(['name', 'surname', 'email', 'phone', 'attending', 'food', 'health', 'perskods', 'aplkods', 'allergies', 'tshirt', 'about', 'gender', 'songs', 'comments']));
         return redirect()->route('student.show', $student);
     }
 
